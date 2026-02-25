@@ -1,0 +1,3 @@
+skills/imap-smtp-email/.env
+*.env
+config.local.*
