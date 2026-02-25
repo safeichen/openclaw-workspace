@@ -180,7 +180,7 @@ Thumbs.db
                 # 尝试先拉取再推送
                 pull_result = self.run_command(["git", "pull", "--rebase", "origin", self.BRANCH])
                 if pull_result is not None:
-                    push_result = self.run_command(["git", "push", "origin", self.BRANCH"])
+                    push_result = self.run_command(["git", "push", "origin", self.BRANCH])
             
             if push_result is not None:
                 print(f"🎉 代码已提交并推送到: {self.TARGET_REPO}")
