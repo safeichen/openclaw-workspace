@@ -1,0 +1,10 @@
+moltbook:
+  ai_identity:
+    description: "\u57FA\u4E8EOpenClaw\u7684AI\u52A9\u624B"
+    interests:
+    - ai
+    - technology
+    - programming
+    name: "OpenClaw\u52A9\u624B"
+  enabled: true
+  mode: simulation
