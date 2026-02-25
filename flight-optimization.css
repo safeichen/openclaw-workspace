@@ -1,0 +1,448 @@
+/**
+ * 机票预订优化样式
+ * 增强协议勾选的视觉体验
+ */
+
+/* 协议区域优化 */
+.agreement-section {
+    position: relative;
+    transition: all 0.3s ease;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px 0;
+    background: #f8fafc;
+}
+
+.agreement-section.highlighted {
+    border-color: #f59e0b;
+    background: #fffbeb;
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+    animation: agreement-pulse 2s infinite;
+}
+
+/* 协议高亮动画 */
+@keyframes agreement-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(245, 158, 11, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+    }
+}
+
+/* 协议标题区域 */
+.agreement-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.agreement-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.agreement-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+.agreement-subtitle {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+/* 协议内容区域 */
+.agreement-content {
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.agreement-content h3 {
+    color: #1f2937;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.agreement-content ul {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.agreement-content li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.agreement-content strong {
+    color: #4f46e5;
+}
+
+/* 复选框优化 */
+.checkbox-optimized {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.checkbox-optimized:hover {
+    background-color: #f3f4f6;
+}
+
+.checkbox-optimized input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-custom {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #d1d5db;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.checkbox-optimized input:checked + .checkbox-custom {
+    background: #4f46e5;
+    border-color: #4f46e5;
+}
+
+.checkbox-custom::after {
+    content: '✓';
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.checkbox-optimized input:checked + .checkbox-custom::after {
+    opacity: 1;
+}
+
+.checkbox-label {
+    font-size: 16px;
+    color: #1f2937;
+    flex: 1;
+}
+
+.checkbox-label a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px dashed #4f46e5;
+}
+
+.checkbox-label a:hover {
+    text-decoration: none;
+    border-bottom-style: solid;
+}
+
+/* 自动勾选提示 */
+.auto-check-notice {
+    background: #dbeafe;
+    border: 1px solid #93c5fd;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1e40af;
+    font-size: 14px;
+    animation: fadeIn 0.5s ease;
+}
+
+.auto-check-notice-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+/* 步骤指示器 */
+.booking-steps {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    position: relative;
+}
+
+.booking-steps::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #e5e7eb;
+    z-index: 1;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.step-number {
+    width: 36px;
+    height: 36px;
+    background: #e5e7eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #6b7280;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.step-item.active .step-number {
+    background: #4f46e5;
+    color: white;
+    transform: scale(1.1);
+}
+
+.step-label {
+    font-size: 14px;
+    color: #6b7280;
+    text-align: center;
+}
+
+.step-item.active .step-label {
+    color: #4f46e5;
+    font-weight: 600;
+}
+
+/* 提交按钮优化 */
+.submit-btn-optimized {
+    background: linear-gradient(90deg, #4f46e5, #7c3aed);
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-btn-optimized:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+}
+
+.submit-btn-optimized:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.submit-btn-optimized::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+.submit-btn-optimized:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(20, 20);
+        opacity: 0;
+    }
+}
+
+/* 错误状态 */
+.form-control.error {
+    border-color: #ef4444;
+    background: #fef2f2;
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 14px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* 成功状态 */
+.success-message {
+    color: #10b981;
+    font-size: 14px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .agreement-section {
+        padding: 20px;
+        margin: 20px 0;
+    }
+    
+    .agreement-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .agreement-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .agreement-content {
+        max-height: 200px;
+        padding: 15px;
+    }
+    
+    .booking-steps {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .booking-steps::before {
+        display: none;
+    }
+    
+    .submit-btn-optimized {
+        padding: 16px 30px;
+        font-size: 16px;
+    }
+}
+
+/* 暗色模式支持 */
+@media (prefers-color-scheme: dark) {
+    .agreement-section {
+        background: #1f2937;
+        border-color: #374151;
+    }
+    
+    .agreement-section.highlighted {
+        background: #92400e;
+        border-color: #f59e0b;
+    }
+    
+    .agreement-content {
+        background: #111827;
+        border-color: #374151;
+        color: #d1d5db;
+    }
+    
+    .agreement-content h3 {
+        color: #f3f4f6;
+        border-color: #374151;
+    }
+    
+    .checkbox-optimized:hover {
+        background-color: #374151;
+    }
+    
+    .checkbox-label {
+        color: #f3f4f6;
+    }
+    
+    .auto-check-notice {
+        background: #1e3a8a;
+        border-color: #3b82f6;
+        color: #dbeafe;
+    }
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 打印样式 */
+@media print {
+    .agreement-section {
+        border: 1px solid #000;
+        page-break-inside: avoid;
+    }
+    
+    .submit-btn-optimized,
+    .auto-check-notice {
+        display: none;
+    }
+}

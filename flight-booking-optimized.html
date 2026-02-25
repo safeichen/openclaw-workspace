@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>机票预订优化页面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 800px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(90deg, #4f46e5, #7c3aed);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .header .steps {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        
+        .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .step-number {
+            width: 36px;
+            height: 36px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .step.active .step-number {
+            background: white;
+            color: #4f46e5;
+        }
+        
+        .step-label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #374151;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: #4f46e5;
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+        }
+        
+        .agreement-section {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 30px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .agreement-section.highlight {
+            border-color: #f59e0b;
+            background: #fffbeb;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+        }
+        
+        .agreement-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .agreement-icon {
+            width: 40px;
+            height: 40px;
+            background: #4f46e5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .agreement-content {
+            max-height: 200px;
+            overflow-y: auto;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .agreement-content h3 {
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+        
+        .agreement-content ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        .agreement-content li {
+            margin-bottom: 8px;
+        }
+        
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .custom-checkbox {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #d1d5db;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+        
+        .checkbox-container input:checked + .custom-checkbox {
+            background: #4f46e5;
+            border-color: #4f46e5;
+        }
+        
+        .custom-checkbox::after {
+            content: '✓';
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        
+        .checkbox-container input:checked + .custom-checkbox::after {
+            opacity: 1;
+        }
+        
+        .checkbox-label {
+            font-size: 16px;
+            color: #1f2937;
+        }
+        
+        .checkbox-label a {
+            color: #4f46e5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .checkbox-label a:hover {
+            text-decoration: underline;
+        }
+        
+        .submit-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(90deg, #4f46e5, #7c3aed);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 300px;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+        }
+        
+        .submit-btn:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #ef4444;
+            color: white;
+            padding: 16px 24px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(239, 68, 68, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transform: translateX(150%);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .toast.show {
+            transform: translateX(0);
+        }
+        
+        .toast-icon {
+            font-size: 20px;
+        }
+        
+        .success-toast {
+            background: #10b981;
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+        }
+        
+        .auto-check-notice {
+            background: #dbeafe;
+            border: 1px solid #93c5fd;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #1e40af;
+            font-size: 14px;
+        }
+        
+        .auto-check-notice i {
+            font-size: 18px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+            
+            .header .steps {
+                gap: 20px;
+            }
+            
+            .agreement-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>✈️ 机票预订</h1>
+            <p>轻松预订，愉快出行</p>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-label">填写信息</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-label">选择航班</div>
+                </div>
+                <div class="step active">
+                    <div class="step-number">3</div>
+                    <div class="step-label">确认协议</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-label">完成支付</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="form-group">
+                <label for="passengerName">乘客姓名</label>
+                <input type="text" id="passengerName" class="form-control" placeholder="请输入乘客姓名">
+            </div>
+            
+            <div class="form-group">
+                <label for="idNumber">身份证号码</label>
+                <input type="text" id="idNumber" class="form-control" placeholder="请输入身份证号码">
+            </div>
+            
+            <div class="form-group">
+                <label for="flightNumber">航班信息</label>
+                <input type="text" id="flightNumber" class="form-control" value="CA1234 北京 → 广州" readonly>
+            </div>
+            
+            <div class="agreement-section" id="agreementSection">
+                <div class="agreement-header">
+                    <div class="agreement-icon">📋</div>
+                    <div>
+                        <h2 style="color: #1f2937; margin-bottom: 5px;">预订协议</h2>
+                        <p style="color: #6b7280; font-size: 14px;">请仔细阅读并确认以下协议</p>
+                    </div>
+                </div>
+                
+                <div class="agreement-content">
+                    <h3>机票预订服务协议</h3>
+                    <p>感谢您使用我们的机票预订服务。在继续之前，请确认您已阅读并同意以下条款：</p>
+                    
+                    <ul>
+                        <li><strong>退改签政策：</strong>特价机票可能不支持退改签，具体以航空公司规定为准</li>
+                        <li><strong>行李规定：</strong>请确认您的行李符合航空公司的重量和尺寸要求</li>
+                        <li><strong>证件要求：</strong>登机时请携带与预订信息一致的有效身份证件</li>
+                        <li><strong>健康声明：</strong>如有发热等症状，请勿乘机并及时联系航空公司</li>
+                        <li><strong>保险选择：</strong>航空意外险为可选项目，您可以根据需要自行决定是否购买</li>
+                    </ul>
+                    
+                    <p>点击"同意协议"即表示您已阅读、理解并接受以上所有条款。</p>
+                </div>
+                
+                <label class="checkbox-container">
+                    <input type="checkbox" id="agreementCheckbox" checked>
+                    <span class="custom-checkbox"></span>
+                    <span class="checkbox-label">
+                        我已阅读并同意 <a href="#" onclick="showFullAgreement()">《机票预订服务协议》</a>
+                    </span>
+                </label>
+                
+                <div class="auto-check-notice">
+                    <i>💡</i>
+                    <span>为简化您的操作，协议已默认勾选。如不同意，请取消勾选。</span>
+                </div>
+            </div>
+            
+            <div class="submit-section">
+                <button class="submit-btn" id="submitBtn" onclick="submitBooking()">
+                    确认预订并支付
+                </button>
+                <p style="color: #6b7280; margin-top: 15px; font-size: 14px;">
+                    点击按钮即表示您确认所有信息准确无误
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="toast" id="errorToast">
+        <div class="toast-icon">⚠️</div>
+        <div>
+            <strong>请先同意协议</strong>
+            <p style="margin-top: 4px; font-size: 14px; opacity: 0.9;">需要您阅读并同意预订协议才能继续</p>
+        </div>
+    </div>
+    
+    <div class="toast success-toast" id="successToast">
+        <div class="toast-icon">✅</div>
+        <div>
+            <strong>预订成功！</strong>
+            <p style="margin-top: 4px; font-size: 14px; opacity: 0.9;">正在跳转到支付页面...</p>
+        </div>
+    </div>
+    
+    <script>
+        // 获取DOM元素
+        const agreementCheckbox = document.getElementById('agreementCheckbox');
+        const agreementSection = document.getElementById('agreementSection');
+        const submitBtn = document.getElementById('submitBtn');
+        const errorToast = document.getElementById('errorToast');
+        const successToast = document.getElementById('successToast');
+        
+        // 实时验证函数
+        function validateForm() {
+            const passengerName = document.getElementById('passengerName').value.trim();
+            const idNumber = document.getElementById('idNumber').value.trim();
+            const isAgreementChecked = agreementCheckbox.checked;
+            
+            // 检查协议是否勾选
+            if (!isAgreementChecked) {
+                highlightAgreement();
+                return false;
+            } else {
+                removeHighlight();
+            }
+            
+            // 检查其他必填字段
+            if (!passengerName || !idNumber) {
+                showToast('请填写完整的乘客信息');
+                return false;
+            }
+            
+            return true;
+        }
+        
+        // 高亮协议区域
+        function highlightAgreement() {
+            agreementSection.classList.add('highlight');
+            
+            // 滚动到协议区域
+            agreementSection.scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'center' 
+            });
+        }
+        
+        // 移除高亮
+        function removeHighlight() {
+            agreementSection.classList.remove('highlight');
+        }
+        
+        // 显示提示
+        function showToast(message, isSuccess = false) {
+            const toast = isSuccess ? successToast : errorToast;
+            
+            if (!isSuccess) {
+                const messageElement = toast.querySelector('p');
+                messageElement.textContent = message;
+            }
+            
+            toast.classList.add('show');
+            
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+        
+        // 提交预订
+        function submitBooking() {
+            if (!validateForm()) {
+                showToast('请先同意预订协议');
+                return;
+            }
+            
+            // 禁用按钮防止重复提交
+            submitBtn.disabled = true;
+            submitBtn.textContent = '处理中...';
+            
+            // 模拟API调用
+            setTimeout(() => {
+                showToast('', true);
+                
+                // 模拟跳转到支付页面
+                setTimeout(() => {
+                    alert('🎉 预订成功！正在跳转到支付页面...\n\n乘客：' + 
+                          document.getElementById('passengerName').value + 
+                          '\n航班：CA1234 北京 → 广州');
+                }, 1500);
+                
+                // 重置按钮状态
+                setTimeout(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = '确认预订并支付';
+                }, 2000);
+            }, 1000);
+        }
+        
+        // 显示完整协议（模拟）
+        function showFullAgreement() {
+            alert('📄 完整协议内容\n\n此处显示完整的机票预订服务协议文本。\n\n您可以在同意前仔细阅读所有条款。');
+            return false;
+        }
+        
+        // 实时监听协议勾选状态
+        agreementCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                removeHighlight();
+            }
+        });
+        
+        // 表单字段变化时实时验证
+        document.getElementById('passengerName').addEventListener('input', validateForm);
+        document.getElementById('idNumber').addEventListener('input', validateForm);
+        
+        // 页面加载时自动聚焦到第一个输入框
+        window.addEventListener('load', function() {
+            document.getElementById('passengerName').focus();
+            
+            // 显示欢迎提示
+            setTimeout(() => {
+                console.log('✅ 优化功能已启用：\n1. 协议默认勾选\n2. 实时验证\n3. 视觉强化\n4. 友好错误提示');
+            }, 500);
+        });
+    </script>
+</body>
+</html>

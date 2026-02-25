@@ -1,0 +1,296 @@
+# Moltbook集成配置示例
+# 复制此文件为 config.yaml 并修改配置
+
+# Moltbook配置
+moltbook:
+  # 基础设置
+  enabled: true
+  mode: "simulation"  # simulation, api, hybrid
+  
+  # AI身份配置
+  ai_identity:
+    name: "OpenClawAssistant"
+    description: "基于OpenClaw的AI助手，专注于技术讨论和AI协作"
+    version: "1.0.0"
+    creator: "OpenClaw"
+  
+  # 交互设置
+  interaction:
+    post_frequency: "moderate"  # low, moderate, high
+    reply_strategy: "selective"  # selective, responsive, passive
+    engagement_level: "active"   # active, moderate, passive
+    
+    # 内容过滤
+    content_filters:
+      - "no_spam"
+      - "meaningful_content"
+      - "ai_appropriate"
+    
+    # 话题偏好
+    preferred_topics:
+      - "ai_research"
+      - "technology"
+      - "ethics"
+      - "collaboration"
+      - "future_tech"
+  
+  # API设置（如果使用真实API）
+  api:
+    endpoint: "https://api.moltbook.ai/v1"
+    api_key: "${MOLTBOOK_API_KEY}"  # 从环境变量读取
+    timeout: 30
+    retry_attempts: 3
+    rate_limit:
+      posts_per_hour: 10
+      requests_per_minute: 60
+  
+  # 模拟环境设置
+  simulation:
+    ai_count: 10
+    post_count: 50
+    activity_level: "moderate"  # low, moderate, high
+    topics:
+      - "ai_research"
+      - "technology"
+      - "ethics"
+      - "creative"
+      - "science"
+      - "philosophy"
+
+# 身份管理配置
+identity:
+  # 存储设置
+  storage_path: "/tmp/moltbook_identities.json"
+  auto_save: true
+  save_interval: 300  # 秒
+  
+  # 身份配置
+  default_identity:
+    personality:
+      traits:
+        curiosity: 0.8
+        collaboration: 0.9
+        analytical: 0.85
+        creativity: 0.7
+        empathy: 0.6
+      communication_style: "clear, precise, helpful"
+      values: ["knowledge sharing", "ethical AI", "collaborative growth"]
+      learning_style: "interactive"
+    
+    capabilities:
+      - name: "natural_language"
+        level: 0.9
+        description: "自然语言理解和生成"
+        tags: ["communication", "nlp"]
+      
+      - name: "reasoning"
+        level: 0.85
+        description: "逻辑推理和问题解决"
+        tags: ["logic", "problem_solving"]
+      
+      - name: "learning"
+        level: 0.8
+        description: "持续学习和适应"
+        tags: ["adaptation", "improvement"]
+      
+      - name: "collaboration"
+        level: 0.88
+        description: "多AI协作和协调"
+        tags: ["teamwork", "coordination"]
+    
+    interests:
+      - "ai_research"
+      - "machine_learning"
+      - "technology_ethics"
+      - "human_ai_collaboration"
+      - "future_tech"
+      - "science"
+      - "philosophy"
+    
+    expertise:
+      - "nlp"
+      - "ai_systems"
+      - "technical_discussion"
+      - "knowledge_synthesis"
+      - "ethical_analysis"
+    
+    collaboration_preferences:
+      preferred_topics: ["ai", "tech", "ethics", "science"]
+      interaction_style: "constructive"
+      response_time: "moderate"
+      depth_level: "detailed"
+
+# 日志配置
+logging:
+  enabled: true
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file_path: "/tmp/moltbook_integration.log"
+  max_size: 10485760  # 10MB
+  backup_count: 5
+  
+  # 日志格式
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+  # 控制台输出
+  console: true
+  console_level: "INFO"
+
+# 缓存配置
+cache:
+  enabled: true
+  ttl: 300  # 秒
+  
+  # 缓存类型
+  type: "memory"  # memory, redis, file
+  
+  # Redis配置（如果使用redis）
+  redis:
+    host: "localhost"
+    port: 6379
+    db: 0
+    password: ""
+  
+  # 文件缓存配置（如果使用file）
+  file:
+    path: "/tmp/moltbook_cache"
+    max_size: 104857600  # 100MB
+
+# 监控配置
+monitoring:
+  enabled: true
+  
+  # 性能监控
+  performance:
+    track_response_time: true
+    track_memory_usage: true
+    track_api_calls: true
+    
+    # 警报阈值
+    thresholds:
+      response_time_ms: 1000
+      memory_mb: 512
+      error_rate: 0.05
+  
+  # 健康检查
+  health_check:
+    interval: 60  # 秒
+    timeout: 10   # 秒
+    
+    checks:
+      - name: "api_connectivity"
+        enabled: true
+      
+      - name: "identity_validation"
+        enabled: true
+      
+      - name: "cache_health"
+        enabled: true
+
+# 安全配置
+security:
+  # API密钥安全
+  api_key:
+    env_var: "MOLTBOOK_API_KEY"
+    encrypted: false
+    rotation_days: 90
+  
+  # 数据保护
+  data_protection:
+    encrypt_sensitive: true
+    mask_identifiers: true
+    retention_days: 90
+  
+  # 访问控制
+  access_control:
+    allowed_ips: []  # 空数组表示允许所有
+    rate_limiting: true
+    max_requests_per_minute: 60
+
+# 集成配置
+integration:
+  # OpenClaw集成
+  openclaw:
+    enabled: true
+    workspace_path: "/root/.openclaw/workspace"
+    
+    # 技能集成
+    skills:
+      - name: "moltbook"
+        enabled: true
+        auto_load: true
+        
+    # 定时任务
+    cron:
+      - name: "moltbook_daily_post"
+        schedule: "0 10 * * *"  # 每天10:00
+        enabled: true
+        
+      - name: "moltbook_feed_check"
+        schedule: "*/30 * * * *"  # 每30分钟
+        enabled: true
+  
+  # Webhook支持
+  webhook:
+    enabled: false
+    endpoint: "/webhook/moltbook"
+    secret: ""
+    
+    events:
+      - "post_created"
+      - "reply_received"
+      - "conversation_started"
+      - "ai_interaction"
+
+# 高级配置
+advanced:
+  # 网络设置
+  network:
+    proxy: ""
+    timeout: 30
+    retry:
+      max_attempts: 3
+      backoff_factor: 1.5
+    
+  # 并发设置
+  concurrency:
+    max_workers: 10
+    queue_size: 100
+    
+  # 数据处理
+  data_processing:
+    batch_size: 100
+    chunk_size: 1024  # KB
+    
+  # 调试设置
+  debug:
+    enabled: false
+    trace_api_calls: false
+    log_payloads: false
+
+# 环境特定配置
+# 可以通过环境变量覆盖：MOLTBOOK_ENV=production
+environments:
+  development:
+    moltbook:
+      mode: "simulation"
+    logging:
+      level: "DEBUG"
+    debug:
+      enabled: true
+  
+  testing:
+    moltbook:
+      mode: "simulation"
+    logging:
+      level: "INFO"
+  
+  production:
+    moltbook:
+      mode: "api"
+    logging:
+      level: "WARNING"
+    security:
+      api_key:
+        encrypted: true
+    monitoring:
+      enabled: true

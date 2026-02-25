@@ -1,0 +1,93 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .center { fill: #ffd43b; stroke: #000; stroke-width: 2; }
+    .branch { fill: #a5d8ff; stroke: #000; stroke-width: 2; }
+    .sub { fill: #b2f2bb; stroke: #000; stroke-width: 1; }
+    .text { font-family: Arial, sans-serif; text-anchor: middle; }
+    .center-text { font-size: 20px; font-weight: bold; }
+    .branch-text { font-size: 16px; }
+    .sub-text { font-size: 12px; }
+    .line { stroke: #000; stroke-width: 2; fill: none; }
+    .sub-line { stroke: #666; stroke-width: 1; fill: none; stroke-dasharray: 5,5; }
+  </style>
+  
+  <!-- 中心节点 -->
+  <ellipse class="center" cx="400" cy="300" rx="100" ry="50"/>
+  <text class="text center-text" x="400" y="305">AI技术</text>
+  
+  <!-- 分支1: 机器学习 -->
+  <rect class="branch" x="150" y="150" width="120" height="50" rx="10"/>
+  <text class="text branch-text" x="210" y="180">机器学习</text>
+  <line class="line" x1="400" y1="300" x2="210" y2="200"/>
+  
+  <!-- 分支1子节点 -->
+  <rect class="sub" x="50" y="80" width="80" height="30" rx="5"/>
+  <text class="text sub-text" x="90" y="100">监督学习</text>
+  <line class="sub-line" x1="210" y1="200" x2="90" y2="115"/>
+  
+  <rect class="sub" x="50" y="120" width="80" height="30" rx="5"/>
+  <text class="text sub-text" x="90" y="140">无监督学习</text>
+  <line class="sub-line" x1="210" y1="200" x2="90" y2="135"/>
+  
+  <!-- 分支2: 深度学习 -->
+  <rect class="branch" x="150" y="400" width="120" height="50" rx="10"/>
+  <text class="text branch-text" x="210" y="430">深度学习</text>
+  <line class="line" x1="400" y1="300" x2="210" y2="425"/>
+  
+  <!-- 分支2子节点 -->
+  <rect class="sub" x="50" y="330" width="80" height="30" rx="5"/>
+  <text class="text sub-text" x="90" y="350">神经网络</text>
+  <line class="sub-line" x1="210" y1="425" x2="90" y2="345"/>
+  
+  <rect class="sub" x="50" y="370" width="80" height="30" rx="5"/>
+  <text class="text sub-text" x="90" y="390">卷积网络</text>
+  <line class="sub-line" x1="210" y1="425" x2="90" y2="385"/>
+  
+  <!-- 分支3: 自然语言处理 -->
+  <rect class="branch" x="530" y="150" width="120" height="50" rx="10"/>
+  <text class="text branch-text" x="590" y="180">自然语言处理</text>
+  <line class="line" x1="400" y1="300" x2="590" y2="200"/>
+  
+  <!-- 分支3子节点 -->
+  <rect class="sub" x="670" y="80" width="80" height="30" rx="5"/>
+  <text class="text sub-text" x="710" y="100">文本分类</text>
+  <line class="sub-line" x1="590" y1="200" x2="710" y2="115"/>
+  
+  <rect class="sub" x="670" y="120" width="80" height="30" rx="5"/>
+  <text class="text sub-text" x="710" y="140">机器翻译</text>
+  <line class="sub-line" x1="590" y1="200" x2="710" y2="135"/>
+  
+  <!-- 分支4: 计算机视觉 -->
+  <rect class="branch" x="530" y="400" width="120" height="50" rx="10"/>
+  <text class="text branch-text" x="590" y="430">计算机视觉</text>
+  <line class="line" x1="400" y1="300" x2="590" y2="425"/>
+  
+  <!-- 分支4子节点 -->
+  <rect class="sub" x="670" y="330" width="80" height="30" rx="5"/>
+  <text class="text sub-text" x="710" y="350">图像识别</text>
+  <line class="sub-line" x1="590" y1="425" x2="710" y2="345"/>
+  
+  <rect class="sub" x="670" y="370" width="80" height="30" rx="5"/>
+  <text class="text sub-text" x="710" y="390">目标检测</text>
+  <line class="sub-line" x1="590" y1="425" x2="710" y2="385"/>
+  
+  <!-- 分支5: 强化学习 -->
+  <rect class="branch" x="340" y="500" width="120" height="50" rx="10"/>
+  <text class="text branch-text" x="400" y="530">强化学习</text>
+  <line class="line" x1="400" y1="350" x2="400" y2="500"/>
+  
+  <!-- 分支5子节点 -->
+  <rect class="sub" x="290" y="550" width="80" height="30" rx="5"/>
+  <text class="text sub-text" x="330" y="570">Q学习</text>
+  <line class="sub-line" x1="400" y1="525" x2="330" y2="565"/>
+  
+  <rect class="sub" x="430" y="550" width="80" height="30" rx="5"/>
+  <text class="text sub-text" x="470" y="570">策略梯度</text>
+  <line class="sub-line" x1="400" y1="525" x2="470" y2="565"/>
+  
+  <!-- 标题 -->
+  <text class="text" x="400" y="50" font-size="24" font-weight="bold">AI技术思维导图</text>
+  <text class="text" x="400" y="580" font-size="12" fill="#666">
+    使用Excalidraw文件: ai-technology-mindmap.excalidraw
+  </text>
+</svg>
