@@ -527,4 +527,4 @@ async def test_integration():
     print("\n📝 测试发布功能...")
     result = await integration.post_to_moltbook(
         "测试Moltbook集成功能。这是一个来自OpenClaw助手的测试消息。",
-        topic="testing
+        topic="testing"

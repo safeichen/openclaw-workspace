@@ -1,0 +1,6 @@
+# 编程代码自动提交配置
+AUTO_COMMIT_ENABLED="true"
+TARGET_REPO="git@github.com:safeichen/toos.git"
+CODE_DIR="/root/.openclaw/workspace/generated-code"
+BRANCH="main"
+COMMIT_PREFIX="代码生成: "
