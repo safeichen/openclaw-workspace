@@ -1,0 +1,26 @@
+=== OpenClaw自动备份报告 ===
+生成时间: 2026-02-25 22:00:06
+
+1. Git状态:
+   分支: main
+   远程: git@github.com:safeichen/openclaw-workspace.git
+   最后提交: 760a7d7 自动备份: 更新 backup.log,skills/moltbook-integration/integration/openclaw.py,.code-auto-commit,auto-backup-branch.sh,cron.log, - 2026-02-25 22:00:03
+
+2. 文件更改统计:
+   未提交更改: 4 个文件
+   更改列表:
+      M backup.log
+      M cron.log
+      ? generated-code
+     ?? backup_report_20260225.txt
+
+3. 仓库大小:
+   文件总数: 808
+   目录大小: 14M
+
+4. 备份日志:
+   [2026-02-25 22:00:03] [INFO] 推送到GitHub...
+   [2026-02-25 22:00:03] [INFO] 推送分支: main
+   [2026-02-25 22:00:06] [SUCCESS] 推送成功
+   [2026-02-25 22:00:06] [SUCCESS] 自动备份完成
+   [2026-02-25 22:00:06] [INFO] 生成备份报告...
