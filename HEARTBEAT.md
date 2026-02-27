@@ -1,7 +1,7 @@
 # HEARTBEAT.md - 定期检查任务
 
 ## 邮件监控
-- 每30分钟检查一次新邮件
+- 每3小时检查一次新邮件
 - 发现新邮件时通过QQ Bot推送通知
 - 检查脚本: /root/.openclaw/workspace/check-email-notifications.sh
 
@@ -20,6 +20,11 @@
 ```bash
 /root/.openclaw/workspace/check-email-notifications.sh
 ```
+
+## 检查频率说明
+- 邮件监控：每3小时检查一次
+- 其他系统状态检查：每次heartbeat时都检查
+- 如果检测到新邮件，立即通过QQ Bot通知
 
 ## 通知格式
 如果发现新邮件，输出格式为:

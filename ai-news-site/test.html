@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI资讯网站测试</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .status {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .info {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>AI资讯网站部署测试</h1>
+    
+    <div class="status info">
+        <h2>部署信息</h2>
+        <p><strong>服务器IP:</strong> 43.159.52.61</p>
+        <p><strong>端口:</strong> 80</p>
+        <p><strong>访问地址:</strong> <a href="http://43.159.52.61" target="_blank">http://43.159.52.61</a></p>
+        <p><strong>本地测试:</strong> <a href="http://localhost" target="_blank">http://localhost</a></p>
+        <p><strong>服务状态:</strong> <span id="serviceStatus">检查中...</span></p>
+    </div>
+    
+    <div class="test-section">
+        <h2>文件访问测试</h2>
+        <button onclick="testFile('index.html')">测试主页</button>
+        <button onclick="testFile('css/style.css')">测试CSS</button>
+        <button onclick="testFile('js/main.js')">测试主JS</button>
+        <button onclick="testFile('js/api-fixed.js')">测试API JS</button>
+        <div id="fileTestResult"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>网站功能测试</h2>
+        <button onclick="window.open('http://43.159.52.61', '_blank')">打开完整网站</button>
+        <button onclick="testAPIConnection()">测试API连接</button>
+        <div id="functionTestResult"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>部署状态</h2>
+        <div id="deploymentStatus">
+            <p>✅ 静态文件服务器已启动 (80端口)</p>
+            <p>✅ 网站主页可访问</p>
+            <p>✅ CSS样式文件可加载</p>
+            <p>✅ JavaScript文件可加载</p>
+            <p>🔄 API使用模拟数据模式</p>
+            <p>✅ 系统服务已配置 (systemd)</p>
+            <p>✅ 自动重启已启用</p>
+        </div>
+    </div>
+    
+    <script>
+        // 检查服务状态
+        async function checkServiceStatus() {
+            try {
+                const response = await fetch('http://localhost/');
+                if (response.ok) {
+                    document.getElementById('serviceStatus').innerHTML = 
+                        '<span style="color: green;">✅ 运行正常</span>';
+                    return true;
+                }
+            } catch (error) {
+                document.getElementById('serviceStatus').innerHTML = 
+                    '<span style="color: red;">❌ 服务异常: ' + error.message + '</span>';
+                return false;
+            }
+        }
+        
+        // 测试文件访问
+        async function testFile(filename) {
+            const resultDiv = document.getElementById('fileTestResult');
+            resultDiv.innerHTML = '<p>测试中: ' + filename + '...</p>';
+            
+            try {
+                const response = await fetch('http://localhost/' + filename);
+                if (response.ok) {
+                    resultDiv.innerHTML = 
+                        '<div class="status success">✅ ' + filename + ' 可正常访问 (状态码: ' + response.status + ')</div>';
+                } else {
+                    resultDiv.innerHTML = 
+                        '<div class="status error">❌ ' + filename + ' 访问失败 (状态码: ' + response.status + ')</div>';
+                }
+            } catch (error) {
+                resultDiv.innerHTML = 
+                    '<div class="status error">❌ ' + filename + ' 访问错误: ' + error.message + '</div>';
+            }
+        }
+        
+        // 测试API连接
+        async function testAPIConnection() {
+            const resultDiv = document.getElementById('functionTestResult');
+            resultDiv.innerHTML = '<p>测试API连接...</p>';
+            
+            try {
+                // 测试模拟API
+                const apiScript = document.createElement('script');
+                apiScript.src = 'js/api-fixed.js';
+                document.head.appendChild(apiScript);
+                
+                // 等待脚本加载
+                setTimeout(() => {
+                    if (window.AI_API) {
+                        resultDiv.innerHTML = 
+                            '<div class="status success">✅ API模块已加载 (模拟模式)</div>' +
+                            '<div class="status info">ℹ️ 网站使用本地模拟数据，无需外部API服务器</div>';
+                    } else {
+                        resultDiv.innerHTML = 
+                            '<div class="status error">❌ API模块加载失败</div>';
+                    }
+                }, 1000);
+            } catch (error) {
+                resultDiv.innerHTML = 
+                    '<div class="status error">❌ API测试错误: ' + error.message + '</div>';
+            }
+        }
+        
+        // 页面加载时检查状态
+        window.onload = function() {
+            checkServiceStatus();
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+🦞 OpenClaw自动备份脚本
+======================
+执行时间: 2026-02-25 22:00:01
+
+[0;34m[INFO][0m 开始OpenClaw工作区自动备份
+[0;34m[INFO][0m 检查Git配置...
+[0;34m[INFO][0m 测试GitHub SSH连接...
+[0;32m[SUCCESS][0m GitHub SSH连接正常
+[0;34m[INFO][0m 开始自动提交...
+[0;34m[INFO][0m 检测到 9 个文件有更改
+更改摘要:
+ M backup.log
+ M skills/moltbook-integration/integration/openclaw.py
+?? .code-auto-commit
+?? auto-backup-branch.sh
+?? cron.log
+?? generated-code/
+?? skills/moltbook-integration/__pycache__/
+?? skills/moltbook-integration/integration/__pycache__/
+?? skills/moltbook-integration/integration/openclaw_fixed.py
+[0;34m[INFO][0m 添加文件到暂存区...
+warning: adding embedded git repository: generated-code
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> generated-code
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached generated-code
+hint: 
+hint: See "git help submodule" for more information.
+[0;34m[INFO][0m 提交更改: 自动备份: 更新 backup.log,skills/moltbook-integration/integration/openclaw.py,.code-auto-commit,auto-backup-branch.sh,cron.log, - 2026-02-25 22:00:03
+[main 760a7d7] 自动备份: 更新 backup.log,skills/moltbook-integration/integration/openclaw.py,.code-auto-commit,auto-backup-branch.sh,cron.log, - 2026-02-25 22:00:03
+ 9 files changed, 457 insertions(+), 1 deletion(-)
+ create mode 100644 .code-auto-commit
+ create mode 100755 auto-backup-branch.sh
+ create mode 100644 cron.log
+ create mode 160000 generated-code
+ create mode 100644 skills/moltbook-integration/__pycache__/openclaw_skill.cpython-311.pyc
+ create mode 100644 skills/moltbook-integration/integration/__pycache__/openclaw_fixed.cpython-311.pyc
+ create mode 100644 skills/moltbook-integration/integration/openclaw_fixed.py
+[0;32m[SUCCESS][0m 提交成功: 自动备份: 更新 backup.log,skills/moltbook-integration/integration/openclaw.py,.code-auto-commit,auto-backup-branch.sh,cron.log, - 2026-02-25 22:00:03
+[0;34m[INFO][0m 推送到GitHub...
+[0;34m[INFO][0m 推送分支: main
+To github.com:safeichen/openclaw-workspace.git
+   efdb941..760a7d7  main -> main
+[0;32m[SUCCESS][0m 推送成功
+[0;32m[SUCCESS][0m 自动备份完成
+[0;34m[INFO][0m 生成备份报告...
+[0;32m[SUCCESS][0m 备份报告已生成: /root/.openclaw/workspace/backup_report_20260225.txt
+[0;34m[INFO][0m 自动备份流程结束
+
+📊 备份摘要:
+   - 日志文件: /root/.openclaw/workspace/backup.log
+   - 报告文件: backup_report_20260225.txt
+   - 查看状态: git status
+
+🦞 OpenClaw自动备份脚本
+======================
+执行时间: 2026-02-26 22:00:02
+
+[0;34m[INFO][0m 开始OpenClaw工作区自动备份
+[0;34m[INFO][0m 检查Git配置...
+[0;34m[INFO][0m 测试GitHub SSH连接...
+[0;32m[SUCCESS][0m GitHub SSH连接正常
+[0;34m[INFO][0m 开始自动提交...
+[0;34m[INFO][0m 检测到 20 个文件有更改
+更改摘要:
+ M HEARTBEAT.md
+ M backup.log
+ M cron.log
+ ? generated-code
+ M skills/moltbook-integration/integration/openclaw.py
+?? backup_report_20260225.txt
+?? check-email-notifications.sh
+?? send_test_email.js
+?? skills/imap-smtp-email/scripts/email-monitor-cache.json
+?? skills/imap-smtp-email/scripts/email-monitor.js
+[0;34m[INFO][0m 添加文件到暂存区...
+[0;34m[INFO][0m 提交更改: 自动备份: 更新 HEARTBEAT.md,backup.log,cron.log,generated-code,skills/moltbook-integration/integration/openclaw.py, - 2026-02-26 22:00:04
+[main 9894553] 自动备份: 更新 HEARTBEAT.md,backup.log,cron.log,generated-code,skills/moltbook-integration/integration/openclaw.py, - 2026-02-26 22:00:04
+ 28 files changed, 2963 insertions(+), 4 deletions(-)
+ create mode 100644 backup_report_20260225.txt
+ create mode 100755 check-email-notifications.sh
+ create mode 100644 send_test_email.js
+ create mode 100644 skills/imap-smtp-email/scripts/email-monitor-cache.json
+ create mode 100755 skills/imap-smtp-email/scripts/email-monitor.js
+ create mode 100644 skills/imap-smtp-email/scripts/email-notified.json
+ create mode 100755 skills/imap-smtp-email/scripts/email-notifier.js
+ create mode 100644 skills/imap-smtp-email/scripts/last-check.txt
+ create mode 100644 skills/imap-smtp-email/scripts/logs/cron-push.log
+ create mode 100644 skills/imap-smtp-email/scripts/logs/cron.log
+ create mode 100644 skills/imap-smtp-email/scripts/logs/push-log.json
+ create mode 100755 skills/imap-smtp-email/scripts/push-to-qqbot.js
+ create mode 100755 skills/imap-smtp-email/scripts/setup-cron.sh
+ create mode 100755 skills/imap-smtp-email/scripts/test-monitor.js
+ create mode 100644 "skills/imap-smtp-email/\351\202\256\344\273\266\347\233\221\346\216\247\347\263\273\347\273\237\344\275\277\347\224\250\350\257\264\346\230\216.md"
+ create mode 100644 skills/moltbook-integration/integration/__pycache__/openclaw.cpython-311.pyc
+ create mode 100644 test-webpage/README.md
+ create mode 100755 test-webpage/check-80-port.sh
+ create mode 100644 test-webpage/check-network.py
+ create mode 100644 test-webpage/index.html
+ create mode 100644 test-webpage/server.log
+ create mode 100755 test-webpage/server.py
+ create mode 100755 test-webpage/start-server.sh
+ create mode 100755 test-webpage/test-external-access.sh
+[0;32m[SUCCESS][0m 提交成功: 自动备份: 更新 HEARTBEAT.md,backup.log,cron.log,generated-code,skills/moltbook-integration/integration/openclaw.py, - 2026-02-26 22:00:04
+[0;34m[INFO][0m 推送到GitHub...
+[0;34m[INFO][0m 推送分支: main
+To github.com:safeichen/openclaw-workspace.git
+   760a7d7..9894553  main -> main
+[0;32m[SUCCESS][0m 推送成功
+[0;32m[SUCCESS][0m 自动备份完成
+[0;34m[INFO][0m 生成备份报告...
+[0;32m[SUCCESS][0m 备份报告已生成: /root/.openclaw/workspace/backup_report_20260226.txt
+[0;34m[INFO][0m 自动备份流程结束
+
+📊 备份摘要:
+   - 日志文件: /root/.openclaw/workspace/backup.log
+   - 报告文件: backup_report_20260226.txt
+   - 查看状态: git status
+

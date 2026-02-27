@@ -1,0 +1,20 @@
+============================================================
+🤖 AI资讯聚合站 - 轻量级服务器
+============================================================
+主页面: http://43.159.52.61:8082
+API状态: http://43.159.52.61:8082/api/system/status
+测试API: http://43.159.52.61:8082/api/test
+AI资讯: http://43.159.52.61:8082/api/ai-news
+============================================================
+服务器启动中...
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/ai-news-site/simple_server.py", line 125, in <module>
+    main()
+  File "/root/.openclaw/workspace/ai-news-site/simple_server.py", line 118, in main
+    with socketserver.TCPServer(("", PORT), AIRequestHandler) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI资讯聚合站 - 最新人工智能动态</title>
+    <link rel="stylesheet" href="css/style-fixed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/ai-icon.png">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="ai-logo">
+                    <i class="fas fa-brain"></i>
+                    <span>AI资讯站</span>
+                </div>
+                <div class="nav-tagline">最新人工智能动态与技术前沿</div>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active"><i class="fas fa-home"></i> 首页</a>
+                <a href="#news" class="nav-link"><i class="fas fa-newspaper"></i> 最新资讯</a>
+                <a href="#trends" class="nav-link"><i class="fas fa-chart-line"></i> 趋势分析</a>
+                <a href="#tools" class="nav-link"><i class="fas fa-tools"></i> AI工具</a>
+                <a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> 关于</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-refresh" id="refreshBtn">
+                    <i class="fas fa-sync-alt"></i> 刷新资讯
+                </button>
+                <div class="server-status">
+                    <span class="status-dot active"></span>
+                    <span>服务器在线</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容区 -->
+    <main class="container">
+        <!-- 英雄区域 -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title">探索人工智能的未来</h1>
+                <p class="hero-subtitle">实时聚合全球AI新闻、研究突破、技术趋势与行业动态</p>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-rss"></i>
+                        <div class="stat-number" id="sourceCount">15+</div>
+                        <div class="stat-label">资讯源</div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <div class="stat-number" id="updateFreq">5分钟</div>
+                        <div class="stat-label">更新频率</div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-globe"></i>
+                        <div class="stat-number" id="categoryCount">8</div>
+                        <div class="stat-label">分类</div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-server"></i>
+                        <div class="stat-number">43.159.52.61</div>
+                        <div class="stat-label">服务器IP</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="ai-visualization">
+                    <div class="neural-node"></div>
+                    <div class="neural-node"></div>
+                    <div class="neural-node"></div>
+                    <div class="data-stream"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 控制面板 -->
+        <section class="control-panel">
+            <div class="panel-header">
+                <h2><i class="fas fa-sliders-h"></i> 资讯控制面板</h2>
+                <div class="last-update">最后更新: <span id="lastUpdateTime">正在加载...</span></div>
+            </div>
+            <div class="panel-controls">
+                <div class="control-group">
+                    <label for="categorySelect"><i class="fas fa-filter"></i> 资讯分类</label>
+                    <select id="categorySelect" class="form-select">
+                        <option value="all">全部AI资讯</option>
+                        <option value="research">学术研究</option>
+                        <option value="industry">行业动态</option>
+                        <option value="startup">创业公司</option>
+                        <option value="ethics">AI伦理</option>
+                        <option value="tools">AI工具</option>
+                        <option value="events">行业活动</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="timeRange"><i class="fas fa-calendar-alt"></i> 时间范围</label>
+                    <select id="timeRange" class="form-select">
+                        <option value="today">今日</option>
+                        <option value="week">本周</option>
+                        <option value="month">本月</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="sortBy"><i class="fas fa-sort-amount-down"></i> 排序方式</label>
+                    <select id="sortBy" class="form-select">
+                        <option value="recent">最新优先</option>
+                        <option value="relevant">相关性</option>
+                        <option value="popular">热度</option>
+                    </select>
+                </div>
+                <button class="btn-apply" id="applyFilters">
+                    <i class="fas fa-check"></i> 应用筛选
+                </button>
+            </div>
+        </section>
+
+        <!-- 资讯展示区 -->
+        <section class="news-section" id="news">
+            <div class="section-header">
+                <h2><i class="fas fa-newspaper"></i> 最新AI资讯</h2>
+                <div class="loading-indicator" id="loadingIndicator">
+                    <div class="spinner"></div>
+                    <span>正在获取最新资讯...</span>
+                </div>
+            </div>
+            
+            <div class="news-grid" id="newsGrid">
+                <!-- 资讯卡片将通过JavaScript动态加载 -->
+                <div class="news-placeholder">
+                    <div class="placeholder-content">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>正在加载AI资讯...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-stats">
+                <div class="stat-item">
+                    <i class="fas fa-database"></i>
+                    <span>资讯总数: <strong id="totalNews">0</strong></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-sync"></i>
+                    <span>自动更新: <strong>每5分钟</strong></span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-code"></i>
+                    <span>技术支持: <strong>OpenClaw + news-summary</strong></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 趋势分析区 -->
+        <section class="trends-section" id="trends">
+            <div class="section-header">
+                <h2><i class="fas fa-chart-line"></i> AI趋势分析</h2>
+            </div>
+            <div class="trends-container">
+                <div class="trend-card">
+                    <h3><i class="fas fa-fire"></i> 热门话题</h3>
+                    <div class="trend-list" id="hotTopics">
+                        <div class="trend-item">
+                            <span class="trend-rank">1</span>
+                            <span class="trend-text">大语言模型进展</span>
+                            <span class="trend-count">42篇</span>
+                        </div>
+                        <!-- 动态加载 -->
+                    </div>
+                </div>
+                <div class="trend-card">
+                    <h3><i class="fas fa-university"></i> 研究机构</h3>
+                    <div class="trend-list" id="researchOrgs">
+                        <!-- 动态加载 -->
+                    </div>
+                </div>
+                <div class="trend-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> 地域分布</h3>
+                    <div class="trend-list" id="geoDistribution">
+                        <!-- 动态加载 -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- API接口区 -->
+        <section class="api-section" id="tools">
+            <div class="section-header">
+                <h2><i class="fas fa-code"></i> API接口</h2>
+                <p class="section-subtitle">通过REST API获取AI资讯数据</p>
+            </div>
+            <div class="api-endpoints">
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method get">GET</span>
+                        <code class="endpoint-url">/api/ai-news</code>
+                    </div>
+                    <p class="endpoint-desc">获取最新AI资讯列表</p>
+                    <div class="endpoint-example">
+                        <pre><code>curl http://43.159.52.61:8082/api/ai-news</code></pre>
+                    </div>
+                </div>
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method get">GET</span>
+                        <code class="endpoint-url">/api/ai-news/category/{category}</code>
+                    </div>
+                    <p class="endpoint-desc">按分类获取AI资讯</p>
+                    <div class="endpoint-example">
+                        <pre><code>curl http://43.159.52.61:8082/api/ai-news/category/research</code></pre>
+                    </div>
+                </div>
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method get">GET</span>
+                        <code class="endpoint-url">/api/ai-news/search?q={query}</code>
+                    </div>
+                    <p class="endpoint-desc">搜索AI资讯</p>
+                    <div class="endpoint-example">
+                        <pre><code>curl "http://43.159.52.61:8082/api/ai-news/search?q=GPT-5"</code></pre>
+                    </div>
+                </div>
+                <div class="endpoint-card">
+                    <div class="endpoint-header">
+                        <span class="method get">GET</span>
+                        <code class="endpoint-url">/api/system/status</code>
+                    </div>
+                    <p class="endpoint-desc">获取系统状态</p>
+                    <div class="endpoint-example">
+                        <pre><code>curl http://43.159.52.61:8082/api/system/status</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer" id="about">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="ai-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>AI资讯聚合站</span>
+                    </div>
+                    <p class="footer-desc">
+                        基于OpenClaw AI助手和news-summary技能构建的实时AI资讯聚合平台。
+                        自动从多个可信来源收集、分析和展示最新人工智能动态。
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>技术栈</h4>
+                    <ul>
+                        <li>OpenClaw AI Assistant</li>
+                        <li>news-summary Skill</li>
+                        <li>Python Flask后端</li>
+                        <li>现代前端技术</li>
+                        <li>RESTful API</li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h4>服务器信息</h4>
+                    <ul>
+                        <li><i class="fas fa-server"></i> IP: 43.159.52.61</li>
+                        <li><i class="fas fa-network-wired"></i> 端口: 8082</li>
+                        <li><i class="fas fa-sync-alt"></i> 更新: 每5分钟</li>
+                        <li><i class="fas fa-database"></i> 数据源: 15+ RSS源</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 AI资讯聚合站 | 部署于腾讯云服务器 | 最后更新: <span id="footerUpdateTime"></span></p>
+                <div class="footer-stats">
+                    <span><i class="fas fa-eye"></i> 访问次数: <span id="visitCount">0</span></span>
+                    <span><i class="fas fa-newspaper"></i> 资讯总数: <span id="footerNewsCount">0</span></span>
+                    <span><i class="fas fa-clock"></i> 运行时间: <span id="uptime">0天</span></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/api-fixed.js"></script>
+</body>
+</html>

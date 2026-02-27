@@ -93,5 +93,145 @@
     "timestamp": "2026-02-26T13:16:26.600Z",
     "hasNew": false,
     "notification": null
+  },
+  {
+    "timestamp": "2026-02-26T14:16:54.879Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-26T14:46:27.542Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-26T15:03:19.998Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-26T15:16:33.930Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-26T15:46:27.222Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-26T15:54:56.693Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-26T16:26:15.729Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-26T16:57:01.204Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-26T17:27:49.713Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-26T17:58:42.015Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T03:51:56.700Z",
+    "hasNew": true,
+    "notification": "📧 您有 1 封新邮件：\n\n1. **=?utf-8?b?44CQ5L2O6IezMC425YWDL+eJh+OAkeWkp+eZvemyqOWIh+WJsg==?=**\n   发件人：=?utf-8?b?5Lqs5LicSkQuY29t?= <newsletter1@jd.com>\n   时间：Fri, 27 Feb 2026 10:24:38 +0800 (CST)\n   摘要：<!DOCT..."
+  },
+  {
+    "timestamp": "2026-02-27T04:21:44.493Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T04:51:44.121Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T05:21:44.382Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T05:51:43.530Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T06:21:45.141Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T06:51:45.030Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T07:21:45.589Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T07:51:46.101Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T08:21:45.759Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T08:51:45.556Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T09:21:46.246Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T09:51:47.325Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T10:21:45.477Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T10:51:45.859Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T11:21:45.013Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T11:51:45.564Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T12:21:45.820Z",
+    "hasNew": false,
+    "notification": null
   }
 ]

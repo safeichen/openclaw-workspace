@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>样式测试</title>
+    <link rel="stylesheet" href="css/style-fixed.css">
+    <style>
+        .test-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .test-box {
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: var(--radius-lg);
+            padding: 30px;
+            margin: 20px 0;
+        }
+        .color-test {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .color-swatch {
+            width: 50px;
+            height: 50px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .status {
+            padding: 10px;
+            border-radius: var(--radius-md);
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .success {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+        }
+        .error {
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--danger-color);
+            border: 1px solid var(--danger-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>AI资讯网站样式测试</h1>
+        
+        <div class="test-box">
+            <h2>CSS变量测试</h2>
+            <div class="color-test">
+                <div class="color-swatch" style="background: var(--primary-color)">主色</div>
+                <div class="color-swatch" style="background: var(--secondary-color)">次色</div>
+                <div class="color-swatch" style="background: var(--accent-color)">强调</div>
+                <div class="color-swatch" style="background: var(--dark-bg)">背景</div>
+                <div class="color-swatch" style="background: var(--dark-card); color: var(--dark-text)">卡片</div>
+            </div>
+            
+            <div id="css-status" class="status">
+                检查CSS加载...
+            </div>
+        </div>
+        
+        <div class="test-box">
+            <h2>组件样式测试</h2>
+            <button class="btn btn-primary">主要按钮</button>
+            <button class="btn btn-outline">轮廓按钮</button>
+            <button class="btn btn-refresh">刷新按钮</button>
+            
+            <div style="margin-top: 20px; padding: 20px; background: var(--dark-bg); border-radius: var(--radius-md);">
+                <div class="news-card" style="max-width: 400px;">
+                    <div class="news-header">
+                        <span class="news-category">技术突破</span>
+                        <span class="news-time">2小时前</span>
+                    </div>
+                    <div class="news-body">
+                        <h3 class="news-title">测试新闻标题</h3>
+                        <p class="news-summary">这是一个测试新闻摘要，用于验证样式是否正确加载。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="test-box">
+            <h2>API测试</h2>
+            <button onclick="testAPI()" class="btn btn-primary">测试API连接</button>
+            <div id="api-status" class="status" style="margin-top: 10px;">
+                API状态：等待测试
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/api-fixed.js"></script>
+    <script>
+        // 检查CSS是否加载
+        function checkCSSLoaded() {
+            const statusEl = document.getElementById('css-status');
+            
+            // 检查CSS变量是否存在
+            const styles = getComputedStyle(document.documentElement);
+            const primaryColor = styles.getPropertyValue('--primary-color').trim();
+            
+            if (primaryColor && primaryColor !== '') {
+                statusEl.innerHTML = `<div class="success">✅ CSS已正确加载！主色: ${primaryColor}</div>`;
+                statusEl.className = 'status success';
+            } else {
+                statusEl.innerHTML = '<div class="error">❌ CSS加载失败</div>';
+                statusEl.className = 'status error';
+            }
+        }
+        
+        // 测试API
+        async function testAPI() {
+            const statusEl = document.getElementById('api-status');
+            statusEl.innerHTML = '<div class="status">测试中...</div>';
+            
+            try {
+                if (window.AI_API) {
+                    const news = await AI_API.fetchNews();
+                    if (news.success) {
+                        statusEl.innerHTML = `<div class="success">✅ API连接成功！获取到 ${news.data.length} 条资讯</div>`;
+                        statusEl.className = 'status success';
+                    } else {
+                        statusEl.innerHTML = '<div class="error">❌ API返回失败</div>';
+                        statusEl.className = 'status error';
+                    }
+                } else {
+                    statusEl.innerHTML = '<div class="error">❌ API模块未加载</div>';
+                    statusEl.className = 'status error';
+                }
+            } catch (error) {
+                statusEl.innerHTML = `<div class="error">❌ API测试错误: ${error.message}</div>`;
+                statusEl.className = 'status error';
+            }
+        }
+        
+        // 页面加载时检查CSS
+        window.onload = function() {
+            checkCSSLoaded();
+        };
+    </script>
+</body>
+</html>
