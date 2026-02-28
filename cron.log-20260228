@@ -1,0 +1,63 @@
+🦞 OpenClaw自动备份脚本
+======================
+执行时间: 2026-02-27 22:00:01
+
+[0;34m[INFO][0m 开始OpenClaw工作区自动备份
+[0;34m[INFO][0m 检查Git配置...
+[0;34m[INFO][0m 测试GitHub SSH连接...
+[0;32m[SUCCESS][0m GitHub SSH连接正常
+[0;34m[INFO][0m 开始自动提交...
+[0;34m[INFO][0m 检测到 15 个文件有更改
+更改摘要:
+ M HEARTBEAT.md
+ M backup.log
+ M cron.log
+ ? generated-code
+ M skills/imap-smtp-email/scripts/email-monitor-cache.json
+ M skills/imap-smtp-email/scripts/email-notified.json
+ M skills/imap-smtp-email/scripts/last-check.txt
+ M skills/imap-smtp-email/scripts/logs/cron-push.log
+ M skills/imap-smtp-email/scripts/logs/cron.log
+ M skills/imap-smtp-email/scripts/logs/push-log.json
+[0;34m[INFO][0m 添加文件到暂存区...
+[0;34m[INFO][0m 提交更改: 自动备份: 更新 HEARTBEAT.md,backup.log,cron.log,generated-code,skills/imap-smtp-email/scripts/email-monitor-cache.json, - 2026-02-27 22:00:04
+[main ebd642b] 自动备份: 更新 HEARTBEAT.md,backup.log,cron.log,generated-code,skills/imap-smtp-email/scripts/email-monitor-cache.json, - 2026-02-27 22:00:04
+ 31 files changed, 4890 insertions(+), 106 deletions(-)
+ create mode 100644 ai-news-site/README.md
+ create mode 100644 ai-news-site/combined-server.py
+ create mode 100644 ai-news-site/css/style-fixed.css
+ create mode 100644 ai-news-site/css/style.css
+ create mode 100644 ai-news-site/index.html
+ create mode 100644 ai-news-site/js/api-fixed.js
+ create mode 100644 ai-news-site/js/api.js
+ create mode 100644 ai-news-site/js/main.js
+ create mode 100644 ai-news-site/quick-test.html
+ create mode 100644 ai-news-site/server.log
+ create mode 100644 ai-news-site/server.pid
+ create mode 100644 ai-news-site/server.py
+ create mode 100644 ai-news-site/simple-http-server.py
+ create mode 100644 ai-news-site/simple_server.py
+ create mode 100755 ai-news-site/start-80.sh
+ create mode 100755 ai-news-site/start.sh
+ create mode 100644 ai-news-site/test.html
+ create mode 100644 ai-news-site/test_server.py
+ create mode 100644 backup.log-20260227
+ create mode 100644 backup_report_20260226.txt
+ create mode 100644 cron.log-20260227
+ create mode 100644 memory/2026-02-26.md
+[0;32m[SUCCESS][0m 提交成功: 自动备份: 更新 HEARTBEAT.md,backup.log,cron.log,generated-code,skills/imap-smtp-email/scripts/email-monitor-cache.json, - 2026-02-27 22:00:04
+[0;34m[INFO][0m 推送到GitHub...
+[0;34m[INFO][0m 推送分支: main
+To github.com:safeichen/openclaw-workspace.git
+   9894553..ebd642b  main -> main
+[0;32m[SUCCESS][0m 推送成功
+[0;32m[SUCCESS][0m 自动备份完成
+[0;34m[INFO][0m 生成备份报告...
+[0;32m[SUCCESS][0m 备份报告已生成: /root/.openclaw/workspace/backup_report_20260227.txt
+[0;34m[INFO][0m 自动备份流程结束
+
+📊 备份摘要:
+   - 日志文件: /root/.openclaw/workspace/backup.log
+   - 报告文件: backup_report_20260227.txt
+   - 查看状态: git status
+

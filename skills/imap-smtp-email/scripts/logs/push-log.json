@@ -233,5 +233,175 @@
     "timestamp": "2026-02-27T12:21:45.820Z",
     "hasNew": false,
     "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T14:41:14.955Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T16:41:03.282Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T18:41:01.657Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T20:11:00.719Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T20:41:00.262Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T21:11:00.785Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T21:41:00.958Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T22:11:00.407Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T22:41:00.574Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T23:11:00.034Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-27T23:33:42.372Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T02:09:06.602Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T03:18:08.243Z",
+    "hasNew": true,
+    "notification": "📧 您有 1 封新邮件：\n\n1. **=?UTF-8?B?5bel5Y2V56Gu6K6k6LaF5YWz6Zet6YCa55+l?=**\n   发件人：xinnet@xinnet.com\n   时间：Sat, 28 Feb 2026 11:00:00 +0800 (CST)\n   摘要：<!DOCTYPE html> <html> <head> <meta charset=3D\"utf-8\">..."
+  },
+  {
+    "timestamp": "2026-02-28T03:47:15.380Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T04:17:09.844Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T04:47:11.951Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T05:17:10.643Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T05:47:11.166Z",
+    "hasNew": true,
+    "notification": "📧 您有 1 封新邮件：\n\n1. **=?utf-8?b?44CQ54K56IO25omL5aWXMC445YWDL+S7mOOAkTEw6ZKINg==?=**\n   发件人：=?utf-8?b?5Lqs5LicSkQuY29t?= <newsletter1@jd.com>\n   时间：Sat, 28 Feb 2026 13:19:30 +0800 (CST)\n   摘要：<!DOCTYPE ..."
+  },
+  {
+    "timestamp": "2026-02-28T06:23:18.881Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T06:49:31.262Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T07:17:35.264Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T07:48:07.465Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T08:17:17.256Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T08:47:12.999Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T09:17:12.114Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T09:47:11.386Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T10:17:11.321Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T10:47:10.751Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T11:17:11.628Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T11:47:11.707Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T12:17:18.586Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T12:47:11.637Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T13:17:11.124Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-02-28T13:47:11.335Z",
+    "hasNew": false,
+    "notification": null
   }
 ]
