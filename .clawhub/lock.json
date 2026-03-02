@@ -32,6 +32,30 @@
     "imap-smtp-email": {
       "version": "0.0.2",
       "installedAt": 1772001854218
+    },
+    "tavily-search": {
+      "version": "1.0.0",
+      "installedAt": 1772414667303
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1772414668320
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1772414668898
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1772414669512
+    },
+    "obsidian": {
+      "version": "1.0.0",
+      "installedAt": 1772414670219
+    },
+    "notion": {
+      "version": "1.0.0",
+      "installedAt": 1772414671266
     }
   }
 }

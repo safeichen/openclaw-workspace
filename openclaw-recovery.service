@@ -1,0 +1,13 @@
+[Unit]
+Description=OpenClaw服务恢复监控
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/bash -c 'sleep 30 && /root/.openclaw/workspace/check-openclaw-service.sh'
+# 延迟30秒执行，确保系统完全启动
+
+[Install]
+WantedBy=multi-user.target
