@@ -1,80 +1,5 @@
 [
   {
-    "timestamp": "2026-03-02T05:26:31.273Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-02T05:58:46.354Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-02T06:26:29.029Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-02T06:57:07.033Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-02T07:28:16.152Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-02T07:57:09.750Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-02T08:26:58.938Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-02T08:58:22.812Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-02T09:27:02.068Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-02T09:56:53.700Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-02T10:26:39.524Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-02T10:44:04.769Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-02T10:53:19.745Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-02T11:28:16.702Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-02T11:58:30.629Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
     "timestamp": "2026-03-02T12:28:19.870Z",
     "hasNew": false,
     "notification": null
@@ -496,6 +421,81 @@
   },
   {
     "timestamp": "2026-03-04T05:22:19.818Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-04T05:52:26.761Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-04T06:22:47.244Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-04T06:53:22.131Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-04T07:24:38.331Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-04T08:52:28.740Z",
+    "hasNew": true,
+    "notification": "📧 您有 1 封新邮件：\n\n1. **=?utf-8?B?UkU6IFtFeHRlcm5hbF0g5rWL6K+V6YKu5Lu2IC0gT3BlbkNsYXfns7vnu58=?=**\n   发件人：=?utf-8?B?S2VsdmluIFl1IO+8iOS/nuaBuu+8iQ==?= <yu.k@trip.com>\n   时间：Wed, 4 Mar 2026 08:24:44 +0000\n..."
+  },
+  {
+    "timestamp": "2026-03-04T09:23:41.282Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-04T09:52:22.312Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-04T10:22:24.641Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-04T10:52:24.288Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-04T11:22:31.275Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-04T11:52:22.034Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-04T12:22:20.922Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-04T12:52:22.032Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-04T13:22:21.502Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-04T13:52:24.871Z",
     "hasNew": false,
     "notification": null
   }
