@@ -14,6 +14,7 @@
 - 检查系统状态
 - 检查OpenClaw服务运行状态
 - 检查重要更新
+- 检查内存文件（确保每日memory/YYYY-MM-DD.md存在）
 
 ## 执行命令
 当收到heartbeat时，运行:
@@ -21,9 +22,16 @@
 /root/.openclaw/workspace/check-email-notifications.sh
 ```
 
+## 内存文件检查逻辑
+1. 检查今天的memory/YYYY-MM-DD.md文件是否存在
+2. 如果不存在，创建基本的内存文件模板
+3. 记录系统状态和重要事件
+4. 如果连续多天缺失，创建补全文件
+
 ## 检查频率说明
 - 邮件监控：每3小时检查一次
 - 其他系统状态检查：每次heartbeat时都检查
+- 内存文件检查：每天第一次heartbeat时检查
 - 如果检测到新邮件，立即通过QQ Bot通知
 
 ## 通知格式
