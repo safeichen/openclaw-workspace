@@ -1,0 +1,66 @@
+{
+  "last_updated": "2026-03-09T22:42:05+08:00",
+  "total": 6,
+  "news": [
+    {
+      "id": "news-001",
+      "title": "Agent Safehouse – macOS-native sandboxing for local agents",
+      "summary": "新的macOS本地AI代理沙盒工具发布，提供更安全的本地AI运行环境...",
+      "category": "tools",
+      "date": "2026-03-09T21:42:05+08:00",
+      "url": "https://github.com/agent-safehouse",
+      "source": "GitHub",
+      "trending": true
+    },
+    {
+      "id": "news-002",
+      "title": "We should revisit literate programming in the agent era",
+      "summary": "讨论在AI代理时代重新审视文学编程的重要性...",
+      "category": "research",
+      "date": "2026-03-09T19:42:05+08:00",
+      "url": "https://news.ycombinator.com/item?id=12345678",
+      "source": "Hacker News",
+      "trending": true
+    },
+    {
+      "id": "news-003",
+      "title": "Artificial-life: A simple (300 lines of code) reproduction of Computational Life",
+      "summary": "用300行代码实现计算生命的人工生命模拟...",
+      "category": "research",
+      "date": "2026-03-09T17:42:05+08:00",
+      "url": "https://github.com/artificial-life",
+      "source": "GitHub",
+      "trending": false
+    },
+    {
+      "id": "news-004",
+      "title": "Blacksky AppView - 新的算法和AI工具发布",
+      "summary": "Blacksky发布新的算法和AI工具，提供更强大的数据分析能力...",
+      "category": "product",
+      "date": "2026-03-08T22:42:05+08:00",
+      "url": "https://blacksky.com/appview",
+      "source": "Blacksky",
+      "trending": true
+    },
+    {
+      "id": "news-005",
+      "title": "OpenAI发布新一代多模态模型",
+      "summary": "OpenAI宣布推出新一代多模态AI模型，在图像理解和生成方面有显著提升...",
+      "category": "industry",
+      "date": "2026-03-07T22:42:05+08:00",
+      "url": "https://openai.com/blog/new-multimodal-model",
+      "source": "OpenAI Blog",
+      "trending": true
+    },
+    {
+      "id": "news-006",
+      "title": "欧盟通过新AI监管法案",
+      "summary": "欧盟正式通过新的AI监管法案，对高风险AI系统实施严格监管...",
+      "category": "policy",
+      "date": "2026-03-06T22:42:05+08:00",
+      "url": "https://ec.europa.eu/ai-act",
+      "source": "European Commission",
+      "trending": false
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+🦞 OpenClaw自动备份脚本
+======================
+执行时间: 2026-03-09 22:00:01
+
+[0;34m[INFO][0m 开始OpenClaw工作区自动备份
+[0;34m[INFO][0m 检查Git配置...
+[0;34m[INFO][0m 测试GitHub SSH连接...
+[0;32m[SUCCESS][0m GitHub SSH连接正常
+[0;34m[INFO][0m 开始自动提交...
+[0;34m[INFO][0m 检测到 26 个文件有更改
+更改摘要:
+ M HEARTBEAT.md
+ M backup.log
+ D backup.log-20260302.gz
+ D backup.log-20260308
+ M cron.log
+ D cron.log-20260302.gz
+ D cron.log-20260308
+ ? generated-code
+ M openclaw-monitor.log
+ M skills/imap-smtp-email/scripts/email-monitor-cache.json
+[0;34m[INFO][0m 添加文件到暂存区...
+[0;34m[INFO][0m 提交更改: 自动备份: 更新 HEARTBEAT.md,backup.log,backup.log-20260302.gz,backup.log-20260308,cron.log, - 2026-03-09 22:00:04
+[main f3f9b29] 自动备份: 更新 HEARTBEAT.md,backup.log,backup.log-20260302.gz,backup.log-20260308,cron.log, - 2026-03-09 22:00:04
+ 25 files changed, 2355 insertions(+), 174 deletions(-)
+ delete mode 100644 backup.log-20260302.gz
+ delete mode 100644 backup.log-20260308
+ create mode 100644 backup.log-20260308.gz
+ create mode 100644 backup.log-20260309
+ create mode 100644 backup_report_20260308.txt
+ create mode 100755 check-memory-files.sh
+ delete mode 100644 cron.log-20260302.gz
+ delete mode 100644 cron.log-20260308
+ create mode 100644 cron.log-20260308.gz
+ create mode 100644 cron.log-20260309
+ create mode 100644 memory/2026-03-05.md
+ create mode 100644 memory/2026-03-06.md
+ create mode 100644 memory/2026-03-07.md
+ create mode 100644 memory/2026-03-08.md
+ create mode 100644 memory/2026-03-09.md
+[0;32m[SUCCESS][0m 提交成功: 自动备份: 更新 HEARTBEAT.md,backup.log,backup.log-20260302.gz,backup.log-20260308,cron.log, - 2026-03-09 22:00:04
+[0;34m[INFO][0m 推送到GitHub...
+[0;34m[INFO][0m 推送分支: main
+To github.com:safeichen/openclaw-workspace.git
+   0f971fb..f3f9b29  main -> main
+[0;32m[SUCCESS][0m 推送成功
+[0;32m[SUCCESS][0m 自动备份完成
+[0;34m[INFO][0m 生成备份报告...
+[0;32m[SUCCESS][0m 备份报告已生成: /root/.openclaw/workspace/backup_report_20260309.txt
+[0;34m[INFO][0m 自动备份流程结束
+
+📊 备份摘要:
+   - 日志文件: /root/.openclaw/workspace/backup.log
+   - 报告文件: backup_report_20260309.txt
+   - 查看状态: git status
+

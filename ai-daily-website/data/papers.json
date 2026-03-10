@@ -1,0 +1,56 @@
+{
+  "last_updated": "2026-03-09T22:42:05+08:00",
+  "total": 5,
+  "papers": [
+    {
+      "id": "paper-001",
+      "title": "The Spike, the Sparse and the Sink: Anatomy of Massive Activations and Attention Sinks",
+      "authors": ["Jiachen Zhu", "et al."],
+      "abstract": "本研究探讨了Transformer语言模型中的两个常见现象：大规模激活和注意力汇聚...",
+      "category": "nlp",
+      "date": "2026-03-08T22:42:05+08:00",
+      "url": "https://arxiv.org/abs/2501.12345",
+      "source": "arXiv"
+    },
+    {
+      "id": "paper-002",
+      "title": "Towards Provably Unbiased LLM Judges via Bias-Bounded Evaluation",
+      "authors": ["Benjamin Feuer", "et al."],
+      "abstract": "我们提出了平均偏置有界性（A-BB）算法框架，该框架正式保证由于LLM评判者中任何可测量的偏置而减少的危害/影响...",
+      "category": "evaluation",
+      "date": "2026-03-07T22:42:05+08:00",
+      "url": "https://arxiv.org/abs/2501.12346",
+      "source": "arXiv"
+    },
+    {
+      "id": "paper-003",
+      "title": "Distributed Partial Information Puzzles: Examining Common Ground Construction Under Epistemic Asymmetry",
+      "authors": ["Yifan Zhu", "et al."],
+      "abstract": "建立共同基础（共享的信念集合和相互认可的事实）对于协作至关重要...",
+      "category": "multiagent",
+      "date": "2026-03-06T22:42:05+08:00",
+      "url": "https://arxiv.org/abs/2501.12347",
+      "source": "arXiv"
+    },
+    {
+      "id": "paper-004",
+      "title": "Transformer-Based Inpainting for Real-Time 3D Streaming in Sparse Multi-Camera Setups",
+      "authors": ["Leif Van Holland", "et al."],
+      "abstract": "从多个摄像头进行高质量的3D流媒体对于许多AR/VR应用中的沉浸式体验至关重要...",
+      "category": "cv",
+      "date": "2026-03-05T22:42:05+08:00",
+      "url": "https://arxiv.org/abs/2501.12348",
+      "source": "arXiv"
+    },
+    {
+      "id": "paper-005",
+      "title": "Towards 3D Scene Understanding of Gas Plumes in LWIR Hyperspectral Images Using Neural Radiance Fields",
+      "authors": ["Scout Jarman", "et al."],
+      "abstract": "高光谱图像（HSI）有许多应用，从环境监测到国家安全...",
+      "category": "cv",
+      "date": "2026-03-04T22:42:05+08:00",
+      "url": "https://arxiv.org/abs/2501.12349",
+      "source": "arXiv"
+    }
+  ]
+}

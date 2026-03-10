@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Daily Insights - 每日AI资讯与论文</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>AI Daily Insights</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="news.html"><i class="fas fa-newspaper"></i> 每日资讯</a></li>
+                <li><a href="papers.html"><i class="fas fa-file-alt"></i> 论文推送</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> 关于</a></li>
+            </ul>
+            <div class="nav-right">
+                <span id="current-date"></span>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <header class="hero">
+        <div class="container">
+            <h1>探索AI前沿，把握科技脉搏</h1>
+            <p class="subtitle">每日精选AI资讯与研究论文，助你保持技术领先</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <i class="fas fa-newspaper"></i>
+                    <span id="news-count">加载中...</span>
+                    <small>今日资讯</small>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-file-alt"></i>
+                    <span id="paper-count">加载中...</span>
+                    <small>最新论文</small>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span id="update-time">今日</span>
+                    <small>最后更新</small>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容 - 左右分栏布局 -->
+    <main class="container">
+        <div class="two-column-layout">
+            <!-- 左侧：AI资讯 -->
+            <div class="column">
+                <section class="card news-column">
+                    <div class="card-header">
+                        <h2><i class="fas fa-newspaper"></i> 每日AI资讯</h2>
+                        <div class="column-stats">
+                            <span class="stat-badge"><i class="far fa-clock"></i> 实时更新</span>
+                            <span class="stat-badge"><i class="fas fa-bolt"></i> 热点追踪</span>
+                        </div>
+                        <a href="news.html" class="view-all">更多资讯 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="card-body">
+                        <!-- 资讯分类标签 -->
+                        <div class="category-tabs">
+                            <button class="tab-btn active" data-category="all">全部</button>
+                            <button class="tab-btn" data-category="research">研究动态</button>
+                            <button class="tab-btn" data-category="industry">行业新闻</button>
+                            <button class="tab-btn" data-category="product">产品发布</button>
+                        </div>
+                        
+                        <!-- 资讯列表 -->
+                        <div id="news-list" class="loading">
+                            <div class="loader"></div>
+                            <p>正在加载AI资讯...</p>
+                        </div>
+                        
+                        <!-- 资讯摘要 -->
+                        <div class="news-summary">
+                            <h4><i class="fas fa-chart-line"></i> 今日热点</h4>
+                            <div id="trending-topics">
+                                <span class="trend-tag">AI代理安全</span>
+                                <span class="trend-tag">文学编程复兴</span>
+                                <span class="trend-tag">多模态模型</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <!-- 右侧：AI论文 -->
+            <div class="column">
+                <section class="card papers-column">
+                    <div class="card-header">
+                        <h2><i class="fas fa-graduation-cap"></i> 最新AI论文</h2>
+                        <div class="column-stats">
+                            <span class="stat-badge"><i class="fas fa-flask"></i> 前沿研究</span>
+                            <span class="stat-badge"><i class="fas fa-book"></i> 学术精选</span>
+                        </div>
+                        <a href="papers.html" class="view-all">更多论文 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="card-body">
+                        <!-- 论文分类标签 -->
+                        <div class="category-tabs">
+                            <button class="tab-btn active" data-category="all">全部</button>
+                            <button class="tab-btn" data-category="nlp">自然语言处理</button>
+                            <button class="tab-btn" data-category="cv">计算机视觉</button>
+                            <button class="tab-btn" data-category="rl">强化学习</button>
+                        </div>
+                        
+                        <!-- 论文列表 -->
+                        <div id="papers-list" class="loading">
+                            <div class="loader"></div>
+                            <p>正在加载AI论文...</p>
+                        </div>
+                        
+                        <!-- 论文统计 -->
+                        <div class="papers-summary">
+                            <h4><i class="fas fa-university"></i> 论文来源</h4>
+                            <div class="sources">
+                                <span class="source-tag">arXiv</span>
+                                <span class="source-tag">OpenReview</span>
+                                <span class="source-tag">顶会论文</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+        <!-- 底部统计信息 -->
+        <div class="stats-footer">
+            <div class="stat-item">
+                <i class="fas fa-sync-alt"></i>
+                <div>
+                    <h4>最后更新</h4>
+                    <p id="last-update-time">刚刚</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-database"></i>
+                <div>
+                    <h4>数据总量</h4>
+                    <p><span id="total-news">6</span> 资讯 · <span id="total-papers">5</span> 论文</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-calendar-alt"></i>
+                <div>
+                    <h4>更新频率</h4>
+                    <p>每日自动更新</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI Daily Insights</h3>
+                    <p>每日更新AI领域最新资讯与研究论文，助力技术学习与创新。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="news.html">每日资讯</a></li>
+                        <li><a href="papers.html">论文推送</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系方式</h4>
+                    <p><i class="fas fa-envelope"></i> contact@aidaily.ai</p>
+                    <p><i class="fas fa-calendar-alt"></i> 每日上午9点更新</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI Daily Insights. 所有内容仅供参考学习。</p>
+                <p>数据来源：arXiv、Hacker News、各大AI实验室官方发布</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // 初始化页面
+        document.addEventListener('DOMContentLoaded', function() {
+            // 设置当前日期
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+            document.getElementById('current-date').textContent = now.toLocaleDateString('zh-CN', options);
+            
+            // 加载数据
+            loadHomepageData();
+            
+            // 主题切换
+            document.getElementById('theme-toggle').addEventListener('click', function() {
+                document.body.classList.toggle('dark-theme');
+                const icon = this.querySelector('i');
+                if (document.body.classList.contains('dark-theme')) {
+                    icon.className = 'fas fa-sun';
+                } else {
+                    icon.className = 'fas fa-moon';
+                }
+            });
+        });
+        
+        function loadHomepageData() {
+            // 这里会从data/news.json和data/papers.json加载数据
+            // 实际实现会在main.js中完成
+        }
+    </script>
+</body>
+</html>

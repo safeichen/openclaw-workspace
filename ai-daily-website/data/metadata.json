@@ -1,0 +1,15 @@
+{
+  "site_name": "AI Daily Insights",
+  "description": "每日AI资讯与论文推送",
+  "version": "1.0.0",
+  "last_full_update": "2026-03-09T22:42:05+08:00",
+  "next_scheduled_update": "2026-03-10T22:42:05+08:00",
+  "update_frequency": "daily",
+  "data_sources": [
+    "arXiv API",
+    "Hacker News RSS",
+    "TechCrunch",
+    "OpenAI Blog",
+    "Google AI Blog"
+  ]
+}
