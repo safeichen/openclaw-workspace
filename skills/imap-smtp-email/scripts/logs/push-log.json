@@ -1,245 +1,5 @@
 [
   {
-    "timestamp": "2026-03-07T16:36:39.649Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-07T17:06:41.308Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-07T17:36:39.970Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-07T18:06:39.213Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-07T18:36:40.607Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-07T19:06:39.159Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-07T19:36:39.385Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-07T20:06:38.248Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-07T20:36:38.029Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-07T21:06:37.845Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-07T21:36:37.618Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-07T22:06:37.292Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-07T22:36:37.396Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-07T23:06:37.330Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-07T23:36:37.354Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T00:06:37.545Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T00:36:38.645Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T01:06:38.356Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T01:36:39.707Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T02:06:38.520Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T02:36:39.990Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T03:06:39.359Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T03:36:38.908Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T04:06:40.802Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T04:36:40.606Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T05:06:40.406Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T05:36:40.387Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T06:06:40.725Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T06:36:41.486Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T07:07:04.548Z",
-    "hasNew": true,
-    "notification": "📧 您有 1 封新邮件：\n\n1. **Your eStatement is ready for viewing**\n   发件人：Global.E-Statement-HK@sc.com\n   时间：Sun, 8 Mar 2026 06:39:39 +0000\n   摘要：------=_Part_2216766_152986112.1772951979647 Content-Type: mul..."
-  },
-  {
-    "timestamp": "2026-03-08T07:36:50.924Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T08:07:02.259Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T08:36:54.504Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T09:07:27.433Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T09:36:58.563Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T10:07:04.172Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T10:36:42.214Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T11:06:43.150Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T11:36:43.527Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T12:06:44.156Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T12:36:42.388Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T13:07:05.205Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T13:36:58.186Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T14:06:53.931Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T14:37:18.920Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T15:07:09.866Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T15:36:57.256Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
-    "timestamp": "2026-03-08T16:07:41.709Z",
-    "hasNew": false,
-    "notification": null
-  },
-  {
     "timestamp": "2026-03-08T16:36:45.866Z",
     "hasNew": false,
     "notification": null
@@ -496,6 +256,246 @@
   },
   {
     "timestamp": "2026-03-10T13:57:26.061Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T14:27:34.390Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T14:57:35.781Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T15:27:40.803Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T15:57:19.643Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T16:27:19.987Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T16:57:12.510Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T17:27:03.413Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T17:57:01.635Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T18:27:01.518Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T18:57:02.797Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T19:27:02.627Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T19:57:00.977Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T20:27:00.426Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T20:56:59.949Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T21:27:00.522Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T21:57:00.124Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T22:26:59.850Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T22:57:00.253Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T23:27:01.478Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-10T23:57:00.696Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T00:27:00.885Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T00:57:00.924Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T01:27:01.556Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T01:57:02.464Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T02:27:16.976Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T02:57:20.959Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T03:27:13.065Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T03:57:03.483Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T04:27:11.072Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T04:57:03.597Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T05:27:07.607Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T05:57:12.808Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T06:28:06.913Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T06:58:01.162Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T07:27:55.591Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T07:58:24.386Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T08:28:30.244Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T08:58:23.845Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T09:27:51.576Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T09:57:06.974Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T10:27:45.234Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T10:57:16.082Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T11:27:23.664Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T11:57:43.687Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T12:27:37.811Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T12:57:41.704Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T13:30:11.276Z",
+    "hasNew": false,
+    "notification": null
+  },
+  {
+    "timestamp": "2026-03-11T13:57:56.937Z",
     "hasNew": false,
     "notification": null
   }
