@@ -1,0 +1,22 @@
+# 核心依赖
+langgraph>=0.0.40
+pydantic>=2.5.0
+typing-extensions>=4.9.0
+python-dotenv>=1.0.0
+
+# 工具库
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+pandas>=2.1.0
+numpy>=1.24.0
+
+# 开发工具
+pytest>=7.4.0
+black>=23.11.0
+flake8>=6.1.0
+mypy>=1.7.0
+
+# 可选：AI相关（如果需要LLM集成）
+# openai>=1.3.0
+# anthropic>=0.7.0
+# langchain>=0.0.340
