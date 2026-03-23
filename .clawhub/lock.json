@@ -3,11 +3,11 @@
   "skills": {
     "agent-browser": {
       "version": "0.2.0",
-      "installedAt": 1770291636524
+      "installedAt": 1774231966379
     },
     "weather": {
       "version": "1.0.0",
-      "installedAt": 1770967328818
+      "installedAt": 1774231988223
     },
     "todo": {
       "version": "1.1.0",
@@ -35,23 +35,23 @@
     },
     "tavily-search": {
       "version": "1.0.0",
-      "installedAt": 1772414667303
+      "installedAt": 1774231957821
     },
     "summarize": {
       "version": "1.0.0",
-      "installedAt": 1772414668320
+      "installedAt": 1774231961698
     },
     "find-skills": {
       "version": "0.1.0",
-      "installedAt": 1772414668898
+      "installedAt": 1774231971398
     },
     "github": {
       "version": "1.0.0",
-      "installedAt": 1772414669512
+      "installedAt": 1774231975725
     },
     "obsidian": {
       "version": "1.0.0",
-      "installedAt": 1772414670219
+      "installedAt": 1774231983451
     },
     "notion": {
       "version": "1.0.0",

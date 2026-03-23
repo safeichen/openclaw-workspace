@@ -5,7 +5,7 @@
 
 SCRIPT_DIR="/root/.openclaw/workspace/skills/imap-smtp-email/scripts"
 LOG_FILE="$SCRIPT_DIR/logs/cron-push.log"
-PUSH_SCRIPT="$SCRIPT_DIR/push-to-qqbot.js"
+PUSH_SCRIPT="$SCRIPT_DIR/push-to-clawbot.js"
 LAST_CHECK_FILE="$SCRIPT_DIR/last-check.txt"
 
 # 创建必要的目录
