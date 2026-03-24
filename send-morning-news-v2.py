@@ -134,24 +134,44 @@ def send_to_wechat_via_openclaw(news_content):
         with open(temp_file, "w", encoding="utf-8") as f:
             f.write(news_content)
         
-        # 尝试使用OpenClaw发送消息
-        # 这里使用message工具发送消息
+        # 尝试使用OpenClaw发送消息到微信
         log("新闻内容已准备，长度: " + str(len(news_content)))
         
-        # 在实际环境中，这里应该调用OpenClaw的消息发送功能
-        # 由于当前环境限制，我们先记录到日志并输出特殊格式
+        # 使用OpenClaw的message工具直接发送到微信
+        # 微信用户ID: o9cq807kCZ8f9w0SsniiqByxTCRY@im.wechat
+        wechat_user_id = "o9cq807kCZ8f9w0SsniiqByxTCRY@im.wechat"
         
-        # 输出特殊格式，让主会话能够捕获并发送
-        print("[[MORNING_NEWS_PUSH]]")
-        print(news_content)
-        print("[[END_MORNING_NEWS_PUSH]]")
+        # 构建OpenClaw命令 - 使用--target参数
+        # 注意：需要对新闻内容进行转义，避免shell问题
+        import shlex
+        safe_content = shlex.quote(news_content)
+        cmd = f"openclaw message send --channel openclaw-weixin --target '{wechat_user_id}' --message {safe_content}"
         
-        log("新闻推送格式已输出，等待主会话处理")
-        return True
+        log(f"执行命令: {cmd}")
+        
+        # 执行命令
+        result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+        
+        if result.returncode == 0:
+            log("新闻已成功发送到微信")
+            return True
+        else:
+            log(f"发送失败: {result.stderr}")
+            # 如果直接发送失败，回退到特殊格式输出
+            print("[[MORNING_NEWS_PUSH]]")
+            print(news_content)
+            print("[[END_MORNING_NEWS_PUSH]]")
+            log("新闻推送格式已输出，等待主会话处理")
+            return True
         
     except Exception as e:
         log(f"发送新闻失败: {e}")
-        return False
+        # 异常时也输出特殊格式
+        print("[[MORNING_NEWS_PUSH]]")
+        print(news_content)
+        print("[[END_MORNING_NEWS_PUSH]]")
+        log("新闻推送格式已输出，等待主会话处理")
+        return True
 
 def main():
     """主函数"""

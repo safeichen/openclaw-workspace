@@ -69,4 +69,53 @@ fi
 
 echo ""
 echo "📅 最后检查时间已更新"
+
+# 检查早间新闻推送
+echo ""
+echo "📰 检查早间新闻推送..."
+MORNING_NEWS_LOG="/root/.openclaw/workspace/morning-news-cron.log"
+
+if [ -f "$MORNING_NEWS_LOG" ] && grep -q "\[\[MORNING_NEWS_PUSH\]\]" "$MORNING_NEWS_LOG"; then
+    echo "✅ 检测到未处理的早间新闻推送"
+    
+    # 提取新闻内容
+    NEWS_CONTENT=$(awk '/\[\[MORNING_NEWS_PUSH\]\]/{flag=1; next} /\[\[END_MORNING_NEWS_PUSH\]\]/{flag=0} flag' "$MORNING_NEWS_LOG")
+    
+    if [ -n "$NEWS_CONTENT" ]; then
+        echo "📋 早间新闻内容已提取"
+        echo ""
+        echo "[[MORNING_NEWS_PUSH]]"
+        echo "$NEWS_CONTENT"
+        echo "[[END_MORNING_NEWS_PUSH]]"
+    else
+        echo "⚠️ 无法提取早间新闻内容"
+    fi
+else
+    echo "ℹ️ 没有未处理的早间新闻推送"
+fi
+
+# 检查AI资讯提醒
+echo ""
+echo "🤖 检查AI资讯提醒..."
+AI_NEWS_LOG="/root/.openclaw/workspace/ai-news-cron.log"
+
+if [ -f "$AI_NEWS_LOG" ] && grep -q "\[\[AI_NEWS_REMINDER\]\]" "$AI_NEWS_LOG"; then
+    echo "✅ 检测到未处理的AI资讯提醒"
+    
+    # 提取AI资讯内容
+    AI_CONTENT=$(awk '/\[\[AI_NEWS_REMINDER\]\]/{flag=1; next} /\[\[END_AI_NEWS_REMINDER\]\]/{flag=0} flag' "$AI_NEWS_LOG")
+    
+    if [ -n "$AI_CONTENT" ]; then
+        echo "📋 AI资讯内容已提取"
+        echo ""
+        echo "[[AI_NEWS_REMINDER]]"
+        echo "$AI_CONTENT"
+        echo "[[END_AI_NEWS_REMINDER]]"
+    else
+        echo "⚠️ 无法提取AI资讯内容"
+    fi
+else
+    echo "ℹ️ 没有未处理的AI资讯提醒"
+fi
+
 echo "✅ 邮件通知检查完成"

@@ -42,4 +42,18 @@
 [[END_EMAIL_NOTIFICATION]]
 ```
 
-主会话需要捕获这个输出并通过ClawBot发送。
+如果发现早间新闻推送，输出格式为:
+```
+[[MORNING_NEWS_PUSH]]
+[早间新闻内容]
+[[END_MORNING_NEWS_PUSH]]
+```
+
+如果发现AI资讯提醒，输出格式为:
+```
+[[AI_NEWS_REMINDER]]
+[AI资讯内容]
+[[END_AI_NEWS_REMINDER]]
+```
+
+主会话需要捕获这些输出并通过相应渠道发送（邮件通知→ClawBot，早间新闻→微信，AI资讯→微信）。
