@@ -14,3 +14,58 @@
 [plugins] [adp-openclaw] Plugin registration complete
 Error: weixin: accountId is required (no default account)
 [2026-03-24 09:07:01] ❌ 发送到微信失败，尝试备用方法...
+[2026-03-25 01:00:01] ====== 开始执行早间新闻推送任务 ======
+[2026-03-25 01:00:01] 生成早间新闻内容...
+[2026-03-25 01:00:01] 新闻内容生成成功
+[2026-03-25 01:00:01] 发送早间新闻到微信...
+[2026-03-25 01:00:01] 新闻内容长度: 615 字符
+/root/.openclaw/workspace/send-morning-news-to-wechat.sh: line 115: openclaw: command not found
+[2026-03-25 01:00:01] ❌ 发送到微信失败，尝试备用方法...
+[2026-03-25 01:00:01] ⚠️ 已输出新闻推送格式，等待主会话处理
+[2026-03-25 01:00:01] ⚠️ 早间新闻推送任务部分完成（需要主会话处理）
+[2026-03-25 09:06:01] ====== 开始执行早间新闻推送任务 ======
+[2026-03-25 09:06:01] 生成早间新闻内容...
+[2026-03-25 09:06:01] 新闻内容生成成功
+[2026-03-25 09:06:01] 发送早间新闻到微信...
+[2026-03-25 09:06:01] 新闻内容长度: 615 字符
+[plugins] plugins.allow is empty; discovered non-bundled plugins may auto-load: adp-openclaw (/root/.openclaw/extensions/adp-openclaw/index.ts), ddingtalk (/root/.openclaw/extensions/ddingtalk/index.ts), openclaw-plugin-yuanbao (/root/.openclaw/extensions/openclaw-plugin-yuanbao/dist/index.js), openclaw-qqbot (/root/.openclaw/extensions/openclaw-qqbot/index.ts), openclaw-weixin (/root/.openclaw/extensions/openclaw-weixin/index.ts), wecom (/root/.openclaw/extensions/wecom/index.ts). Set plugins.allow to explicit trusted ids.
+[adp-openclaw] register() called - starting plugin registration
+[plugins] [adp-openclaw] Plugin register() called
+[adp-openclaw] Registering tool factory: adp_upload_file
+[plugins] [adp-openclaw] Registering tool factory: adp_upload_file
+[adp-openclaw] Tool adp_upload_file registered successfully
+[plugins] [adp-openclaw] Tool adp_upload_file registered successfully
+[adp-openclaw] Plugin registration complete
+[plugins] [adp-openclaw] Plugin registration complete
+Error: weixin: accountId is required (no default account)
+[2026-03-25 09:06:11] ❌ 发送到微信失败，尝试备用方法...
+[2026-03-25 09:06:11] ⚠️ 已输出新闻推送格式，等待主会话处理
+[2026-03-25 09:06:11] ⚠️ 早间新闻推送任务部分完成（需要主会话处理）
+[2026-03-25 09:06:52] ====== 开始执行早间新闻推送任务 ======
+[2026-03-25 09:06:52] 生成早间新闻内容...
+[2026-03-25 09:06:53] 新闻内容生成成功
+[2026-03-25 09:06:53] 发送早间新闻到微信...
+[2026-03-25 09:06:53] 新闻内容长度: 615 字符
+error: unknown option '--accountId'
+(Did you mean --account?)
+[2026-03-25 09:06:55] ❌ 发送到微信失败，尝试备用方法...
+[2026-03-25 09:06:55] ⚠️ 已输出新闻推送格式，等待主会话处理
+[2026-03-25 09:06:55] ⚠️ 早间新闻推送任务部分完成（需要主会话处理）
+[2026-03-25 09:07:14] ====== 开始执行早间新闻推送任务 ======
+[2026-03-25 09:07:14] 生成早间新闻内容...
+[2026-03-25 09:07:14] 新闻内容生成成功
+[2026-03-25 09:07:14] 发送早间新闻到微信...
+[2026-03-25 09:07:15] 新闻内容长度: 615 字符
+[plugins] plugins.allow is empty; discovered non-bundled plugins may auto-load: adp-openclaw (/root/.openclaw/extensions/adp-openclaw/index.ts), ddingtalk (/root/.openclaw/extensions/ddingtalk/index.ts), openclaw-plugin-yuanbao (/root/.openclaw/extensions/openclaw-plugin-yuanbao/dist/index.js), openclaw-qqbot (/root/.openclaw/extensions/openclaw-qqbot/index.ts), openclaw-weixin (/root/.openclaw/extensions/openclaw-weixin/index.ts), wecom (/root/.openclaw/extensions/wecom/index.ts). Set plugins.allow to explicit trusted ids.
+[adp-openclaw] register() called - starting plugin registration
+[plugins] [adp-openclaw] Plugin register() called
+[adp-openclaw] Registering tool factory: adp_upload_file
+[plugins] [adp-openclaw] Registering tool factory: adp_upload_file
+[adp-openclaw] Tool adp_upload_file registered successfully
+[plugins] [adp-openclaw] Tool adp_upload_file registered successfully
+[adp-openclaw] Plugin registration complete
+[plugins] [adp-openclaw] Plugin registration complete
+Error: sendWeixinOutbound: contextToken is required
+[2026-03-25 09:07:25] ❌ 发送到微信失败，尝试备用方法...
+[2026-03-25 09:07:25] ⚠️ 已输出新闻推送格式，等待主会话处理
+[2026-03-25 09:07:25] ⚠️ 早间新闻推送任务部分完成（需要主会话处理）

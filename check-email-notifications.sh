@@ -118,4 +118,52 @@ else
     echo "ℹ️ 没有未处理的AI资讯提醒"
 fi
 
+# 检查AI每日报告
+echo ""
+echo "📋 检查AI每日报告..."
+AI_DAILY_REPORT_LOG="/root/.openclaw/workspace/ai-daily-report-cron.log"
+
+if [ -f "$AI_DAILY_REPORT_LOG" ] && grep -q "\[\[AI_DAILY_REPORT\]\]" "$AI_DAILY_REPORT_LOG"; then
+    echo "✅ 检测到未处理的AI每日报告"
+    
+    # 提取AI每日报告内容
+    AI_DAILY_CONTENT=$(awk '/\[\[AI_DAILY_REPORT\]\]/{flag=1; next} /\[\[END_AI_DAILY_REPORT\]\]/{flag=0} flag' "$AI_DAILY_REPORT_LOG")
+    
+    if [ -n "$AI_DAILY_CONTENT" ]; then
+        echo "📋 AI每日报告内容已提取"
+        echo ""
+        echo "[[AI_DAILY_REPORT]]"
+        echo "$AI_DAILY_CONTENT"
+        echo "[[END_AI_DAILY_REPORT]]"
+    else
+        echo "⚠️ 无法提取AI每日报告内容"
+    fi
+else
+    echo "ℹ️ 没有未处理的AI每日报告"
+fi
+
+# 检查学校选餐提醒
+echo ""
+echo "🏫 检查学校选餐提醒..."
+SCHOOL_MEAL_LOG="/root/.openclaw/workspace/school-meal-cron.log"
+
+if [ -f "$SCHOOL_MEAL_LOG" ] && grep -q "\[\[SCHOOL_MEAL_REMINDER\]\]" "$SCHOOL_MEAL_LOG"; then
+    echo "✅ 检测到未处理的学校选餐提醒"
+    
+    # 提取学校选餐提醒内容
+    SCHOOL_MEAL_CONTENT=$(awk '/\[\[SCHOOL_MEAL_REMINDER\]\]/{flag=1; next} /\[\[END_SCHOOL_MEAL_REMINDER\]\]/{flag=0} flag' "$SCHOOL_MEAL_LOG")
+    
+    if [ -n "$SCHOOL_MEAL_CONTENT" ]; then
+        echo "📋 学校选餐提醒内容已提取"
+        echo ""
+        echo "[[SCHOOL_MEAL_REMINDER]]"
+        echo "$SCHOOL_MEAL_CONTENT"
+        echo "[[END_SCHOOL_MEAL_REMINDER]]"
+    else
+        echo "⚠️ 无法提取学校选餐提醒内容"
+    fi
+else
+    echo "ℹ️ 没有未处理的学校选餐提醒"
+fi
+
 echo "✅ 邮件通知检查完成"

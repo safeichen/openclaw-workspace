@@ -56,4 +56,18 @@
 [[END_AI_NEWS_REMINDER]]
 ```
 
-主会话需要捕获这些输出并通过相应渠道发送（邮件通知→ClawBot，早间新闻→微信，AI资讯→微信）。
+如果发现AI每日报告，输出格式为:
+```
+[[AI_DAILY_REPORT]]
+[AI每日报告内容]
+[[END_AI_DAILY_REPORT]]
+```
+
+如果发现学校选餐提醒，输出格式为:
+```
+[[SCHOOL_MEAL_REMINDER]]
+[学校选餐提醒内容]
+[[END_SCHOOL_MEAL_REMINDER]]
+```
+
+主会话需要捕获这些输出并通过相应渠道发送（邮件通知→ClawBot，早间新闻→微信，AI资讯→微信，AI每日报告→微信，学校选餐提醒→微信）。

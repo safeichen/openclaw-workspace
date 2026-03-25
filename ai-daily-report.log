@@ -1,0 +1,18 @@
+[2026-03-25 11:24:46] ====== 开始执行AI每日报告任务 ======
+[2026-03-25 11:24:46] AI每日报告内容生成成功
+[2026-03-25 11:24:46] 开始发送AI每日报告到微信...
+[2026-03-25 11:24:46] 消息长度: 1185 字符
+[plugins] plugins.allow is empty; discovered non-bundled plugins may auto-load: adp-openclaw (/root/.openclaw/extensions/adp-openclaw/index.ts), ddingtalk (/root/.openclaw/extensions/ddingtalk/index.ts), openclaw-plugin-yuanbao (/root/.openclaw/extensions/openclaw-plugin-yuanbao/dist/index.js), openclaw-qqbot (/root/.openclaw/extensions/openclaw-qqbot/index.ts), openclaw-weixin (/root/.openclaw/extensions/openclaw-weixin/index.ts), wecom (/root/.openclaw/extensions/wecom/index.ts). Set plugins.allow to explicit trusted ids.
+[adp-openclaw] register() called - starting plugin registration
+[plugins] [adp-openclaw] Plugin register() called
+[adp-openclaw] Registering tool factory: adp_upload_file
+[plugins] [adp-openclaw] Registering tool factory: adp_upload_file
+[adp-openclaw] Tool adp_upload_file registered successfully
+[plugins] [adp-openclaw] Tool adp_upload_file registered successfully
+[adp-openclaw] Plugin registration complete
+[plugins] [adp-openclaw] Plugin registration complete
+Error: sendWeixinOutbound: contextToken is required
+[2026-03-25 11:24:57] ❌ 发送到微信失败，尝试备用方法...
+[2026-03-25 11:24:57] ⚠️ 已输出报告格式，等待主会话处理
+[2026-03-25 11:24:57] ⚠️ AI每日报告任务部分完成（需要主会话处理）
+[2026-03-25 11:24:57] ====== AI每日报告任务执行完成 ======

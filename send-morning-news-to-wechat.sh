@@ -2,12 +2,15 @@
 # 早间新闻推送到微信脚本
 # 这个脚本由cron调用，直接发送早间新闻到微信
 
+# 设置PATH，确保cron环境中能找到命令
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.nvm/versions/node/v22.22.0/bin
+
 # 工作区路径
 WORKSPACE="/root/.openclaw/workspace"
 LOG_FILE="$WORKSPACE/morning-news-wechat.log"
 
 # 微信用户ID
-WECHAT_USER_ID="o9cq807kCZ8f9w0SsniiqByxTCRY@im.wechat"
+WECHAT_USER_ID="o9cq80-W-pYsx8MmI6T8Tpf9zlp0@im.wechat"
 
 # 日志函数
 log() {
@@ -112,7 +115,7 @@ send_to_wechat() {
     echo "$news_content" > "$temp_file"
     
     # 发送消息
-    if openclaw message send --channel openclaw-weixin --target "$WECHAT_USER_ID" --message "$news_content" >> "$LOG_FILE" 2>&1; then
+    if /root/.nvm/versions/node/v22.22.0/bin/openclaw message send --channel openclaw-weixin --account aa458d4db39b-im-bot --target "$WECHAT_USER_ID" --message "$news_content" >> "$LOG_FILE" 2>&1; then
         log "✅ 早间新闻已成功发送到微信"
         rm -f "$temp_file"
         return 0

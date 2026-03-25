@@ -1,0 +1,26 @@
+=== OpenClaw自动备份报告 ===
+生成时间: 2026-03-24 22:00:04
+
+1. Git状态:
+   分支: main
+   远程: https://github.com/safeichen/openclaw-workspace.git
+   最后提交: 9834ac4 自动备份: 更新 HEARTBEAT.md,backup.log,backup.log-20260317.gz,backup.log-20260323,check-email-notifications.sh, - 2026-03-24 22:00:04
+
+2. 文件更改统计:
+   未提交更改: 4 个文件
+   更改列表:
+      M backup.log
+      M cron.log
+      ? generated-code
+     ?? backup_report_20260324.txt
+
+3. 仓库大小:
+   文件总数: 1036
+   目录大小: 22M
+
+4. 备份日志:
+   [2026-03-24 22:00:04] [INFO] 推送分支: main
+   [2026-03-24 22:00:04] [ERROR] 推送失败
+   [2026-03-24 22:00:04] [INFO] 尝试先拉取更新...
+   [2026-03-24 22:00:04] [ERROR] 备份完成但推送失败
+   [2026-03-24 22:00:04] [INFO] 生成备份报告...
