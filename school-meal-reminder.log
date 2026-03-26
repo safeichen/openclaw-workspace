@@ -17,3 +17,66 @@ Error: sendWeixinOutbound: contextToken is required
 [2026-03-25 20:19:51] ⚠️ 已输出提醒格式，等待主会话处理
 [2026-03-25 20:19:51] ⚠️ 学校选餐提醒任务部分完成（需要主会话处理）
 [2026-03-25 20:19:51] ====== 学校选餐提醒任务执行完成 ======
+[2026-03-26 12:00:00] ====== 开始执行学校选餐提醒任务 ======
+[2026-03-26 12:00:00] 提醒时间: 2026-03-25 20:00 (北京时间)
+[2026-03-26 12:00:00] 提醒内容: 学校选餐
+[2026-03-26 12:00:00] 开始发送学校选餐提醒到微信...
+[2026-03-26 12:00:00] 消息内容: 学校选餐提醒 - 2026年3月25日 20:00
+[plugins] plugins.allow is empty; discovered non-bundled plugins may auto-load: adp-openclaw (/root/.openclaw/extensions/adp-openclaw/index.ts), ddingtalk (/root/.openclaw/extensions/ddingtalk/index.ts), openclaw-plugin-yuanbao (/root/.openclaw/extensions/openclaw-plugin-yuanbao/dist/index.js), openclaw-qqbot (/root/.openclaw/extensions/openclaw-qqbot/index.ts), openclaw-weixin (/root/.openclaw/extensions/openclaw-weixin/index.ts), wecom (/root/.openclaw/extensions/wecom/index.ts). Set plugins.allow to explicit trusted ids.
+[adp-openclaw] register() called - starting plugin registration
+[plugins] [adp-openclaw] Plugin register() called
+[adp-openclaw] Registering tool factory: adp_upload_file
+[plugins] [adp-openclaw] Registering tool factory: adp_upload_file
+[adp-openclaw] Tool adp_upload_file registered successfully
+[plugins] [adp-openclaw] Tool adp_upload_file registered successfully
+[adp-openclaw] Plugin registration complete
+[plugins] [adp-openclaw] Plugin registration complete
+[plugins] openclaw-weixin failed to load from /root/.openclaw/extensions/openclaw-weixin/index.ts: TypeError: (0 , _pluginSdk.resolvePreferredOpenClawTmpDir) is not a function
+[adp-openclaw] register() called - starting plugin registration
+[plugins] [adp-openclaw] Plugin register() called
+[adp-openclaw] Registering tool factory: adp_upload_file
+[plugins] [adp-openclaw] Registering tool factory: adp_upload_file
+[adp-openclaw] Tool adp_upload_file registered successfully
+[plugins] [adp-openclaw] Tool adp_upload_file registered successfully
+[adp-openclaw] Plugin registration complete
+[plugins] [adp-openclaw] Plugin registration complete
+[plugins] openclaw-weixin failed to load from /root/.openclaw/extensions/openclaw-weixin/index.ts: TypeError: (0 , _pluginSdk.resolvePreferredOpenClawTmpDir) is not a function
+[adp-openclaw] register() called - starting plugin registration
+[plugins] [adp-openclaw] Plugin register() called
+[adp-openclaw] Registering tool factory: adp_upload_file
+[plugins] [adp-openclaw] Registering tool factory: adp_upload_file
+[adp-openclaw] Tool adp_upload_file registered successfully
+[plugins] [adp-openclaw] Tool adp_upload_file registered successfully
+[adp-openclaw] Plugin registration complete
+[plugins] [adp-openclaw] Plugin registration complete
+[plugins] openclaw-weixin failed to load from /root/.openclaw/extensions/openclaw-weixin/index.ts: TypeError: (0 , _pluginSdk.resolvePreferredOpenClawTmpDir) is not a function
+[adp-openclaw] register() called - starting plugin registration
+[plugins] [adp-openclaw] Plugin register() called
+[adp-openclaw] Registering tool factory: adp_upload_file
+[plugins] [adp-openclaw] Registering tool factory: adp_upload_file
+[adp-openclaw] Tool adp_upload_file registered successfully
+[plugins] [adp-openclaw] Tool adp_upload_file registered successfully
+[adp-openclaw] Plugin registration complete
+[plugins] [adp-openclaw] Plugin registration complete
+[plugins] openclaw-weixin failed to load from /root/.openclaw/extensions/openclaw-weixin/index.ts: TypeError: (0 , _pluginSdk.resolvePreferredOpenClawTmpDir) is not a function
+[plugins] plugins.allow is empty; discovered non-bundled plugins may auto-load: adp-openclaw (/root/.openclaw/extensions/adp-openclaw/index.ts), ddingtalk (/root/.openclaw/extensions/ddingtalk/index.ts), openclaw-plugin-yuanbao (/root/.openclaw/extensions/openclaw-plugin-yuanbao/dist/index.js), openclaw-qqbot (/root/.openclaw/extensions/openclaw-qqbot/index.ts), openclaw-weixin (/root/.openclaw/extensions/openclaw-weixin/index.ts), wecom (/root/.openclaw/extensions/wecom/index.ts). Set plugins.allow to explicit trusted ids.
+[adp-openclaw] register() called - starting plugin registration
+[plugins] [adp-openclaw] Plugin register() called
+[adp-openclaw] Registering tool factory: adp_upload_file
+[plugins] [adp-openclaw] Registering tool factory: adp_upload_file
+[adp-openclaw] Tool adp_upload_file registered successfully
+[plugins] [adp-openclaw] Tool adp_upload_file registered successfully
+[adp-openclaw] Plugin registration complete
+[plugins] [adp-openclaw] Plugin registration complete
+[plugins] openclaw-weixin failed to load from /root/.openclaw/extensions/openclaw-weixin/index.ts: TypeError: (0 , _pluginSdk.resolvePreferredOpenClawTmpDir) is not a function
+[openclaw] Failed to start CLI: PluginLoadFailureError: plugin load failed: openclaw-weixin: TypeError: (0 , _pluginSdk.resolvePreferredOpenClawTmpDir) is not a function
+    at maybeThrowOnPluginLoadError (file:///root/.local/share/pnpm/global/5/.pnpm/openclaw@2026.3.24_@napi-rs+canvas@0.1.97/node_modules/openclaw/dist/pi-embedded-BaSvmUpW.js:147071:8)
+    at loadOpenClawPlugins (file:///root/.local/share/pnpm/global/5/.pnpm/openclaw@2026.3.24_@napi-rs+canvas@0.1.97/node_modules/openclaw/dist/pi-embedded-BaSvmUpW.js:147636:2)
+    at ensurePluginRegistryLoaded (file:///root/.local/share/pnpm/global/5/.pnpm/openclaw@2026.3.24_@napi-rs+canvas@0.1.97/node_modules/openclaw/dist/plugin-registry-C75agtIu.js:26:2)
+    at Object.callback (file:///root/.local/share/pnpm/global/5/.pnpm/openclaw@2026.3.24_@napi-rs+canvas@0.1.97/node_modules/openclaw/dist/program-BCAS9h7J.js:321:5)
+    at async Command.parseAsync (/root/.local/share/pnpm/global/5/.pnpm/commander@14.0.3/node_modules/commander/lib/command.js:1122:5)
+    at async runCli (file:///root/.local/share/pnpm/global/5/.pnpm/openclaw@2026.3.24_@napi-rs+canvas@0.1.97/node_modules/openclaw/dist/run-main-y8ijbwjJ.js:427:3)
+[2026-03-26 12:00:19] ❌ 发送到微信失败，尝试备用方法...
+[2026-03-26 12:00:19] ⚠️ 已输出提醒格式，等待主会话处理
+[2026-03-26 12:00:19] ⚠️ 学校选餐提醒任务部分完成（需要主会话处理）
+[2026-03-26 12:00:19] ====== 学校选餐提醒任务执行完成 ======
