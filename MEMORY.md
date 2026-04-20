@@ -29,6 +29,7 @@
 6. **邮件通知推送** - 每5分钟检查（推送到ClawBot） - 更新于2026-03-23
 
 ### 技能安装状态
+- **China Stock Analysis**: ✅ 已安装 (2026-04-20)
 - **Stock Analysis**: 计划明天9点安装
 - **YouTube Watcher**: 等待ClawHub速率限制恢复
 - **Proactive Agent**: 等待ClawHub速率限制恢复
