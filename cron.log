@@ -1,22 +1,22 @@
 🦞 OpenClaw自动备份脚本
 ======================
-执行时间: 2026-05-07 22:00:02
+执行时间: 2026-05-08 22:00:01
 
 [0;34m[INFO][0m 开始OpenClaw工作区自动备份
 [0;34m[INFO][0m 检查Git配置...
 [0;34m[INFO][0m 测试GitHub SSH连接...
 [0;32m[SUCCESS][0m GitHub SSH连接正常
 [0;34m[INFO][0m 开始自动提交...
-[0;34m[INFO][0m 检测到 18 个文件有更改
+[0;34m[INFO][0m 检测到 19 个文件有更改
 更改摘要:
  M backup.log
- D backup.log-20260430.gz
- D backup.log-20260506
+ D backup.log-20260501.gz
+ D backup.log-20260507
  M cron.log
- D cron.log-20260430.gz
- D cron.log-20260506
+ D cron.log-20260501.gz
+ D cron.log-20260507
  ? generated-code
  M openclaw-monitor.log
  M skills/imap-smtp-email/scripts/email-monitor-cache.json
- M skills/imap-smtp-email/scripts/last-check-time.json
+ M skills/imap-smtp-email/scripts/email-notified.json
 [0;34m[INFO][0m 添加文件到暂存区...
