@@ -3,6 +3,19 @@
 # 邮件通知检查脚本
 # 这个脚本会被OpenClaw定期调用，检查是否有新邮件通知需要推送
 
+# 确保 node 在 PATH 中（cron 环境 PATH 很精简）
+export PATH="/root/.nvm/versions/node/v22.22.0/bin:$PATH"
+
+# 如果上面路径不适用，自动探测 node
+if ! command -v node >/dev/null 2>&1; then
+    for NODE_CAND in /root/.nvm/versions/node/*/bin/node /usr/local/bin/node /usr/bin/node; do
+        if [ -x "$NODE_CAND" ]; then
+            export PATH="$(dirname "$NODE_CAND"):$PATH"
+            break
+        fi
+    done
+fi
+
 SCRIPT_DIR="/root/.openclaw/workspace/skills/imap-smtp-email/scripts"
 LOG_FILE="$SCRIPT_DIR/logs/cron-push.log"
 PUSH_SCRIPT="$SCRIPT_DIR/push-to-clawbot.js"
