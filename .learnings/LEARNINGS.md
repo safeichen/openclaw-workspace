@@ -101,3 +101,34 @@
 
 ---
 
+## LRN-20260912-001: openclaw-weixin 插件无法加载（SDK API 不兼容）
+
+**日期**: 2026-09-12
+**优先级**: high
+**状态**: open
+**领域**: plugin
+
+### 摘要
+微信通道（openclaw-weixin）插件加载失败，导致所有微信推送（AI每日报告、早间新闻、学校选餐提醒等）无法送达。
+
+### 详情
+执行 `openclaw message send --channel openclaw-weixin` 失败，报错：
+```
+PluginLoadFailureError: plugin load failed: openclaw-weixin:
+TypeError: (0 , _pluginSdk.resolvePreferredOpenClawTmpDir) is not a function
+```
+插件源码 `/root/.openclaw/extensions/openclaw-weixin/src/messaging/process-message.ts` 调用了
+`resolvePreferredOpenClawTmpDir()`，但当前安装的 OpenClaw 版本（2026.3.24）的 plugin SDK 中不存在该函数，
+属于插件与核心版本不匹配。
+
+### 建议行动
+1. 升级/重装 openclaw-weixin 插件到与 OpenClaw 2026.3.24 兼容的版本
+2. 或降级/升级 OpenClaw 核心以匹配插件期望的 SDK
+3. 微信推送不可用期间，改用 ClawBot/QQ 通道作为备用通知渠道
+4. 手动把重要推送（如每日AI论文）转发到可用渠道
+
+### 元数据
+- 来源: heartbeat_check
+- 相关文件: /root/.openclaw/extensions/openclaw-weixin/src/messaging/process-message.ts
+- 标签: wechat, plugin, version-mismatch
+- 模式键: plugin.wechat.sdk.incompatible
