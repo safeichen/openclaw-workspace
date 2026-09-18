@@ -1,0 +1,23 @@
+🤖 **AI资讯简报 | 2026-09-18**
+
+📰 **研究论文**
+• **AutoArk Edge0**：35B 级 MoE 专家权重放 SSD，per-layer prerouter 提前一个 token 预测路由以隐藏 SSD 延迟。M4 Pro 24GB Mac mini 上 20.4 tok/s（仅 2.9GiB 活跃内存），对比全驻留 int4 的 3.9 tok/s（18.2GiB）。与 fp16 teacher 质量差平均 3.9 分，框架/checkpoint/recovery-LoRA 全开源。
+• **Z.ai GLM 国产芯片推理栈**：GLM-5.3 驱动的 Infra Agent 几乎独立完成 GLM-5.3-Flash（320B/18B 激活，1M 上下文）部署到 10 万+ 国产加速器集群。两周吞吐翻三倍，每 token 成本"与主流 Nvidia GPU 相当"。
+
+🏢 **行业动态**
+• **诺和诺德采用 Claude** 做药物研发（Claude Science），覆盖药物发现与 AI 驱动软件开发。
+• **印度半导体使命翻倍至 $135 亿**（12 年二期），应用材料承诺 10 年投 $50 亿。
+• **Crusoe 融资 $39 亿**，投后估值约 $309 亿，量产模块化 AI 数据中心。
+• **华为徐直军喊话"加速"**：称中国 AI"还没强到能感受到前沿风险"，与美方实验室"放缓"呼声相左；预测 2035 年 AI agent 占全球 AI 处理流量 90%+。
+
+🛠 **工具与产品**
+• Anthropic Claude Science（诺和诺德企业级采用）
+• GLM-5.3-Flash 上线 1M 上下文
+• Crusoe Spark 模块化 AI 数据中心
+
+💡 **趋势与见解**
+• **美中 AI 核武级护栏提案**（9/24 特朗普-习近平会晤前）：禁 AI 自主决定核武使用、人类独占对核指挥系统的 AI 网络攻击权限、AI 事件军事热线。
+• **政治极化反转**：Pew 调查显示民主党对 AI 担忧首次超过共和党（56% vs 49%）。
+• **核心张力**：华为"加速感知风险" vs 美国实验室"感知风险所以要减速" —— 2026 下半年 AI 治理分水岭。
+
+来源：AI Weekly、The Standard、Novo Nordisk、Pew Research、WSJ 等公开报道。
