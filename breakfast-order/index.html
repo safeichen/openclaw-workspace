@@ -130,9 +130,14 @@
   #histModal{position:fixed;inset:0;background:rgba(17,17,17,.45);display:none;align-items:flex-end;z-index:100;}
   #histModal.show{display:flex;}
   .sheet{position:relative;}
-  .sheet-x{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;border:none;
-    background:var(--tint);color:var(--ink);font-size:16px;font-weight:700;cursor:pointer;line-height:1;
-    display:flex;align-items:center;justify-content:center;z-index:5;}
+  .sheet-x{position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:50%;border:2px solid #fff;
+    background:linear-gradient(135deg,#ffd7a8,#ffb27a);color:#7a4a1d;font-size:17px;cursor:pointer;line-height:1;
+    display:flex;align-items:center;justify-content:center;z-index:5;
+    box-shadow:0 3px 10px rgba(255,150,90,.35);transition:transform .15s ease, box-shadow .15s ease;}
+  .sheet-x:hover{transform:rotate(90deg) scale(1.08);box-shadow:0 5px 16px rgba(255,150,90,.5);}
+  .sheet-x:active{transform:scale(.88) rotate(-15deg);}
+  @keyframes xpop{0%{transform:scale(.6);opacity:0}60%{transform:scale(1.15)}100%{transform:scale(1);opacity:1}}
+  #histModal.show .sheet-x{animation:xpop .35s cubic-bezier(.34,1.56,.64,1) both;}
   .sheet-x:active{transform:scale(.94);}
   .cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
   .cal-head span{font-size:16px;font-weight:800;}
@@ -216,7 +221,7 @@
 
 <div id="histModal">
   <div class="sheet">
-    <button class="sheet-x" id="closeHist" aria-label="关闭">✕</button>
+    <button class="sheet-x" id="closeHist" aria-label="关闭">🙈</button>
     <div class="handle"></div>
     <h3>📅 早餐历史</h3>
     <div class="cal-head">
