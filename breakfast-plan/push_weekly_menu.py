@@ -14,6 +14,8 @@ MENU_FILE = os.path.join(BASE, "menu.json")
 STATE_FILE = os.path.join(BASE, "state.json")
 
 DAYS = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
+DAY_EMOJI = {"周一": "🟠", "周二": "🔴", "周三": "🟡", "周四": "🟢",
+             "周五": "🔵", "周六": "🟣", "周日": "🟤"}
 
 
 def load_menu():
@@ -38,26 +40,25 @@ def save_state(st):
 
 def next_week_monday():
     today = datetime.now().date()
-    # 下周一
-    days_ahead = 7 - today.weekday()  # weekday(): Mon=0
-    if today.weekday() == 5:  # 周六当天推送，下周一是 +2
+    days_ahead = 7 - today.weekday()
+    if today.weekday() == 5:
         days_ahead = 2
     return today + timedelta(days=days_ahead)
 
 
 def build():
     menu = load_menu()
-    # 展平成带编号的列表
     flat = {}
     lines = []
     idx = 1
     for cat in menu["categories"]:
         lines.append(f"\n{cat['icon']} 【{cat['name']}】")
         for it in cat["items"]:
-            note = f" - {it['note']}" if it.get("note") else ""
-            lines.append(f"  {idx}. {it.get('emoji','')} {it['name']}{note}")
+            note = f" {it['note']}" if it.get("note") else ""
+            lines.append(f"  {idx}.  {it.get('emoji','')} {it['name']}{note}")
             flat[str(idx)] = {"name": it["name"], "emoji": it.get("emoji", ""), "cat": cat["name"]}
             idx += 1
+    flat["7"] = {"name": "其他", "emoji": "✍️", "cat": "其他"}
 
     monday = next_week_monday()
     sunday = monday + timedelta(days=6)
@@ -67,26 +68,30 @@ def build():
         "monday": monday.isoformat(),
         "sunday": sunday.isoformat(),
         "pushed_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "picks": {},          # {day: [item_names]}
-        "selected": False,
     }
     save_state(st)
 
-    header = [
-        f"🍳 【下周早餐菜单】( {monday.strftime('%m/%d')} ~ {sunday.strftime('%m/%d')} )",
-        "",
-        "请回复每天想吃的编号，格式示例👇",
-        "  周一：1 5 9",
-        "  周二：2 3",
-        "  （每天一行，空格分隔编号）",
-        "  也可以回复「套餐A」等自定义，或「休息」表示当天不做。",
-    ]
-    body = "\n".join(header + lines)
-    body += "\n\n📅 回复示例（复制修改）：\n"
-    for i, d in enumerate(DAYS):
-        body += f"{d}：\n"
-    body += "\n选好后我每周汇总，每晚 8 点提醒第二天吃什么。"
-    return body
+    out = []
+    out.append("╭──────────────────────╮")
+    out.append("   🍳 下周早餐菜单")
+    out.append("╰──────────────────────╯")
+    out.append(f"🗓  {monday.strftime('%m/%d')} (周一) ~ {sunday.strftime('%m/%d')} (周日)")
+    out.append("")
+    out.append("┌ 请选餐 ┐")
+    out += lines
+    out.append("")
+    out.append("━━━━━━━━━━━━━━")
+    out.append("✏️ 回复格式（每天一行）：")
+    for d in DAYS:
+        out.append(f"  {DAY_EMOJI[d]} {d}：")
+    out.append("")
+    out.append("💡 例：周一：1 2   周三：5")
+    out.append("   想加别的 → 「周一：其他 包子」")
+    out.append("   不做早餐 → 「周六：休息」")
+    out.append("━━━━━━━━━━━━━━")
+    out.append("")
+    out.append("选好后每晚 8 点提醒你第二天吃啥 🔔")
+    return "\n".join(out)
 
 
 if __name__ == "__main__":

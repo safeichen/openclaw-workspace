@@ -1,5 +1,5 @@
 {
-  "_说明": "早餐菜谱预设。分类下每道菜填：name(菜名) emoji(可选) 料(可选食材/说明)。可自由增删。",
+  "_说明": "早餐菜谱预设。可自由增删。items 里每项：name(菜名) emoji(可选) note(可选说明)。选择时回复编号；要临时加别的菜，回复「其他 菜名」即可。",
   "week_start": "monday",
   "days": ["周一", "周二", "周三", "周四", "周五", "周六", "周日"],
   "categories": [
@@ -8,47 +8,20 @@
       "name": "主食",
       "icon": "🍚",
       "items": [
-        {"name": "小笼包", "emoji": "🥟", "note": "鲜肉一笼"},
-        {"name": "豆浆油条", "emoji": "🥖", "note": "经典"},
-        {"name": "肠粉", "emoji": "🍥", "note": "蛋肉"},
-        {"name": "煎饼果子", "emoji": "🌯", "note": "加蛋"},
-        {"name": "三明治", "emoji": "🥪", "note": "火腿芝士"},
-        {"name": "白粥", "emoji": "🍚", "note": "配小菜"},
-        {"name": "馄饨", "emoji": "🍜", "note": ""},
-        {"name": "手抓饼", "emoji": "🥞", "note": ""}
+        {"name": "小笼包", "emoji": "🥟", "note": ""},
+        {"name": "锅贴", "emoji": "🥟", "note": ""},
+        {"name": "煎饼", "emoji": "🥞", "note": ""},
+        {"name": "手抓饼", "emoji": "🫓", "note": ""},
+        {"name": "汉堡", "emoji": "🍔", "note": ""},
+        {"name": "烧麦", "emoji": "🍡", "note": ""}
       ]
     },
     {
-      "id": "protein",
-      "name": "蛋奶",
-      "icon": "🥚",
+      "id": "other",
+      "name": "其他",
+      "icon": "✍️",
       "items": [
-        {"name": "水煮蛋", "emoji": "🥚", "note": ""},
-        {"name": "煎蛋", "emoji": "🍳", "note": "溏心"},
-        {"name": "牛奶", "emoji": "🥛", "note": "250ml"},
-        {"name": "酸奶", "emoji": "🍶", "note": "原味"}
-      ]
-    },
-    {
-      "id": "side",
-      "name": "小食",
-      "icon": "🍎",
-      "items": [
-        {"name": "苹果", "emoji": "🍎", "note": ""},
-        {"name": "香蕉", "emoji": "🍌", "note": ""},
-        {"name": "蒸红薯", "emoji": "🍠", "note": ""},
-        {"name": "坚果", "emoji": "🥜", "note": "混合"}
-      ]
-    },
-    {
-      "id": "drink",
-      "name": "饮品",
-      "icon": "☕",
-      "items": [
-        {"name": "热豆浆", "emoji": "🥛", "note": ""},
-        {"name": "咖啡", "emoji": "☕", "note": "美式"},
-        {"name": "橙汁", "emoji": "🍊", "note": "鲜榨"},
-        {"name": "温水", "emoji": "💧", "note": ""}
+        {"name": "其他（可文字输入）", "emoji": "✍️", "note": "回复「其他 你想吃的」"}
       ]
     }
   ]
