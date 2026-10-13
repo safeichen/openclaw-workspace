@@ -2,8 +2,10 @@
 # -*- coding: utf-8 -*-
 """
 每晚 20:00 提醒第二天早餐吃什么。
-从 state.json 读取本周计划（current_week_plan: {周几: [菜名,...]}），
-输出明天对应的菜单。
+数据来源：
+  1) 网页点单（breakfast-order/data/orders.json）—— 用户实际选的
+  2) 周计划（breakfast-plan/state.json 的 current_week_plan）—— 文字选餐兜底
+输出到 stdout，由主会话捕获并推送到 QQ。
 """
 import json
 import os
@@ -11,43 +13,59 @@ from datetime import datetime, timedelta
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 STATE_FILE = os.path.join(BASE, "state.json")
+ORDERS_FILE = "/root/.openclaw/workspace/breakfast-order/data/orders.json"
 
 DAYS = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
 
 
-def load_state():
-    if os.path.exists(STATE_FILE):
+def load_json(path, default):
+    if os.path.exists(path):
         try:
-            with open(STATE_FILE, "r", encoding="utf-8") as f:
+            with open(path, "r", encoding="utf-8") as f:
                 return json.load(f)
         except Exception:
             pass
-    return {}
+    return default
 
 
 def main():
-    st = load_state()
-    plan = st.get("current_week_plan", {})   # {"周一": ["小笼包","水煮蛋"], ...}
-
     now = datetime.now()
     tomorrow = now + timedelta(days=1)
     tname = DAYS[tomorrow.weekday()]
+    today_name = DAYS[now.weekday()]
 
-    out = [f"🥣 【明早早餐提醒】", f"明天是 {tname}（{tomorrow.strftime('%m/%d')}）", ""]
+    out = ["🥣 【明早早餐提醒】", f"明天 {tname}（{tomorrow.strftime('%m/%d')}）", ""]
 
-    items = plan.get(tname) or plan.get(str(tomorrow.weekday())) or []
-    if not items:
-        out.append("明天还没安排早餐～")
-        out.append("回复菜名即可临时加上，例如：明早 小笼包 豆浆")
-    elif items == "__REST__" or items == ["休息"]:
-        out.append("明天休息，不做早餐 🛌")
+    # 1) 网页点单
+    orders = load_json(ORDERS_FILE, {})
+    lines = []
+    for person, od in orders.items():
+        items = od.get("items", [])
+        if not items:
+            continue
+        s = "、".join(f"{i['name']}×{i['qty']}" if i.get("qty", 1) > 1 else i["name"] for i in items)
+        lines.append(f"  👤 {person}：{s}")
+
+    if lines:
+        out.append("📋 已点：")
+        out += lines
     else:
-        out.append("明早吃：")
-        for it in items:
-            out.append(f"  • {it}")
-        out.append("")
-        out.append("早睡早起，好好吃饭 💪")
+        # 2) 周计划兜底
+        st = load_json(STATE_FILE, {})
+        plan = st.get("current_week_plan", {})
+        items = plan.get(tname) or plan.get(str(tomorrow.weekday())) or []
+        if items and items != ["休息"] and items != "__REST__":
+            out.append("📋 明早吃：")
+            for it in items:
+                out.append(f"  • {it}")
+        elif items in (["休息"], ["__REST__"]):
+            out.append("明早休息，不做早餐 🛌")
+        else:
+            out.append("明天还没安排早餐～")
+            out.append("👉 http://ipainting.cc/breakfast/ 点一下就说定了")
 
+    out.append("")
+    out.append("早睡早起，好好吃饭 💪")
     print("[[BREAKFAST_NIGHTLY]]")
     print("\n".join(out))
     print("[[END_BREAKFAST_NIGHTLY]]")
