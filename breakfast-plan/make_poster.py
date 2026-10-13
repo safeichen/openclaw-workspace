@@ -48,12 +48,14 @@ y = 190
 center("🍳 早餐吃什么呀", y, font(SANS_BOLD, 100), INK)
 
 # 二维码（白底卡片）
+from qrcode.image.styles.moduledrawers.pil import CircleModuleDrawer
 qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_M, box_size=16, border=2)
 qr.add_data(URL)
 qr.make(fit=True)
 qimg = qr.make_image(
     image_factory=StyledPilImage,
     module_drawer=RoundedModuleDrawer(),
+    eye_drawer=RoundedModuleDrawer(radius_ratio=1.0),   # 定位角也圆角，跟内部协调
     color_mask=SolidFillColorMask(back_color=(255, 255, 255), front_color=ORANGE),
 ).convert("RGB")
 
