@@ -10,10 +10,33 @@ import json
 import os
 import sys
 import threading
+import subprocess
 import mimetypes
-from datetime import datetime
+from datetime import datetime, timedelta
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse, parse_qs
+
+# 点单提交后自动推送给主人的 QQ
+QQ_NOTIFY_TARGET = "AE09E3EC4BCBB9BA31D09E71F47CB6FE"
+QQ_NOTIFY_CHANNEL = "qqbot"
+
+
+def notify_qq(text):
+    """后台异步调用 openclaw 发送 QQ 消息，失败只记日志不影响主流程。"""
+    def _run():
+        try:
+            subprocess.run(
+                ["openclaw", "message", "send",
+                 "--channel", QQ_NOTIFY_CHANNEL,
+                 "--target", QQ_NOTIFY_TARGET,
+                 "--message", text],
+                timeout=30,
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
+        except Exception as e:
+            sys.stderr.write("[notify_qq] error: %s\n" % e)
+    threading.Thread(target=_run, daemon=True).start()
 
 SITE_DIR = "/root/.openclaw/workspace/ai-news-site"
 BF_DIR = "/root/.openclaw/workspace/breakfast-order"
@@ -144,6 +167,13 @@ class Handler(BaseHTTPRequestHandler):
                 bf.orders[name] = {"name": name, "items": clean,
                                    "ts": datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
                 bf.save_orders()
+            # 提交成功后推送一条 QQ 给主人
+            try:
+                tmr = (datetime.now() + timedelta(days=1)).strftime("%m/%d")
+                picked = "、".join(f"{i['name']}×{i['qty']}" if i.get("qty", 1) > 1 else i["name"] for i in clean)
+                notify_qq(f"✅ 收到啦～\n👤 {name} 点了：{picked}\n明早（{tmr}）给你安排上 🍳")
+            except Exception:
+                pass
             self._json({"ok": True, "message": f"{name} 的早餐已提交！", "daily_menu": bf.build_daily_menu()})
         elif path == "/breakfast/api/reset":
             with lock:

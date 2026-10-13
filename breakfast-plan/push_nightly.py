@@ -34,7 +34,7 @@ def main():
     tname = DAYS[tomorrow.weekday()]
     today_name = DAYS[now.weekday()]
 
-    out = ["🥣 【明早早餐提醒】", f"明天 {tname}（{tomorrow.strftime('%m/%d')}）", ""]
+    out = ["🥣 小朋友，明天早上想吃点啥呀？", f"（{tname} {tomorrow.strftime('%m/%d')}）", ""]
 
     # 1) 网页点单
     orders = load_json(ORDERS_FILE, {})
@@ -48,30 +48,10 @@ def main():
         t = f"（{ts[11:16]} 提交）" if ts else ""
         lines.append(f"  👤 {person}：{s}{t}")
 
-    if lines:
-        out.append("📋 已点：")
-        out += lines
-        out.append("")
-        out.append("想改就在下面扫一扫 👇")
-    else:
-        # 2) 周计划兜底
-        st = load_json(STATE_FILE, {})
-        plan = st.get("current_week_plan", {})
-        items = plan.get(tname) or plan.get(str(tomorrow.weekday())) or []
-        if items and items != ["休息"] and items != "__REST__":
-            out.append("📋 明早吃：")
-            for it in items:
-                out.append(f"  • {it}")
-            out.append("")
-            out.append("想改就在下面扫一扫 👇")
-        elif items in (["休息"], ["__REST__"]):
-            out.append("明早休息，不做早餐 🛌")
-        else:
-            out.append("明天还没点早餐哦～")
-            out.append("想吃什么，在下面扫一扫挑吧 👇")
-
+    # 已点清单不在提醒里展示（改为提交时单独推送）；这里只负责邀请去挑
+    out.append("想吃什么，扫扫下面的小方块去挑吧 👇")
     out.append("")
-    out.append("早睡早起，好好吃饭 💪")
+    out.append("早睡早起，才能长得高高壮壮 🌱💛")
     print("[[BREAKFAST_NIGHTLY]]")
     print("\n".join(out))
     print("[[QR]]")
