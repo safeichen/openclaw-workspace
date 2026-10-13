@@ -82,7 +82,7 @@ qimg = qimg.resize((qsize, qsize), Image.NEAREST)
 
 card_pad = 42
 card_x = (W - qsize - card_pad*2) / 2
-card_y = 300
+card_y = 360
 radius = 48
 card = Image.new("RGB", (qsize + card_pad*2, qsize + card_pad*2), (255, 255, 255))
 mask = Image.new("L", card.size, 0)
