@@ -74,6 +74,8 @@ def main():
     out.append("早睡早起，好好吃饭 💪")
     print("[[BREAKFAST_NIGHTLY]]")
     print("\n".join(out))
+    print("[[QR]]")
+    print(os.path.join(BASE, "order_qr.png"))
     print("[[END_BREAKFAST_NIGHTLY]]")
 
 
