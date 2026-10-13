@@ -129,6 +129,11 @@
   /* ---------- 日历 ---------- */
   #histModal{position:fixed;inset:0;background:rgba(17,17,17,.45);display:none;align-items:flex-end;z-index:100;}
   #histModal.show{display:flex;}
+  .sheet{position:relative;}
+  .sheet-x{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;border:none;
+    background:var(--tint);color:var(--ink);font-size:16px;font-weight:700;cursor:pointer;line-height:1;
+    display:flex;align-items:center;justify-content:center;z-index:5;}
+  .sheet-x:active{transform:scale(.94);}
   .cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
   .cal-head span{font-size:16px;font-weight:800;}
   .cal-head button{width:34px;height:34px;border-radius:50%;border:none;background:var(--tint);
@@ -211,6 +216,7 @@
 
 <div id="histModal">
   <div class="sheet">
+    <button class="sheet-x" id="closeHist" aria-label="关闭">✕</button>
     <div class="handle"></div>
     <h3>📅 早餐历史</h3>
     <div class="cal-head">
@@ -223,9 +229,6 @@
     </div>
     <div class="cal-grid" id="calGrid"></div>
     <div class="mk" id="histDetail" style="margin-top:14px;display:none"></div>
-    <div class="acts">
-      <button class="close" id="closeHist">关闭</button>
-    </div>
   </div>
 </div>
 
@@ -420,42 +423,49 @@ let calYear, calMonth;   // 当前显示的年月
 function ymd(y,m,d){return `${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;}
 
 async function openHist(){
-  try{
-    const r=await fetch(API+'/api/history');
-    const d=await r.json();
-    HIST=d.days||{};
-  }catch(e){HIST={};}
+  // 先立刻显示弹窗和日历（用已有缓存），避免点击卡顿
   const now=new Date();
   calYear=now.getFullYear();calMonth=now.getMonth();
   renderCal();
   document.getElementById('histModal').classList.add('show');
   document.getElementById('histDetail').style.display='none';
+  // 后台拉取历史，回来再刷新
+  try{
+    const r=await fetch(API+'/api/history');
+    const d=await r.json();
+    HIST=d.days||{};
+    renderCal();
+  }catch(e){/* 保留已渲染的日历 */}
 }
 
+// 用 DOM 拼片段一次性插入，减少重排
 function renderCal(){
   const grid=document.getElementById('calGrid');
   const title=document.getElementById('calTitle');
   title.textContent=`${calYear}年 ${calMonth+1}月`;
-  grid.innerHTML='';
+  const frag=document.createDocumentFragment();
   const first=new Date(calYear,calMonth,1);
   let startIdx=(first.getDay()+6)%7;  // 周一=0
   const daysInMonth=new Date(calYear,calMonth+1,0).getDate();
   const todayStr=new Date().toISOString().slice(0,10);
   for(let i=0;i<startIdx;i++){
-    const c=document.createElement('div');c.className='cal-cell empty';grid.appendChild(c);
+    const c=document.createElement('div');c.className='cal-cell empty';frag.appendChild(c);
   }
   for(let d=1;d<=daysInMonth;d++){
     const ds=ymd(calYear,calMonth,d);
     const info=HIST[ds];
     const c=document.createElement('div');
     c.className='cal-cell'+(info?' has':'')+(ds===todayStr?' today':'');
-    c.innerHTML=`<span class="dnum">${d}</span>${info?'<span class="dot"></span>':''}`;
+    // 用 textContent 拼装，避免解析 innerHTML
+    const dn=document.createElement('span');dn.className='dnum';dn.textContent=d;c.appendChild(dn);
     if(info){
+      const dot=document.createElement('span');dot.className='dot';c.appendChild(dot);
       c.onclick=()=>showHistDay(ds);
       c.title=info.preview||'';
     }
-    grid.appendChild(c);
+    frag.appendChild(c);
   }
+  grid.replaceChildren(frag);
 }
 
 async function showHistDay(ds){
@@ -470,11 +480,17 @@ async function showHistDay(ds){
 
 document.getElementById('histBtn').onclick=openHist;
 document.getElementById('closeHist').onclick=()=>document.getElementById('histModal').classList.remove('show');
-document.getElementById('histModal').onclick=(e)=>{if(e.target.id==='histModal')e.currentTarget.classList.remove('show');};
 document.getElementById('calPrev').onclick=()=>{calMonth--;if(calMonth<0){calMonth=11;calYear--;}renderCal();};
 document.getElementById('calNext').onclick=()=>{calMonth++;if(calMonth>11){calMonth=0;calYear++;}renderCal();};
 
 /* 顶部日期徽章（移除后放到哪里？改为不显示） */
+
+/* 点击遮罩（弹窗外任意位置）关闭弹窗 */
+['modal','histModal'].forEach(id=>{
+  const m=document.getElementById(id);
+  m.addEventListener('click',e=>{ if(e.target===m) m.classList.remove('show'); });
+});
+
 </script>
 </body>
 </html>
