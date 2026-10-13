@@ -44,11 +44,15 @@ def main():
         if not items:
             continue
         s = "、".join(f"{i['name']}×{i['qty']}" if i.get("qty", 1) > 1 else i["name"] for i in items)
-        lines.append(f"  👤 {person}：{s}")
+        ts = od.get("ts", "")
+        t = f"（{ts[11:16]} 提交）" if ts else ""
+        lines.append(f"  👤 {person}：{s}{t}")
 
     if lines:
         out.append("📋 已点：")
         out += lines
+        out.append("")
+        out.append("想改就点这里 👉 http://ipainting.cc/breakfast/")
     else:
         # 2) 周计划兜底
         st = load_json(STATE_FILE, {})
@@ -58,11 +62,13 @@ def main():
             out.append("📋 明早吃：")
             for it in items:
                 out.append(f"  • {it}")
+            out.append("")
+            out.append("想改就点这里 👉 http://ipainting.cc/breakfast/")
         elif items in (["休息"], ["__REST__"]):
             out.append("明早休息，不做早餐 🛌")
         else:
-            out.append("明天还没安排早餐～")
-            out.append("👉 http://ipainting.cc/breakfast/ 点一下就说定了")
+            out.append("明天还没点早餐哦～")
+            out.append("👉 点这里选：http://ipainting.cc/breakfast/")
 
     out.append("")
     out.append("早睡早起，好好吃饭 💪")

@@ -347,7 +347,8 @@ function menuToText(m){
   s+=`——————\n👤 各人明细：\n`;
   for(const p of m.per_person){
     const list=p.items.map(i=>`${i.name}${i.qty>1?'×'+i.qty:''}`).join('、');
-    s+=`· ${p.name}：${list}\n`;
+    const t=p.ts?`  🕐 ${p.ts.slice(11,16)}`:'';
+    s+=`· ${p.name}：${list}${t}\n`;
   }
   return s;
 }
