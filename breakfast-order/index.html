@@ -149,6 +149,7 @@
   .cal-cell{aspect-ratio:1/1;border-radius:12px;display:flex;flex-direction:column;align-items:center;
     justify-content:center;font-size:13px;background:var(--bg);color:var(--text);position:relative;}
   .cal-cell.empty{background:transparent;}
+  .cal-cell.out{opacity:.28;}
   .cal-cell.has{background:var(--ink);color:#fff;font-weight:700;cursor:pointer;}
   .cal-cell.today{box-shadow:inset 0 0 0 2px var(--ink);}
   .cal-cell .dot{width:4px;height:4px;border-radius:50%;background:#fff;position:absolute;bottom:6px;}
@@ -223,7 +224,7 @@
   <div class="sheet">
     <button class="sheet-x" id="closeHist" aria-label="关闭">🙈</button>
     <div class="handle"></div>
-    <h3>📅 早餐历史</h3>
+    <h3>🍳 最近吃过啥</h3>
     <div class="cal-head">
       <button id="calPrev">‹</button>
       <span id="calTitle"></span>
@@ -424,8 +425,14 @@ fetch(API+'/api/menu').then(r=>r.json()).then(d=>{MENU=d.menu;renderTabs();rende
 /* ================= 日历历史 ================= */
 let HIST = {};           // {date: {count, people, preview}}
 let calYear, calMonth;   // 当前显示的年月
+const HIST_DAYS = 30;    // 只保留最近30天
 
 function ymd(y,m,d){return `${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;}
+function dayStr(dt){return dt.toISOString().slice(0,10);}
+function cutoffStr(){        // 30天窗口最早那天(含)
+  const c=new Date(); c.setHours(0,0,0,0); c.setDate(c.getDate()-(HIST_DAYS-1));
+  return dayStr(c);
+}
 
 async function openHist(){
   // 先立刻显示弹窗和日历（用已有缓存），避免点击卡顿
@@ -452,21 +459,25 @@ function renderCal(){
   const first=new Date(calYear,calMonth,1);
   let startIdx=(first.getDay()+6)%7;  // 周一=0
   const daysInMonth=new Date(calYear,calMonth+1,0).getDate();
-  const todayStr=new Date().toISOString().slice(0,10);
+  const todayStr=dayStr(new Date());
+  const cut=cutoffStr();
   for(let i=0;i<startIdx;i++){
     const c=document.createElement('div');c.className='cal-cell empty';frag.appendChild(c);
   }
   for(let d=1;d<=daysInMonth;d++){
     const ds=ymd(calYear,calMonth,d);
     const info=HIST[ds];
+    const inWindow = ds>=cut && ds<=todayStr;   // 只在最近30天内可选
     const c=document.createElement('div');
-    c.className='cal-cell'+(info?' has':'')+(ds===todayStr?' today':'');
+    c.className='cal-cell'+(info&&inWindow?' has':'')+(ds===todayStr?' today':'');
     // 用 textContent 拼装，避免解析 innerHTML
     const dn=document.createElement('span');dn.className='dnum';dn.textContent=d;c.appendChild(dn);
-    if(info){
+    if(info&&inWindow){
       const dot=document.createElement('span');dot.className='dot';c.appendChild(dot);
       c.onclick=()=>showHistDay(ds);
       c.title=info.preview||'';
+    }else if(!inWindow){
+      c.classList.add('out');
     }
     frag.appendChild(c);
   }
@@ -485,7 +496,20 @@ async function showHistDay(ds){
 
 document.getElementById('histBtn').onclick=openHist;
 document.getElementById('closeHist').onclick=()=>document.getElementById('histModal').classList.remove('show');
-document.getElementById('calPrev').onclick=()=>{calMonth--;if(calMonth<0){calMonth=11;calYear--;}renderCal();};
+// 只在最近30天窗口内翻月，超出则按钮禁用
+function inWindowMonth(y,m){
+  const cand=new Date(y,m+1,0);            // 该月最后一天
+  return dayStr(cand)>=cutoffStr() && dayStr(new Date(y,m,1))<=dayStr(new Date());
+}
+function updateNav(){
+  const prevOut = !inWindowMonth(calMonth===0?calYear-1:calYear, calMonth===0?11:calMonth-1);
+  const nextOut = !inWindowMonth(calMonth===11?calYear+1:calYear, calMonth===11?0:calMonth+1);
+  const p=document.getElementById('calPrev'), n=document.getElementById('calNext');
+  p.disabled=prevOut; p.style.opacity=prevOut?.3:1; p.style.cursor=prevOut?'default':'pointer';
+  n.disabled=nextOut; n.style.opacity=nextOut?.3:1; n.style.cursor=nextOut?'default':'pointer';
+}
+const _renderCal=renderCal;
+renderCal=function(){_renderCal();updateNav();};document.getElementById('calPrev').onclick=()=>{calMonth--;if(calMonth<0){calMonth=11;calYear--;}renderCal();};
 document.getElementById('calNext').onclick=()=>{calMonth++;if(calMonth>11){calMonth=0;calYear++;}renderCal();};
 
 /* 顶部日期徽章（移除后放到哪里？改为不显示） */

@@ -126,9 +126,10 @@ class Handler(BaseHTTPRequestHandler):
                 data = hist.get(date, {})
                 self._json({"date": date, "menu": bf.build_menu_for(data, date), "orders": data})
             else:
+                cutoff = (datetime.now() - timedelta(days=29)).strftime("%Y-%m-%d")
                 days = {}
                 for d, od in hist.items():
-                    if not od:
+                    if not od or d < cutoff:
                         continue
                     m = bf.build_menu_for(od, d)
                     names = [f"{s['emoji']}{s['name']}" for s in m["summary"]]
