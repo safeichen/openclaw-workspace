@@ -26,8 +26,8 @@ def font(path, size):
     except Exception:
         return ImageFont.truetype(SANS_REG, size)
 
-# A4 @150dpi ≈ 1240x1754
-W, H = 1240, 1754
+# 海报尺寸（略矮，更紧凑）
+W, H = 1240, 1420
 img = Image.new("RGB", (W, H), BG)
 d = ImageDraw.Draw(img)
 
@@ -63,8 +63,8 @@ def center_combo(parts, y, size, gap=16):
 
 
 # 标题：🥣(橙) + 早餐吃什么呀(深棕)
-y = 190
-center_combo([("🥣", "e", ORANGE), ("早餐吃什么呀", "t", INK)], y, 104)
+y = 130
+center_combo([("🥣", "e", ORANGE), ("早餐吃什么呀", "t", INK)], y, 100)
 
 # 二维码（白底卡片）
 qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_M, box_size=16, border=2)
@@ -77,12 +77,12 @@ qimg = qr.make_image(
     color_mask=SolidFillColorMask(back_color=(255, 255, 255), front_color=ORANGE),
 ).convert("RGB")
 
-qsize = 720
+qsize = 640
 qimg = qimg.resize((qsize, qsize), Image.NEAREST)
 
-card_pad = 46
+card_pad = 42
 card_x = (W - qsize - card_pad*2) / 2
-card_y = 420
+card_y = 300
 radius = 48
 card = Image.new("RGB", (qsize + card_pad*2, qsize + card_pad*2), (255, 255, 255))
 mask = Image.new("L", card.size, 0)
@@ -98,7 +98,7 @@ img.paste(qimg, (int(card_x + card_pad), int(card_y + card_pad)))
 
 # 底部小字
 center_combo([("🍞🥟🍔", "e", ORANGE), ("好好吃饭，长高高", "t", INK), ("🌱💛", "e", ORANGE)],
-             H - 190, 46)
+             H - 240, 46)
 
 img.save(OUT, quality=95)
 print("海报已生成:", OUT)
