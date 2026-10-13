@@ -44,11 +44,8 @@ def center(text, y, f, fill, shadow=None):
     return y + (bbox[3]-bbox[1])
 
 # 标题
-y = 150
-center("🍳 早餐吃什么呀", y, font(SANS_BOLD, 92), INK)
-# 副标题
-y = 300
-center("每天扫码点单 · 挑好想吃的", y, font(SANS_REG, 40), MUTED)
+y = 190
+center("🍳 早餐吃什么呀", y, font(SANS_BOLD, 100), INK)
 
 # 二维码（白底卡片）
 qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_M, box_size=16, border=2)
@@ -82,13 +79,11 @@ img.paste(card, (int(card_x), int(card_y)), mask)
 img.paste(qimg, (int(card_x + card_pad), int(card_y + card_pad)))
 
 # 二维码下方提示
-y = int(card_y + card.size[1] + 60)
-center("📱 用手机扫一扫", y, font(SANS_BOLD, 52), INK)
-y += 90
-center("选好早餐，写上名字就可以啦", y, font(SANS_REG, 38), MUTED)
+y = int(card_y + card.size[1] + 70)
+center("📱 手机扫一扫", y, font(SANS_BOLD, 56), INK)
 
 # 底部小字
-center("🍞🥟🍔  好好吃饭，长高高  🌱💛", H - 170, font(SANS_REG, 42), ORANGE)
+center("🍞🥟🍔  好好吃饭，长高高  🌱💛", H - 180, font(SANS_REG, 46), ORANGE)
 
 img.save(OUT, quality=95)
 print("海报已生成:", OUT)
