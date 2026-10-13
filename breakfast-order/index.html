@@ -382,7 +382,8 @@ const saved=localStorage.getItem('bf_name');
 if(saved) document.getElementById('nameInput').value=saved;
 document.getElementById('nameInput').addEventListener('change',e=>localStorage.setItem('bf_name',e.target.value.trim()));
 
-/* ===== 今日已点提示 ===== */
+/* ===== 今日已点提示 + 自动勾选 ===== */
+let todayLoaded=false;
 function showTodayBox(name){
   const box=document.getElementById('todayBox');
   if(!name){box.style.display='none';return;}
@@ -390,10 +391,15 @@ function showTodayBox(name){
     const od=(d.orders||{})[name];
     if(od && od.items && od.items.length){
       const list=od.items.map(i=>`${i.emoji||'🍽'}${i.name}${i.qty>1?'×'+i.qty:''}`).join('、');
-      box.innerHTML=`<div class="tb-t">😊 你今天已经点过啦</div>`
+      box.innerHTML=`<div class="tb-t">😊 你今天已经点过啦（已帮你勾上）</div>`
         +`<div>你的选择：<span class="tb-n">${list}</span></div>`
-        +`<div style="margin-top:4px;color:#a08a4a">想换？在下面重新挑，再点一次「就吃这些啦！」就行 👇</div>`;
+        +`<div style="margin-top:4px;color:#a08a4a">想换？在下面改一改，再点一次「就吃这些啦！」就行 👇</div>`;
       box.style.display='block';
+      // 自动把已点项填进购物车
+      CART={};
+      for(const it of od.items){ if(it.id) CART[it.id]=it.qty||1; }
+      if(typeof MENU!=='undefined' && MENU && MENU.categories) render();
+      todayLoaded=true;
     }else{
       box.style.display='none';
     }
