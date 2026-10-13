@@ -190,7 +190,7 @@
         <button id="histBtn">📅 历史</button>
       </div>
     </div>
-    <div class="who">
+    <div class="who" id="whoBar" style="display:none">
       <span class="icon">👤</span>
       <input id="nameInput" placeholder="输入你的名字" maxlength="20">
     </div>
@@ -342,8 +342,7 @@ function updateBar(){
 }
 
 async function submit(){
-  const name=document.getElementById('nameInput').value.trim();
-  if(!name){toast('先写上你的名字呀～');return;}
+  const name=USER_NAME;   // 只有一位用户「仁仁」
   const items=cartList();
   if(!items.length){toast('至少挑一样想吃的嘛 🥺');return;}
   try{
@@ -391,9 +390,8 @@ document.getElementById('copyBtn').onclick=async()=>{
   catch(e){toast('长按文字手动复制也行哦');}
 };
 
-const saved=localStorage.getItem('bf_name');
-if(saved) document.getElementById('nameInput').value=saved;
-document.getElementById('nameInput').addEventListener('change',e=>localStorage.setItem('bf_name',e.target.value.trim()));
+/* 只有一位用户「仁仁」，无需填名字 */
+const USER_NAME='仁仁';
 
 /* ===== 今日已点提示 + 自动勾选 ===== */
 let todayLoaded=false;
@@ -418,12 +416,8 @@ function showTodayBox(name){
     }
   }).catch(()=>{box.style.display='none';});
 }
-document.getElementById('nameInput').addEventListener('input',e=>showTodayBox(e.target.value.trim()));
-document.getElementById('nameInput').addEventListener('change',e=>showTodayBox(e.target.value.trim()));
-
 fetch(API+'/api/menu').then(r=>r.json()).then(d=>{MENU=d.menu;renderTabs();render();
-  const nm=document.getElementById('nameInput').value.trim();
-  if(nm) showTodayBox(nm);
+  showTodayBox(USER_NAME);
 });
 
 /* ================= 日历历史 ================= */
