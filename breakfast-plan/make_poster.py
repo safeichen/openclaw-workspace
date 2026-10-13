@@ -45,7 +45,7 @@ def center(text, y, f, fill, shadow=None):
 
 # 标题
 y = 190
-center("🍳 早餐吃什么呀", y, font(SANS_BOLD, 100), INK)
+center("🥣 早餐吃什么呀", y, font(SANS_BOLD, 100), INK)
 
 # 二维码（白底卡片）
 from qrcode.image.styles.moduledrawers.pil import CircleModuleDrawer
@@ -82,7 +82,7 @@ img.paste(qimg, (int(card_x + card_pad), int(card_y + card_pad)))
 
 # 二维码下方提示
 y = int(card_y + card.size[1] + 70)
-center("📱 手机扫一扫", y, font(SANS_BOLD, 56), INK)
+center("📷 手机扫一扫", y, font(SANS_BOLD, 56), INK)
 
 # 底部小字
 center("🍞🥟🍔  好好吃饭，长高高  🌱💛", H - 180, font(SANS_REG, 46), ORANGE)
