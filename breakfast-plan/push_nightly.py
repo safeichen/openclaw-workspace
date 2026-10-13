@@ -34,7 +34,7 @@ def main():
     tname = DAYS[tomorrow.weekday()]
     today_name = DAYS[now.weekday()]
 
-    out = ["🥣 小朋友，明天早上想吃点啥呀？", f"（{tname} {tomorrow.strftime('%m/%d')}）", ""]
+    out = ["叮咚~ 明天早餐想吃点啥呀？🍳✨", f"（{tname} {tomorrow.strftime('%m/%d')}）", ""]
 
     # 1) 网页点单
     orders = load_json(ORDERS_FILE, {})
@@ -49,7 +49,7 @@ def main():
         lines.append(f"  👤 {person}：{s}{t}")
 
     # 已点清单不在提醒里展示（改为提交时单独推送）；这里只负责邀请去挑
-    out.append("想吃什么，扫扫下面的小方块去挑吧 👇")
+    out.append("扫扫这个小方块，挑几样喜欢的～")
     out.append("")
     out.append("早睡早起，才能长得高高壮壮 🌱💛")
     print("[[BREAKFAST_NIGHTLY]]")
