@@ -57,18 +57,53 @@ def ensure_data():
 def load_orders():
     global orders
     ensure_data()
-    if os.path.exists(ORDERS_FILE):
+    today = datetime.now().strftime("%Y-%m-%d")
+    hist = load_history()
+    if today in hist:
+        orders = hist[today]
+    elif os.path.exists(ORDERS_FILE):
         try:
             with open(ORDERS_FILE, "r", encoding="utf-8") as f:
                 orders = json.load(f)
         except Exception:
             orders = {}
+    else:
+        orders = {}
+
+
+HISTORY_FILE = os.path.join(DATA_DIR, "history.json")
+
+
+def load_history():
+    ensure_data()
+    if os.path.exists(HISTORY_FILE):
+        try:
+            with open(HISTORY_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
+
+
+def save_history(hist):
+    ensure_data()
+    with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(hist, f, ensure_ascii=False, indent=2)
 
 
 def save_orders():
     ensure_data()
     with open(ORDERS_FILE, "w", encoding="utf-8") as f:
         json.dump(orders, f, ensure_ascii=False, indent=2)
+    # 同步归档到 history.json（按日期）
+    today = datetime.now().strftime("%Y-%m-%d")
+    hist = load_history()
+    if orders:
+        hist[today] = orders
+    elif today in hist:
+        # 清空当天
+        hist[today] = {}
+    save_history(hist)
 
 
 def price_of(item_id):
@@ -87,11 +122,11 @@ def item_of(item_id):
     return None
 
 
-def build_daily_menu():
-    """汇总所有点单，生成每日早餐菜单"""
-    agg = {}  # item_id -> {name, emoji, price, qty}
-    total_people = len(orders)
-    for person, od in orders.items():
+def build_menu_for(orders_data, date_str):
+    """通用：把某个日期的一份 orders 汇总成菜单"""
+    agg = {}
+    total_people = len(orders_data)
+    for person, od in orders_data.items():
         for it in od.get("items", []):
             iid = it["id"]
             if iid not in agg:
@@ -102,29 +137,31 @@ def build_daily_menu():
             agg[iid]["people"].append(person)
 
     summary = sorted(agg.values(), key=lambda x: -x["qty"])
-    total_price = sum(x["price"] * x["qty"] for x in summary)
     total_items = sum(x["qty"] for x in summary)
 
     per_person = []
-    for person, od in orders.items():
-        p_total = sum(it.get("price", 0) * it.get("qty", 1) for it in od.get("items", []))
+    for person, od in orders_data.items():
         per_person.append({
             "name": person,
             "items": od.get("items", []),
-            "total": p_total,
             "ts": od.get("ts"),
         })
     per_person.sort(key=lambda x: x["name"])
 
     return {
-        "date": datetime.now().strftime("%Y-%m-%d"),
+        "date": date_str,
         "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "total_people": total_people,
         "total_items": total_items,
-        "total_price": total_price,
+        "total_price": 0,
         "summary": summary,
         "per_person": per_person,
     }
+
+
+def build_daily_menu():
+    """汇总今日点单"""
+    return build_menu_for(orders, datetime.now().strftime("%Y-%m-%d"))
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -165,6 +202,27 @@ class Handler(BaseHTTPRequestHandler):
             self._json(build_daily_menu())
         elif path == "/api/orders":
             self._json({"orders": orders})
+        elif path == "/api/history":
+            qs = parse_qs(parsed.query)
+            hist = load_history()
+            # 补齐当天（可能还没归档）
+            today = datetime.now().strftime("%Y-%m-%d")
+            if orders and today not in hist:
+                hist[today] = orders
+            date = (qs.get("date") or [None])[0]
+            if date:
+                data = hist.get(date, {})
+                self._json({"date": date, "menu": build_menu_for(data, date), "orders": data})
+            else:
+                # 日历总览：只返回有记录的日期概览
+                days = {}
+                for d, od in hist.items():
+                    if not od:
+                        continue
+                    m = build_menu_for(od, d)
+                    names = [f"{s['emoji']}{s['name']}" for s in m["summary"]]
+                    days[d] = {"count": m["total_items"], "people": m["total_people"], "preview": "、".join(names[:6])}
+                self._json({"days": days})
         else:
             self.send_error(404, "Not Found")
 

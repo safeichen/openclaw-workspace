@@ -13,7 +13,7 @@ import threading
 import mimetypes
 from datetime import datetime
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs
 
 SITE_DIR = "/root/.openclaw/workspace/ai-news-site"
 BF_DIR = "/root/.openclaw/workspace/breakfast-order"
@@ -72,7 +72,8 @@ class Handler(BaseHTTPRequestHandler):
 
     # ---------- GET ----------
     def do_GET(self):
-        path = urlparse(self.path).path
+        parsed = urlparse(self.path)
+        path = parsed.path
         # 早餐 API
         if path == "/breakfast/api/menu":
             self._json({"menu": bf.MENU, "orders": bf.orders}); return
@@ -80,6 +81,25 @@ class Handler(BaseHTTPRequestHandler):
             self._json(bf.build_daily_menu()); return
         if path == "/breakfast/api/orders":
             self._json({"orders": bf.orders}); return
+        if path == "/breakfast/api/history":
+            qs = parse_qs(parsed.query)
+            hist = bf.load_history()
+            today = datetime.now().strftime("%Y-%m-%d")
+            if bf.orders and today not in hist:
+                hist[today] = bf.orders
+            date = (qs.get("date") or [None])[0]
+            if date:
+                data = hist.get(date, {})
+                self._json({"date": date, "menu": bf.build_menu_for(data, date), "orders": data})
+            else:
+                days = {}
+                for d, od in hist.items():
+                    if not od:
+                        continue
+                    m = bf.build_menu_for(od, d)
+                    names = [f"{s['emoji']}{s['name']}" for s in m["summary"]]
+                    days[d] = {"count": m["total_items"], "people": m["total_people"], "preview": "、".join(names[:6])}
+                self._json({"days": days}); return
         # 早餐页面
         if path in ("/breakfast", "/breakfast/"):
             self._file(os.path.join(BF_DIR, "index.html")); return

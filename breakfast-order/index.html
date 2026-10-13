@@ -34,6 +34,10 @@
   header .sub{margin:2px 0 0;font-size:12px;color:var(--muted);}
   header .date{margin-left:auto;font-size:12px;color:var(--muted);background:#fff;
     padding:6px 11px;border-radius:999px;box-shadow:var(--shadow);white-space:nowrap;}
+  .hdr-btns{margin-left:auto;display:flex;gap:8px;}
+  .hdr-btns button{border:none;background:#fff;box-shadow:var(--shadow);border-radius:999px;
+    padding:7px 12px;font-size:12.5px;font-weight:600;color:var(--ink);cursor:pointer;white-space:nowrap;}
+  .hdr-btns button:active{transform:scale(.96);}
 
   /* ---------- 名字 ---------- */
   .who{display:flex;align-items:center;gap:10px;margin-top:14px;background:#fff;border-radius:var(--radius);
@@ -116,6 +120,24 @@
   .copy{background:var(--ink);color:#fff;}
   .close{background:var(--tint);color:var(--ink);}
 
+  /* ---------- 日历 ---------- */
+  #histModal{position:fixed;inset:0;background:rgba(17,17,17,.45);display:none;align-items:flex-end;z-index:100;}
+  #histModal.show{display:flex;}
+  .cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+  .cal-head span{font-size:16px;font-weight:800;}
+  .cal-head button{width:34px;height:34px;border-radius:50%;border:none;background:var(--tint);
+    font-size:18px;font-weight:700;cursor:pointer;line-height:1;}
+  .cal-week{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font-size:12px;
+    color:var(--muted);margin-bottom:6px;}
+  .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;}
+  .cal-cell{aspect-ratio:1/1;border-radius:12px;display:flex;flex-direction:column;align-items:center;
+    justify-content:center;font-size:13px;background:var(--bg);color:var(--text);position:relative;}
+  .cal-cell.empty{background:transparent;}
+  .cal-cell.has{background:var(--ink);color:#fff;font-weight:700;cursor:pointer;}
+  .cal-cell.today{box-shadow:inset 0 0 0 2px var(--ink);}
+  .cal-cell .dot{width:4px;height:4px;border-radius:50%;background:#fff;position:absolute;bottom:6px;}
+  .cal-cell .dnum{line-height:1;}
+
   /* ---------- 响应式：平板/桌面 ---------- */
   @media(min-width:560px){
     .grid{grid-template-columns:repeat(2,1fr);}
@@ -143,7 +165,9 @@
         <h1>早餐点单</h1>
         <p class="sub">选好想吃的，提交后自动汇总</p>
       </div>
-      <div class="date" id="today"></div>
+      <div class="hdr-btns">
+        <button id="histBtn">📅 历史</button>
+      </div>
     </div>
     <div class="who">
       <span class="icon">👤</span>
@@ -175,6 +199,26 @@
     <div class="acts">
       <button class="close" id="closeModal">关闭</button>
       <button class="copy" id="copyBtn">复制菜单</button>
+    </div>
+  </div>
+</div>
+
+<div id="histModal">
+  <div class="sheet">
+    <div class="handle"></div>
+    <h3>📅 早餐历史</h3>
+    <div class="cal-head">
+      <button id="calPrev">‹</button>
+      <span id="calTitle"></span>
+      <button id="calNext">›</button>
+    </div>
+    <div class="cal-week">
+      <span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+    <div class="mk" id="histDetail" style="margin-top:14px;display:none"></div>
+    <div class="acts">
+      <button class="close" id="closeHist">关闭</button>
     </div>
   </div>
 </div>
@@ -317,8 +361,6 @@ function showMenu(m){
   else fetch(API+'/api/daily-menu').then(r=>r.json()).then(fill);
 }
 
-document.getElementById('today').textContent=
-  new Date().toLocaleDateString('zh-CN',{month:'long',day:'numeric',weekday:'short'});
 document.getElementById('submitBtn').onclick=submit;
 document.getElementById('genBtn').onclick=()=>showMenu(null);
 document.getElementById('closeModal').onclick=()=>document.getElementById('modal').classList.remove('show');
@@ -334,6 +376,69 @@ if(saved) document.getElementById('nameInput').value=saved;
 document.getElementById('nameInput').addEventListener('change',e=>localStorage.setItem('bf_name',e.target.value.trim()));
 
 fetch(API+'/api/menu').then(r=>r.json()).then(d=>{MENU=d.menu;renderTabs();render();});
+
+/* ================= 日历历史 ================= */
+let HIST = {};           // {date: {count, people, preview}}
+let calYear, calMonth;   // 当前显示的年月
+
+function ymd(y,m,d){return `${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;}
+
+async function openHist(){
+  try{
+    const r=await fetch(API+'/api/history');
+    const d=await r.json();
+    HIST=d.days||{};
+  }catch(e){HIST={};}
+  const now=new Date();
+  calYear=now.getFullYear();calMonth=now.getMonth();
+  renderCal();
+  document.getElementById('histModal').classList.add('show');
+  document.getElementById('histDetail').style.display='none';
+}
+
+function renderCal(){
+  const grid=document.getElementById('calGrid');
+  const title=document.getElementById('calTitle');
+  title.textContent=`${calYear}年 ${calMonth+1}月`;
+  grid.innerHTML='';
+  const first=new Date(calYear,calMonth,1);
+  let startIdx=(first.getDay()+6)%7;  // 周一=0
+  const daysInMonth=new Date(calYear,calMonth+1,0).getDate();
+  const todayStr=new Date().toISOString().slice(0,10);
+  for(let i=0;i<startIdx;i++){
+    const c=document.createElement('div');c.className='cal-cell empty';grid.appendChild(c);
+  }
+  for(let d=1;d<=daysInMonth;d++){
+    const ds=ymd(calYear,calMonth,d);
+    const info=HIST[ds];
+    const c=document.createElement('div');
+    c.className='cal-cell'+(info?' has':'')+(ds===todayStr?' today':'');
+    c.innerHTML=`<span class="dnum">${d}</span>${info?'<span class="dot"></span>':''}`;
+    if(info){
+      c.onclick=()=>showHistDay(ds);
+      c.title=info.preview||'';
+    }
+    grid.appendChild(c);
+  }
+}
+
+async function showHistDay(ds){
+  const det=document.getElementById('histDetail');
+  try{
+    const r=await fetch(API+'/api/history?date='+ds);
+    const d=await r.json();
+    det.textContent=menuToText(d.menu);
+  }catch(e){det.textContent='加载失败';}
+  det.style.display='block';
+}
+
+document.getElementById('histBtn').onclick=openHist;
+document.getElementById('closeHist').onclick=()=>document.getElementById('histModal').classList.remove('show');
+document.getElementById('histModal').onclick=(e)=>{if(e.target.id==='histModal')e.currentTarget.classList.remove('show');};
+document.getElementById('calPrev').onclick=()=>{calMonth--;if(calMonth<0){calMonth=11;calYear--;}renderCal();};
+document.getElementById('calNext').onclick=()=>{calMonth++;if(calMonth>11){calMonth=0;calYear++;}renderCal();};
+
+/* 顶部日期徽章（移除后放到哪里？改为不显示） */
 </script>
 </body>
 </html>
