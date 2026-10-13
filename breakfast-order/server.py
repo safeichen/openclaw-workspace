@@ -26,45 +26,20 @@ MENU = {
             "name": "主食",
             "icon": "🍚",
             "items": [
-                {"id": "s1", "name": "小笼包", "emoji": "🥟", "desc": "一笼6只，鲜肉", "price": 6},
-                {"id": "s2", "name": "豆浆油条", "emoji": "🥖", "desc": "经典搭配", "price": 5},
-                {"id": "s3", "name": "肠粉", "emoji": "🍥", "desc": "鸡蛋瘦肉", "price": 7},
-                {"id": "s4", "name": "煎饼果子", "emoji": "🌯", "desc": "加蛋加脆饼", "price": 8},
-                {"id": "s5", "name": "三明治", "emoji": "🥪", "desc": "火腿芝士", "price": 9},
-                {"id": "s6", "name": "白粥", "emoji": "🍚", "desc": "配小菜", "price": 3},
+                {"id": "s1", "name": "小笼包", "emoji": "🥟", "desc": "", "price": 0},
+                {"id": "s2", "name": "锅贴", "emoji": "🥟", "desc": "", "price": 0},
+                {"id": "s3", "name": "煎饼", "emoji": "🥞", "desc": "", "price": 0},
+                {"id": "s4", "name": "手抓饼", "emoji": "🫓", "desc": "", "price": 0},
+                {"id": "s5", "name": "汉堡", "emoji": "🍔", "desc": "", "price": 0},
+                {"id": "s6", "name": "烧麦", "emoji": "🍡", "desc": "", "price": 0},
             ],
         },
         {
-            "id": "protein",
-            "name": "蛋奶",
-            "icon": "🥚",
+            "id": "other",
+            "name": "其他",
+            "icon": "✍️",
             "items": [
-                {"id": "p1", "name": "水煮蛋", "emoji": "🥚", "desc": "1个", "price": 2},
-                {"id": "p2", "name": "煎蛋", "emoji": "🍳", "desc": "溏心", "price": 3},
-                {"id": "p3", "name": "牛奶", "emoji": "🥛", "desc": "250ml", "price": 4},
-                {"id": "p4", "name": "酸奶", "emoji": "🍶", "desc": "原味", "price": 5},
-            ],
-        },
-        {
-            "id": "side",
-            "name": "小食",
-            "icon": "🍎",
-            "items": [
-                {"id": "d1", "name": "苹果", "emoji": "🍎", "desc": "1个", "price": 3},
-                {"id": "d2", "name": "香蕉", "emoji": "🍌", "desc": "1根", "price": 2},
-                {"id": "d3", "name": "蒸红薯", "emoji": "🍠", "desc": "1个", "price": 4},
-                {"id": "d4", "name": "坚果", "emoji": "🥜", "desc": "混合一小包", "price": 5},
-            ],
-        },
-        {
-            "id": "drink",
-            "name": "饮品",
-            "icon": "☕",
-            "items": [
-                {"id": "k1", "name": "热豆浆", "emoji": "🥛", "desc": "无糖/微甜", "price": 3},
-                {"id": "k2", "name": "咖啡", "emoji": "☕", "desc": "美式", "price": 8},
-                {"id": "k3", "name": "橙汁", "emoji": "🍊", "desc": "鲜榨", "price": 6},
-                {"id": "k4", "name": "温水", "emoji": "💧", "desc": "一杯", "price": 0},
+                {"id": "o1", "name": "其他（可文字输入）", "emoji": "✍️", "desc": "选这个可补充说明", "price": 0},
             ],
         },
     ]
@@ -212,10 +187,15 @@ class Handler(BaseHTTPRequestHandler):
             clean = []
             for it in items:
                 iid = it.get("id")
+                qty = max(1, int(it.get("qty", 1)))
+                if isinstance(iid, str) and iid.startswith("c_"):
+                    # 自定义输入项
+                    nm = it.get("name") or iid[2:]
+                    clean.append({"id": iid, "name": nm, "emoji": "✍️", "qty": qty, "price": 0})
+                    continue
                 base = item_of(iid)
                 if not base:
                     continue
-                qty = max(1, int(it.get("qty", 1)))
                 clean.append({"id": iid, "name": base["name"], "emoji": base.get("emoji", "🍽"),
                               "qty": qty, "price": base.get("price", 0)})
             if not clean:

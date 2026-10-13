@@ -108,9 +108,14 @@ class Handler(BaseHTTPRequestHandler):
                 self._json({"ok": False, "error": "请填写你的名字"}, 400); return
             clean = []
             for it in items:
-                base = bf.item_of(it.get("id"))
-                if not base: continue
+                iid = it.get("id")
                 qty = max(1, int(it.get("qty", 1)))
+                if isinstance(iid, str) and iid.startswith("c_"):
+                    nm = it.get("name") or iid[2:]
+                    clean.append({"id": iid, "name": nm, "emoji": "✍️", "qty": qty, "price": 0})
+                    continue
+                base = bf.item_of(iid)
+                if not base: continue
                 clean.append({"id": base["id"], "name": base["name"], "emoji": base.get("emoji", "🍽"),
                               "qty": qty, "price": base.get("price", 0)})
             if not clean:

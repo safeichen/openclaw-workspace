@@ -142,17 +142,16 @@ function render(){
         <div class="info">
           <div class="nm">${it.name}</div>
           <div class="ds">${it.desc||''}</div>
-          <div class="pr">¥${it.price}</div>
         </div>
         <div class="stepper">
           <button class="minus" ${q>0?'':'style="visibility:hidden"'}>−</button>
           <span class="q">${q>0?q:''}</span>
           <button class="plus">+</button>
         </div>`;
-      el.querySelector('.plus').onclick=(e)=>{e.stopPropagation();CART[it.id]=(CART[it.id]||0)+1;render();};
+      el.querySelector('.plus').onclick=(e)=>{e.stopPropagation();addItem(it);};
       el.querySelector('.minus').onclick=(e)=>{e.stopPropagation();
         if(CART[it.id]){CART[it.id]--;if(CART[it.id]<=0)delete CART[it.id];render();}};
-      el.onclick=()=>{CART[it.id]=(CART[it.id]||0)+1;render();};
+      el.onclick=()=>{addItem(it);};
       grid.appendChild(el);
     }
     sec.appendChild(grid);
@@ -161,9 +160,25 @@ function render(){
   updateBar();
 }
 
+function addItem(it){
+  if(it.id==='o1'){
+    const v=prompt('想吃什么？（可输入菜名）','');
+    if(!v||!v.trim())return;
+    CART['c_'+v.trim()]=(CART['c_'+v.trim()]||0)+1;
+    render();
+    return;
+  }
+  CART[it.id]=(CART[it.id]||0)+1;
+  render();
+}
+
 function cartList(){
   const arr=[];
   for(const id in CART){
+    if(id.startsWith('c_')){
+      arr.push({id, name:id.slice(2), emoji:'✍️', price:0, qty:CART[id]});
+      continue;
+    }
     const it=findItem(id);
     if(it) arr.push({id,name:it.name,emoji:it.emoji||'🍽',price:it.price,qty:CART[id]});
   }
@@ -173,9 +188,10 @@ function cartList(){
 function updateBar(){
   const list=cartList();
   const n=list.reduce((a,b)=>a+b.qty,0);
-  const p=list.reduce((a,b)=>a+b.price*b.qty,0);
   document.getElementById('cnt').textContent=`已选 ${n} 样`;
-  document.getElementById('price').textContent=`¥${p}`;
+  const names=list.map(x=>x.qty>1?`${x.name}×${x.qty}`:x.name).join('、');
+  document.getElementById('price').textContent=names||'还没选';
+  document.getElementById('price').style.fontSize=n>0?'14px':'13px';
 }
 
 async function submit(){
@@ -196,16 +212,16 @@ async function submit(){
 
 function menuToText(m){
   let s=`🍳 每日早餐菜单 (${m.date})\n`;
-  s+=`👥 ${m.total_people} 人 · ${m.total_items} 份 · 合计 ¥${m.total_price}\n`;
+  s+=`👥 ${m.total_people} 人 · ${m.total_items} 份\n`;
   s+=`——————\n`;
   if(!m.summary.length){s+='（还没有人点单）\n';return s;}
   for(const it of m.summary){
-    s+=`${it.emoji||'🍽'} ${it.name} ×${it.qty}  ¥${it.price*it.qty}\n`;
+    s+=`${it.emoji||'🍽'} ${it.name} ×${it.qty}\n`;
   }
   s+=`——————\n👤 各人明细：\n`;
   for(const p of m.per_person){
     const list=p.items.map(i=>`${i.name}${i.qty>1?'×'+i.qty:''}`).join('、');
-    s+=`· ${p.name}：${list}（¥${p.total}）\n`;
+    s+=`· ${p.name}：${list}\n`;
   }
   return s;
 }
