@@ -19,21 +19,32 @@ from urllib.parse import urlparse, parse_qs
 # 点单提交后自动推送给主人的 QQ
 QQ_NOTIFY_TARGET = "AE09E3EC4BCBB9BA31D09E71F47CB6FE"
 QQ_NOTIFY_CHANNEL = "qqbot"
+OPENCLAW_BIN = "/root/.nvm/versions/node/v22.22.0/bin/openclaw"
+NODE_BIN_DIR = "/root/.nvm/versions/node/v22.22.0/bin"
+HOME_DIR = "/root"
 
 
 def notify_qq(text):
     """后台异步调用 openclaw 发送 QQ 消息，失败只记日志不影响主流程。"""
     def _run():
         try:
-            subprocess.run(
-                ["openclaw", "message", "send",
+            env = dict(os.environ)
+            env["PATH"] = NODE_BIN_DIR + ":" + env.get("PATH", "/usr/bin:/bin")
+            env["HOME"] = HOME_DIR
+            r = subprocess.run(
+                [OPENCLAW_BIN, "message", "send",
                  "--channel", QQ_NOTIFY_CHANNEL,
                  "--target", QQ_NOTIFY_TARGET,
                  "--message", text],
-                timeout=30,
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
+                timeout=40,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                env=env,
             )
+            if r.returncode != 0:
+                sys.stderr.write("[notify_qq] rc=%s err=%s\n" % (r.returncode, r.stderr.decode()[:500]))
+            else:
+                sys.stderr.write("[notify_qq] sent ok\n")
         except Exception as e:
             sys.stderr.write("[notify_qq] error: %s\n" % e)
     threading.Thread(target=_run, daemon=True).start()

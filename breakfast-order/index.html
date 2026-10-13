@@ -96,6 +96,12 @@
   .btn-ghost{background:var(--tint);color:var(--ink);}
   .btn-main{background:var(--ink);color:#fff;box-shadow:0 6px 16px rgba(17,17,17,.25);}
 
+  /* ---------- 今日已点提示 ---------- */
+  .today-box{margin:12px 0 0;padding:12px 14px;border-radius:14px;background:#fff8e8;border:1px solid #ffe3a3;
+    font-size:14px;line-height:1.5;color:#8a6d1f;display:none;}
+  .today-box .tb-t{font-weight:700;margin-bottom:2px;color:#b8860b;}
+  .today-box .tb-n{color:#111;font-weight:600;}
+
   /* ---------- toast ---------- */
   #toast{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%) scale(.9);background:rgba(17,17,17,.94);
     color:#fff;padding:14px 24px;border-radius:16px;font-size:15px;font-weight:600;opacity:0;pointer-events:none;
@@ -173,6 +179,7 @@
       <span class="icon">👤</span>
       <input id="nameInput" placeholder="输入你的名字" maxlength="20">
     </div>
+    <div id="todayBox" class="today-box" style="display:none"></div>
   </header>
 
   <div class="tabs" id="tabs"></div>
@@ -333,6 +340,7 @@ async function submit(){
     if(!d.ok){toast(d.error||'哎呀，没送出去');return;}
     toast('✅ 好啦！明早等着吃吧～');
     CART={};render();
+    showTodayBox(name);
     showMenu(d.daily_menu);
   }catch(e){toast('网络开小差了，再点一次吧');}
 }
@@ -374,7 +382,30 @@ const saved=localStorage.getItem('bf_name');
 if(saved) document.getElementById('nameInput').value=saved;
 document.getElementById('nameInput').addEventListener('change',e=>localStorage.setItem('bf_name',e.target.value.trim()));
 
-fetch(API+'/api/menu').then(r=>r.json()).then(d=>{MENU=d.menu;renderTabs();render();});
+/* ===== 今日已点提示 ===== */
+function showTodayBox(name){
+  const box=document.getElementById('todayBox');
+  if(!name){box.style.display='none';return;}
+  fetch(API+'/api/orders').then(r=>r.json()).then(d=>{
+    const od=(d.orders||{})[name];
+    if(od && od.items && od.items.length){
+      const list=od.items.map(i=>`${i.emoji||'🍽'}${i.name}${i.qty>1?'×'+i.qty:''}`).join('、');
+      box.innerHTML=`<div class="tb-t">😊 你今天已经点过啦</div>`
+        +`<div>你的选择：<span class="tb-n">${list}</span></div>`
+        +`<div style="margin-top:4px;color:#a08a4a">想换？在下面重新挑，再点一次「就吃这些啦！」就行 👇</div>`;
+      box.style.display='block';
+    }else{
+      box.style.display='none';
+    }
+  }).catch(()=>{box.style.display='none';});
+}
+document.getElementById('nameInput').addEventListener('input',e=>showTodayBox(e.target.value.trim()));
+document.getElementById('nameInput').addEventListener('change',e=>showTodayBox(e.target.value.trim()));
+
+fetch(API+'/api/menu').then(r=>r.json()).then(d=>{MENU=d.menu;renderTabs();render();
+  const nm=document.getElementById('nameInput').value.trim();
+  if(nm) showTodayBox(nm);
+});
 
 /* ================= 日历历史 ================= */
 let HIST = {};           // {date: {count, people, preview}}
