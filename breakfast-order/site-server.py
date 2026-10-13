@@ -53,7 +53,7 @@ SITE_DIR = "/root/.openclaw/workspace/ai-news-site"
 BF_DIR = "/root/.openclaw/workspace/breakfast-order"
 BF_DATA = os.path.join(BF_DIR, "data")
 ORDERS_FILE = os.path.join(BF_DATA, "orders.json")
-PORT = 80
+PORT = 8080
 
 sys.path.insert(0, BF_DIR)
 import server as bf  # 复用早餐业务的 MENU / 逻辑

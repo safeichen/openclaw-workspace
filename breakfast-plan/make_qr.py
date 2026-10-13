@@ -7,7 +7,7 @@ from qrcode.image.styledpil import StyledPilImage
 from qrcode.image.styles.moduledrawers.pil import RoundedModuleDrawer
 from qrcode.image.styles.colormasks import SolidFillColorMask
 
-url = sys.argv[1] if len(sys.argv) > 1 else "http://43.159.52.61/breakfast/"
+url = sys.argv[1] if len(sys.argv) > 1 else "https://ipainting.cc/breakfast/"
 out = sys.argv[2] if len(sys.argv) > 2 else "/root/.openclaw/workspace/breakfast-plan/qr.png"
 
 qr = qrcode.QRCode(

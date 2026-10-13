@@ -7,7 +7,7 @@ from qrcode.image.styles.moduledrawers.pil import RoundedModuleDrawer
 from qrcode.image.styles.colormasks import SolidFillColorMask
 from PIL import Image, ImageDraw, ImageFont
 
-URL = "http://ipainting.cc/breakfast/"
+URL = "https://ipainting.cc/breakfast/"
 OUT = "/root/.openclaw/workspace/breakfast-plan/poster_a4.png"
 
 BG = (255, 250, 240)        # 奶白
