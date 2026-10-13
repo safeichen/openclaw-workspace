@@ -163,7 +163,7 @@
       <div class="logo">🍳</div>
       <div>
         <h1>早餐点单</h1>
-        <p class="sub">选好想吃的，提交后自动汇总</p>
+        <p class="sub">挑好想吃的，好好吃饭长高高 🌱</p>
       </div>
       <div class="hdr-btns">
         <button id="histBtn">📅 历史</button>
@@ -184,8 +184,8 @@
         <div class="l1" id="cnt">还没选</div>
         <div class="l2" id="picked">—</div>
       </div>
-      <button id="genBtn" class="btn-ghost">菜单</button>
-      <button id="submitBtn" class="btn-main">提交</button>
+      <button id="genBtn" class="btn-ghost">看看大家点了啥</button>
+      <button id="submitBtn" class="btn-main">就说这些啦！</button>
     </div>
   </div>
 </div>
@@ -194,7 +194,7 @@
 <div id="modal">
   <div class="sheet">
     <div class="handle"></div>
-    <h3>📋 每日早餐菜单</h3>
+    <h3>🍳 明天吃什么呀</h3>
     <div class="mk" id="menuText"></div>
     <div class="acts">
       <button class="close" id="closeModal">关闭</button>
@@ -264,7 +264,7 @@ function render(){
     const sec=document.createElement('section');
     sec.className='cat';sec.id='cat_'+cat.id;
     const cnt=cat.items.reduce((a,it)=>a+(CART[it.id]||0),0);
-    sec.innerHTML=`<h2><span class="dot"></span>${cat.icon} ${cat.name}${cnt?`<span class="badge">已选 ${cnt}</span>`:''}</h2>`;
+    sec.innerHTML=`<h2><span class="dot"></span>${cat.icon} ${cat.name}${cnt?`<span class="badge">想要 ${cnt}</span>`:''}</h2>`;
     const grid=document.createElement('div');
     grid.className='grid';
     for(const it of cat.items){
@@ -317,34 +317,34 @@ function cartList(){
 function updateBar(){
   const list=cartList();
   const n=list.reduce((a,b)=>a+b.qty,0);
-  document.getElementById('cnt').textContent=n?`已选 ${n} 样`:'还没选';
+  document.getElementById('cnt').textContent=n?`想吃了 ${n} 样 😋`:'还没挑呢～';
   const names=list.map(x=>x.qty>1?`${x.name}×${x.qty}`:x.name).join('、');
   document.getElementById('picked').textContent=names||'—';
 }
 
 async function submit(){
   const name=document.getElementById('nameInput').value.trim();
-  if(!name){toast('请先填写名字');return;}
+  if(!name){toast('先写上你的名字呀～');return;}
   const items=cartList();
-  if(!items.length){toast('请至少选一样早餐');return;}
+  if(!items.length){toast('至少挑一样想吃的嘛 🥺');return;}
   try{
     const r=await fetch(API+'/api/submit',{method:'POST',headers:{'Content-Type':'application/json'},
       body:JSON.stringify({name,items})});
     const d=await r.json();
-    if(!d.ok){toast(d.error||'提交失败');return;}
-    toast('✅ 提交成功！');
+    if(!d.ok){toast(d.error||'哎呀，没送出去');return;}
+    toast('✅ 好啦！明早等着吃吧～');
     CART={};render();
     showMenu(d.daily_menu);
-  }catch(e){toast('网络错误，请重试');}
+  }catch(e){toast('网络开小差了，再点一次吧');}
 }
 
 function menuToText(m){
-  let s=`🍳 每日早餐菜单 (${m.date})\n`;
-  s+=`👥 ${m.total_people} 人 · ${m.total_items} 份\n`;
+  let s=`🍳 明天吃什么呀 (${m.date})\n`;
+  s+=`👥 ${m.total_people} 人 · 一共 ${m.total_items} 样\n`;
   s+=`——————\n`;
-  if(!m.summary.length){s+='（还没有人点单）\n';return s;}
+  if(!m.summary.length){s+='（大家还没挑呢～）\n';return s;}
   for(const it of m.summary) s+=`${it.emoji||'🍽'} ${it.name} ×${it.qty}\n`;
-  s+=`——————\n👤 各人明细：\n`;
+  s+=`——————\n👤 谁想吃啥：\n`;
   for(const p of m.per_person){
     const list=p.items.map(i=>`${i.name}${i.qty>1?'×'+i.qty:''}`).join('、');
     const t=p.ts?`  🕐 ${p.ts.slice(11,16)}`:'';
@@ -368,8 +368,8 @@ document.getElementById('closeModal').onclick=()=>document.getElementById('modal
 document.getElementById('modal').onclick=(e)=>{if(e.target.id==='modal')e.currentTarget.classList.remove('show');};
 document.getElementById('copyBtn').onclick=async()=>{
   const txt=document.getElementById('menuText').textContent;
-  try{await navigator.clipboard.writeText(txt);toast('已复制菜单');}
-  catch(e){toast('长按文本手动复制');}
+  try{await navigator.clipboard.writeText(txt);toast('抄好啦，可以贴给别人看');}
+  catch(e){toast('长按文字手动复制也行哦');}
 };
 
 const saved=localStorage.getItem('bf_name');
@@ -429,7 +429,7 @@ async function showHistDay(ds){
     const r=await fetch(API+'/api/history?date='+ds);
     const d=await r.json();
     det.textContent=menuToText(d.menu);
-  }catch(e){det.textContent='加载失败';}
+  }catch(e){det.textContent='呃…没打开，等下再试试';}
   det.style.display='block';
 }
 
