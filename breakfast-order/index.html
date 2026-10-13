@@ -107,7 +107,8 @@
 </div>
 
 <script>
-const API = location.origin;
+// 自动适配：在 /breakfast/ 子路径或独立端口下都能用
+const API = location.pathname.startsWith('/breakfast') ? (location.origin + '/breakfast') : location.origin;
 let MENU = null;
 let CART = {};   // id -> qty
 
