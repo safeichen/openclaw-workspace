@@ -184,8 +184,7 @@
         <div class="l1" id="cnt">还没选</div>
         <div class="l2" id="picked">—</div>
       </div>
-      <button id="genBtn" class="btn-ghost">看看大家点了啥</button>
-      <button id="submitBtn" class="btn-main">就说这些啦！</button>
+      <button id="submitBtn" class="btn-main">就吃这些啦！</button>
     </div>
   </div>
 </div>
@@ -363,7 +362,6 @@ function showMenu(m){
 }
 
 document.getElementById('submitBtn').onclick=submit;
-document.getElementById('genBtn').onclick=()=>showMenu(null);
 document.getElementById('closeModal').onclick=()=>document.getElementById('modal').classList.remove('show');
 document.getElementById('modal').onclick=(e)=>{if(e.target.id==='modal')e.currentTarget.classList.remove('show');};
 document.getElementById('copyBtn').onclick=async()=>{
