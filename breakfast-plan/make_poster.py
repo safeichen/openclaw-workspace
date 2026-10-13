@@ -96,10 +96,6 @@ d = ImageDraw.Draw(img)
 img.paste(card, (int(card_x), int(card_y)), mask)
 img.paste(qimg, (int(card_x + card_pad), int(card_y + card_pad)))
 
-# 二维码下方提示：📷(橙) + 手机扫一扫(深棕)
-y = int(card_y + card.size[1] + 70)
-center_combo([("📷", "e", ORANGE), ("手机扫一扫", "t", INK)], y, 58)
-
 # 底部小字
 center_combo([("🍞🥟🍔", "e", ORANGE), ("好好吃饭，长高高", "t", INK), ("🌱💛", "e", ORANGE)],
              H - 190, 46)
