@@ -402,9 +402,9 @@ function showTodayBox(name){
     const od=(d.orders||{})[name];
     if(od && od.items && od.items.length){
       const list=od.items.map(i=>`${i.emoji||'🍽'}${i.name}${i.qty>1?'×'+i.qty:''}`).join('、');
-      box.innerHTML=`<div class="tb-t">😊 你今天已经点过啦（已帮你勾上）</div>`
-        +`<div>你的选择：<span class="tb-n">${list}</span></div>`
-        +`<div style="margin-top:4px;color:#a08a4a">想换？在下面改一改，再点一次「就吃这些啦！」就行 👇</div>`;
+      box.innerHTML=`<div class="tb-t">🥰 今天已经挑好啦，帮小肚子记着呢</div>`
+        +`<div>就想吃：<span class="tb-n">${list}</span></div>`
+        +`<div style="margin-top:4px;color:#a08a4a">改主意啦？在下面点点，再喊一声「就吃这些啦！」就好 👇</div>`;
       box.style.display='block';
       // 自动把已点项填进购物车
       CART={};
