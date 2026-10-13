@@ -18,12 +18,13 @@ MUTED = (150, 130, 110)
 
 SANS_BOLD = "/usr/share/fonts/google-noto-cjk/NotoSansCJK-Bold.ttc"
 SANS_REG = "/usr/share/fonts/google-noto-cjk/NotoSansCJK-Regular.ttc"
+EMOJI = "/usr/share/fonts/google-noto-emoji-fonts/NotoEmoji-Regular.ttf"
 
 def font(path, size):
     try:
         return ImageFont.truetype(path, size)
     except Exception:
-        return ImageFont.truetype("/usr/share/fonts/google-noto-cjk/NotoSansCJK-Regular.ttc", size)
+        return ImageFont.truetype(SANS_REG, size)
 
 # A4 @150dpi ≈ 1240x1754
 W, H = 1240, 1754
@@ -34,35 +35,51 @@ d = ImageDraw.Draw(img)
 d.ellipse([W-380, -260, W+180, 300], fill=TINT)
 d.ellipse([-180, H-360, 300, H+120], fill=TINT)
 
-def center(text, y, f, fill, shadow=None):
-    bbox = d.textbbox((0, 0), text, font=f)
-    w = bbox[2] - bbox[0]
-    x = (W - w) / 2
-    if shadow:
-        d.text((x+2, y+2), text, font=f, fill=shadow)
-    d.text((x, y), text, font=f, fill=fill)
-    return y + (bbox[3]-bbox[1])
 
-# 标题
+def seg_width(text, f):
+    b = d.textbbox((0, 0), text, font=f)
+    return b[2] - b[0]
+
+
+def center_combo(parts, y, size, gap=16):
+    """parts: [(text, kind, color)] kind in {'t','e'}  t=文字 e=emoji;
+    同一行水平居中对齐绘制，返回底部 y。"""
+    f_txt = font(SANS_BOLD, size)
+    f_emo = font(EMOJI, size)
+    # 计算总宽
+    widths = []
+    for text, kind, _ in parts:
+        f = f_emo if kind == "e" else f_txt
+        widths.append(seg_width(text, f))
+    total = sum(widths) + gap * (len(parts) - 1)
+    x = (W - total) / 2
+    for (text, kind, color), wd in zip(parts, widths):
+        f = f_emo if kind == "e" else f_txt
+        # 让基线大致一致
+        b = d.textbbox((0, 0), text, font=f)
+        d.text((x, y), text, font=f, fill=color)
+        x += wd + gap
+    return y + size
+
+
+# 标题：🥣(橙) + 早餐吃什么呀(深棕)
 y = 190
-center("🥣 早餐吃什么呀", y, font(SANS_BOLD, 100), INK)
+center_combo([("🥣", "e", ORANGE), ("早餐吃什么呀", "t", INK)], y, 104)
 
 # 二维码（白底卡片）
-from qrcode.image.styles.moduledrawers.pil import CircleModuleDrawer
 qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_M, box_size=16, border=2)
 qr.add_data(URL)
 qr.make(fit=True)
 qimg = qr.make_image(
     image_factory=StyledPilImage,
     module_drawer=RoundedModuleDrawer(),
-    eye_drawer=RoundedModuleDrawer(radius_ratio=1.0),   # 定位角也圆角，跟内部协调
+    eye_drawer=RoundedModuleDrawer(radius_ratio=1.0),
     color_mask=SolidFillColorMask(back_color=(255, 255, 255), front_color=ORANGE),
 ).convert("RGB")
 
 qsize = 720
 qimg = qimg.resize((qsize, qsize), Image.NEAREST)
 
-# 白色圆角卡片
 card_pad = 46
 card_x = (W - qsize - card_pad*2) / 2
 card_y = 420
@@ -70,7 +87,6 @@ radius = 48
 card = Image.new("RGB", (qsize + card_pad*2, qsize + card_pad*2), (255, 255, 255))
 mask = Image.new("L", card.size, 0)
 ImageDraw.Draw(mask).rounded_rectangle([0, 0, card.size[0]-1, card.size[1]-1], radius=radius, fill=255)
-# 阴影
 shadow = Image.new("RGBA", img.size, (0, 0, 0, 0))
 ImageDraw.Draw(shadow).rounded_rectangle(
     [card_x+6, card_y+10, card_x+card.size[0]+6, card_y+card.size[1]+10],
@@ -80,17 +96,17 @@ d = ImageDraw.Draw(img)
 img.paste(card, (int(card_x), int(card_y)), mask)
 img.paste(qimg, (int(card_x + card_pad), int(card_y + card_pad)))
 
-# 二维码下方提示
+# 二维码下方提示：📷(橙) + 手机扫一扫(深棕)
 y = int(card_y + card.size[1] + 70)
-center("📷 手机扫一扫", y, font(SANS_BOLD, 56), INK)
+center_combo([("📷", "e", ORANGE), ("手机扫一扫", "t", INK)], y, 58)
 
 # 底部小字
-center("🍞🥟🍔  好好吃饭，长高高  🌱💛", H - 180, font(SANS_REG, 46), ORANGE)
+center_combo([("🍞🥟🍔", "e", ORANGE), ("好好吃饭，长高高", "t", INK), ("🌱💛", "e", ORANGE)],
+             H - 190, 46)
 
 img.save(OUT, quality=95)
 print("海报已生成:", OUT)
 
-# 顺带出个打印用 PDF（A4）
 pdf = "/root/.openclaw/workspace/breakfast-plan/poster_a4.pdf"
 img.save(pdf, "PDF", resolution=150.0)
 print("PDF 已生成:", pdf)
