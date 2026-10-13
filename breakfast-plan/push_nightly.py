@@ -52,7 +52,7 @@ def main():
         out.append("📋 已点：")
         out += lines
         out.append("")
-        out.append("想改就点这里 👉 http://ipainting.cc/breakfast/")
+        out.append("想改就在下面扫一扫 👇")
     else:
         # 2) 周计划兜底
         st = load_json(STATE_FILE, {})
@@ -63,12 +63,12 @@ def main():
             for it in items:
                 out.append(f"  • {it}")
             out.append("")
-            out.append("想改就点这里 👉 http://ipainting.cc/breakfast/")
+            out.append("想改就在下面扫一扫 👇")
         elif items in (["休息"], ["__REST__"]):
             out.append("明早休息，不做早餐 🛌")
         else:
             out.append("明天还没点早餐哦～")
-            out.append("👉 点这里选：http://ipainting.cc/breakfast/")
+            out.append("想吃什么，在下面扫一扫挑吧 👇")
 
     out.append("")
     out.append("早睡早起，好好吃饭 💪")
