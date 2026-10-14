@@ -32,6 +32,8 @@ MENU = {
                 {"id": "s4", "name": "手抓饼", "emoji": "🫓", "desc": "", "price": 0},
                 {"id": "s5", "name": "汉堡", "emoji": "🍔", "desc": "", "price": 0},
                 {"id": "s6", "name": "烧麦", "emoji": "🍡", "desc": "", "price": 0},
+                {"id": "s7", "name": "馒头", "emoji": "🍞", "desc": "", "price": 0},
+                {"id": "s8", "name": "肉夹馍", "emoji": "🥙", "desc": "", "price": 0},
             ],
         },
         {

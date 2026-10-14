@@ -13,7 +13,9 @@
         {"name": "煎饼", "emoji": "🥞", "note": ""},
         {"name": "手抓饼", "emoji": "🫓", "note": ""},
         {"name": "汉堡", "emoji": "🍔", "note": ""},
-        {"name": "烧麦", "emoji": "🍡", "note": ""}
+        {"name": "烧麦", "emoji": "🍡", "note": ""},
+        {"name": "馒头", "emoji": "🍞", "note": ""},
+        {"name": "肉夹馍", "emoji": "🥙", "note": ""}
       ]
     },
     {
