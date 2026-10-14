@@ -35,6 +35,17 @@ MENU = {
             ],
         },
         {
+            "id": "pair",
+            "name": "搭配",
+            "icon": "🍳",
+            "items": [
+                {"id": "p1", "name": "培根", "emoji": "🥓", "desc": "", "price": 0},
+                {"id": "p2", "name": "火腿", "emoji": "🍖", "desc": "", "price": 0},
+                {"id": "p3", "name": "煎蛋", "emoji": "🍳", "desc": "", "price": 0},
+                {"id": "p4", "name": "水煮蛋", "emoji": "🥚", "desc": "", "price": 0},
+            ],
+        },
+        {
             "id": "other",
             "name": "其他",
             "icon": "✍️",
@@ -54,6 +65,12 @@ def ensure_data():
     os.makedirs(DATA_DIR, exist_ok=True)
 
 
+def _date_of_order(od):
+    """从记录的 ts 里取日期部分（YYYY-MM-DD）。"""
+    ts = (od or {}).get("ts") or ""
+    return ts[:10] if len(ts) >= 10 else ""
+
+
 def load_orders():
     global orders
     ensure_data()
@@ -69,6 +86,19 @@ def load_orders():
             orders = {}
     else:
         orders = {}
+    # 日期隔离：只保留「今天下的单」（今天选、明天吃）。
+    # 昨天及更早的单视为已消费，先归档到 history 再从当前 orders 清掉。
+    stale_dates = set()
+    keep = {}
+    for name, od in list(orders.items()):
+        d = _date_of_order(od)
+        if d == today:
+            keep[name] = od
+        elif d:
+            stale_dates.add(d)
+    if len(keep) != len(orders):
+        orders = keep
+        save_orders()  # 同步把当前 orders.json 更新为今天的单
 
 
 HISTORY_FILE = os.path.join(DATA_DIR, "history.json")
