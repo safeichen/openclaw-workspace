@@ -1614,3 +1614,4 @@ BrokenPipeError: [Errno 32] Broken pipe
 127.0.0.1 - - "GET /breakfast/ HTTP/1.1" 200 -
 127.0.0.1 - - "GET / HTTP/1.1" 200 -
 127.0.0.1 - - "GET /breakfast/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/api/menu HTTP/1.1" 200 -
