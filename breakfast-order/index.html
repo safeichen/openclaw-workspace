@@ -47,8 +47,9 @@
   .who input::placeholder{color:#b5b0a8;}
 
   /* ---------- 分类tab ---------- */
-  .tabs{display:flex;gap:8px;padding:4px 18px 10px;overflow-x:auto;position:sticky;top:0;
-    background:var(--bg);z-index:15;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+  .tabs{display:flex;gap:8px;padding:4px 18px 10px;overflow-x:auto;position:sticky;
+    top:var(--hdr-h,0px);
+    background:var(--bg);z-index:19;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
   .tabs::-webkit-scrollbar{display:none;}
   .tab{flex:0 0 auto;border:none;background:#fff;color:var(--muted);padding:8px 15px;border-radius:999px;
     font-size:13.5px;font-weight:600;cursor:pointer;box-shadow:var(--shadow);transition:.15s;white-space:nowrap;}
@@ -267,7 +268,12 @@ function renderTabs(){
     b.textContent=`${cat.icon} ${cat.name}`;
     b.onclick=()=>{
       const t=document.getElementById('cat_'+cat.id);
-      if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+      if(t){
+        const hdrH=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--hdr-h'))||0;
+        const tabsH=document.getElementById('tabs').offsetHeight||0;
+        const y=t.getBoundingClientRect().top+window.scrollY-(hdrH+tabsH)-6;
+        window.scrollTo({top:Math.max(0,y),behavior:'smooth'});
+      }
       document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
       b.classList.add('on');
     };
@@ -393,6 +399,14 @@ document.getElementById('copyBtn').onclick=async()=>{
 /* 只有一位用户「仁仁」，无需填名字 */
 const USER_NAME='仁仁';
 
+/* 动态记录 header 高度，让 tab 栏粘在 header 下方 */
+function syncHdrH(){
+  const h=document.querySelector('header');
+  if(h) document.documentElement.style.setProperty('--hdr-h', h.offsetHeight+'px');
+}
+window.addEventListener('resize', syncHdrH);
+window.addEventListener('load', syncHdrH);
+
 /* ===== 今日已点提示 + 自动勾选 ===== */
 let todayLoaded=false;
 function showTodayBox(name){
@@ -414,10 +428,12 @@ function showTodayBox(name){
     }else{
       box.style.display='none';
     }
+    syncHdrH();
   }).catch(()=>{box.style.display='none';});
 }
 fetch(API+'/api/menu').then(r=>r.json()).then(d=>{MENU=d.menu;renderTabs();render();
   showTodayBox(USER_NAME);
+  syncHdrH();
 });
 
 /* ================= 日历历史 ================= */
