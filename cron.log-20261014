@@ -1,0 +1,41 @@
+🦞 OpenClaw自动备份脚本
+======================
+执行时间: 2026-10-13 22:00:01
+
+[0;34m[INFO][0m 开始OpenClaw工作区自动备份
+[0;34m[INFO][0m 检查Git配置...
+[0;34m[INFO][0m 测试GitHub SSH连接...
+[0;32m[SUCCESS][0m GitHub SSH连接正常
+[0;34m[INFO][0m 开始自动提交...
+[0;34m[INFO][0m 检测到 11 个文件有更改
+更改摘要:
+ M backup.log
+ M breakfast-order/data/history.json
+ M breakfast-order/data/orders.json
+ M cron.log
+ ? generated-code
+ M openclaw-monitor.log
+ M skills/imap-smtp-email/scripts/email-monitor-cache.json
+ M skills/imap-smtp-email/scripts/last-check-time.json
+ M skills/imap-smtp-email/scripts/last-email-check.json
+ M skills/imap-smtp-email/scripts/logs/cron-push.log
+[0;34m[INFO][0m 添加文件到暂存区...
+[0;34m[INFO][0m 提交更改: 自动备份: 更新 backup.log,breakfast-order/data/history.json,breakfast-order/data/orders.json,cron.log,generated-code, - 2026-10-13 22:00:03
+[main ae44e17] 自动备份: 更新 backup.log,breakfast-order/data/history.json,breakfast-order/data/orders.json,cron.log,generated-code, - 2026-10-13 22:00:03
+ 10 files changed, 1553 insertions(+), 9 deletions(-)
+[0;32m[SUCCESS][0m 提交成功: 自动备份: 更新 backup.log,breakfast-order/data/history.json,breakfast-order/data/orders.json,cron.log,generated-code, - 2026-10-13 22:00:03
+[0;34m[INFO][0m 推送到GitHub...
+[0;34m[INFO][0m 推送分支: main
+To github.com:safeichen/openclaw-workspace.git
+   d5ec92f..ae44e17  main -> main
+[0;32m[SUCCESS][0m 推送成功
+[0;32m[SUCCESS][0m 自动备份完成
+[0;34m[INFO][0m 生成备份报告...
+[0;32m[SUCCESS][0m 备份报告已生成: /root/.openclaw/workspace/backup_report_20261013.txt
+[0;34m[INFO][0m 自动备份流程结束
+
+📊 备份摘要:
+   - 日志文件: /root/.openclaw/workspace/backup.log
+   - 报告文件: backup_report_20261013.txt
+   - 查看状态: git status
+

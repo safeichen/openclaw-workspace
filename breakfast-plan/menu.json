@@ -17,6 +17,17 @@
       ]
     },
     {
+      "id": "protein",
+      "name": "蛋类/配菜",
+      "icon": "🍳",
+      "items": [
+        {"name": "培根", "emoji": "🥓", "note": ""},
+        {"name": "火腿", "emoji": "🍖", "note": ""},
+        {"name": "煎蛋", "emoji": "🍳", "note": ""},
+        {"name": "水煮蛋", "emoji": "🥚", "note": ""}
+      ]
+    },
+    {
       "id": "other",
       "name": "其他",
       "icon": "✍️",

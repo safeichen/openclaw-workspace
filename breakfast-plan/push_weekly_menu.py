@@ -58,7 +58,6 @@ def build():
             lines.append(f"  {idx}.  {it.get('emoji','')} {it['name']}{note}")
             flat[str(idx)] = {"name": it["name"], "emoji": it.get("emoji", ""), "cat": cat["name"]}
             idx += 1
-    flat["7"] = {"name": "其他", "emoji": "✍️", "cat": "其他"}
 
     monday = next_week_monday()
     sunday = monday + timedelta(days=6)
