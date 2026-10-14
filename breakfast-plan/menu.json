@@ -18,7 +18,7 @@
     },
     {
       "id": "protein",
-      "name": "蛋类/配菜",
+      "name": "搭配",
       "icon": "🍳",
       "items": [
         {"name": "培根", "emoji": "🥓", "note": ""},
