@@ -298,7 +298,6 @@ const SB_DURATION=3000;
 let _sbTimer=null,_sbTick=null;
 function showSuccessBar(onDone){
   const bar=document.getElementById('successBar');
-  const num=document.getElementById('sbNum');
   const ringNum=document.getElementById('sbRingNum');
   const ring=document.getElementById('sbRing');
   const prog=document.getElementById('sbProg');
@@ -309,7 +308,6 @@ function showSuccessBar(onDone){
   bar.classList.remove('show');
   void bar.offsetWidth;
   const totalSec=Math.ceil(SB_DURATION/1000);
-  if(num)num.textContent=totalSec;
   if(ringNum)ringNum.textContent=totalSec;
   ring.style.setProperty('--p','100%');
   prog.style.width='100%';
@@ -320,7 +318,6 @@ function showSuccessBar(onDone){
     const left=Math.max(0,SB_DURATION-(Date.now()-start));
     const sec=Math.max(0,Math.ceil(left/1000));
     const pct=left/SB_DURATION*100;
-    if(num)num.textContent=sec;
     if(ringNum)ringNum.textContent=sec;
     ring.style.setProperty('--p',pct.toFixed(1)+'%');
     prog.style.width=pct.toFixed(1)+'%';
