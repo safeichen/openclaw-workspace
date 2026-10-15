@@ -19,6 +19,7 @@ from urllib.parse import urlparse, parse_qs
 # 点单提交后自动推送给主人的 QQ
 QQ_NOTIFY_TARGET = "AE09E3EC4BCBB9BA31D09E71F47CB6FE"
 QQ_NOTIFY_CHANNEL = "qqbot"
+QQ_NOTIFY_ACCOUNT = "102845116"  # 必须指定具名账号，否则 CLI 落到未配置的 default 账号会静默不投递
 OPENCLAW_BIN = "/root/.nvm/versions/node/v22.22.0/bin/openclaw"
 NODE_BIN_DIR = "/root/.nvm/versions/node/v22.22.0/bin"
 HOME_DIR = "/root"
@@ -34,6 +35,7 @@ def notify_qq(text):
             r = subprocess.run(
                 [OPENCLAW_BIN, "message", "send",
                  "--channel", QQ_NOTIFY_CHANNEL,
+                 "--account", QQ_NOTIFY_ACCOUNT,
                  "--target", QQ_NOTIFY_TARGET,
                  "--message", text],
                 timeout=40,
@@ -41,8 +43,10 @@ def notify_qq(text):
                 stderr=subprocess.PIPE,
                 env=env,
             )
-            if r.returncode != 0:
-                sys.stderr.write("[notify_qq] rc=%s err=%s\n" % (r.returncode, r.stderr.decode()[:500]))
+            out = (r.stdout.decode(errors="replace") + r.stderr.decode(errors="replace"))
+            # 注意：CLI 即使投递失败(如账号未配置)也返回 rc=0，必须检查输出内容
+            if r.returncode != 0 or "not configured" in out or "messageId=undefined" in out:
+                sys.stderr.write("[notify_qq] FAIL rc=%s out=%s\n" % (r.returncode, out[:500]))
             else:
                 sys.stderr.write("[notify_qq] sent ok\n")
         except Exception as e:
