@@ -110,17 +110,18 @@ class Handler(BaseHTTPRequestHandler):
         path = parsed.path
         # 早餐 API
         if path == "/breakfast/api/menu":
-            self._json({"menu": bf.MENU, "orders": bf.orders}); return
+            self._json({"menu": bf.MENU, "orders": bf.current_orders()}); return
         if path == "/breakfast/api/daily-menu":
             self._json(bf.build_daily_menu()); return
         if path == "/breakfast/api/orders":
-            self._json({"orders": bf.orders}); return
+            self._json({"orders": bf.current_orders()}); return
         if path == "/breakfast/api/history":
             qs = parse_qs(parsed.query)
             hist = bf.load_history()
             today = datetime.now().strftime("%Y-%m-%d")
-            if bf.orders and today not in hist:
-                hist[today] = bf.orders
+            cur = bf.current_orders()
+            if cur and today not in hist:
+                hist[today] = cur
             date = (qs.get("date") or [None])[0]
             if date:
                 data = hist.get(date, {})

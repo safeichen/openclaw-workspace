@@ -104,6 +104,30 @@ def load_orders():
         save_orders()  # 同步把当前 orders.json 更新为今天的单
 
 
+def rollover_orders():
+    """读取前调用：把「非今天」的单从内存剔除（跨天滚动）。
+    这样即使服务跨过零点长时间运行，也不会把昨天的单当成今天的展示。
+    """
+    global orders
+    today = datetime.now().strftime("%Y-%m-%d")
+    keep, dropped = {}, False
+    for name, od in list(orders.items()):
+        if _date_of_order(od) == today:
+            keep[name] = od
+        else:
+            dropped = True
+    if dropped or len(keep) != len(orders):
+        with lock:
+            orders = keep
+            save_orders()
+    return orders
+
+
+def current_orders():
+    """返回「今天的」点单（会先做跨天滚动）。"""
+    return rollover_orders()
+
+
 HISTORY_FILE = os.path.join(DATA_DIR, "history.json")
 
 
@@ -194,6 +218,7 @@ def build_menu_for(orders_data, date_str):
 
 def build_daily_menu():
     """汇总今日点单"""
+    rollover_orders()
     return build_menu_for(orders, datetime.now().strftime("%Y-%m-%d"))
 
 
@@ -230,18 +255,19 @@ class Handler(BaseHTTPRequestHandler):
         if path in ("/", "/index.html"):
             self._file(os.path.join(BASE_DIR, "index.html"), "text/html; charset=utf-8")
         elif path == "/api/menu":
-            self._json({"menu": MENU, "orders": orders})
+            self._json({"menu": MENU, "orders": current_orders()})
         elif path == "/api/daily-menu":
             self._json(build_daily_menu())
         elif path == "/api/orders":
-            self._json({"orders": orders})
+            self._json({"orders": current_orders()})
         elif path == "/api/history":
             qs = parse_qs(parsed.query)
             hist = load_history()
             # 补齐当天（可能还没归档）
             today = datetime.now().strftime("%Y-%m-%d")
-            if orders and today not in hist:
-                hist[today] = orders
+            cur = current_orders()
+            if cur and today not in hist:
+                hist[today] = cur
             date = (qs.get("date") or [None])[0]
             if date:
                 data = hist.get(date, {})
