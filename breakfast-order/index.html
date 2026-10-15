@@ -103,6 +103,34 @@
   .today-box .tb-t{font-weight:700;margin-bottom:2px;color:#b8860b;}
   .today-box .tb-n{color:#111;font-weight:600;}
 
+  /* ---------- 选餐成功浮框 ---------- */
+  .success-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;
+    background:linear-gradient(135deg,#0f0f0f 0%,#262626 58%,#3a2f1f 100%);
+    color:#fff;
+    padding:16px 18px calc(16px + env(safe-area-inset-bottom));
+    transform:translateY(130%);opacity:0;pointer-events:none;
+    transition:transform .38s cubic-bezier(.2,.9,.2,1),opacity .3s ease;
+    box-shadow:0 -10px 34px rgba(0,0,0,.3);overflow:hidden;}
+  .success-bar.show{transform:translateY(0);opacity:1;pointer-events:auto;}
+  .success-bar .sb-inner{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;gap:14px;}
+  .success-bar .sb-emoji{font-size:32px;line-height:1;filter:drop-shadow(0 3px 8px rgba(255,190,90,.45));}
+  .success-bar.show .sb-emoji{animation:sbPop .72s cubic-bezier(.34,1.56,.64,1) both;}
+  @keyframes sbPop{0%{transform:scale(.2) rotate(-30deg);opacity:0}
+    55%{transform:scale(1.35) rotate(12deg);opacity:1}
+    75%{transform:scale(.94) rotate(-5deg)}100%{transform:scale(1) rotate(0);opacity:1}}
+  .success-bar .sb-t1{font-size:17px;font-weight:800;letter-spacing:.5px;}
+  .success-bar .sb-t2{font-size:12.5px;opacity:.72;margin-top:4px;}
+  .success-bar .sb-t2 b{color:#ffd9a0;font-size:13.5px;}
+  .success-bar .sb-ring{margin-left:auto;width:46px;height:46px;border-radius:50%;flex-shrink:0;
+    display:grid;place-items:center;position:relative;
+    background:conic-gradient(#ffcf87 var(--p,100%), rgba(255,255,255,.15) 0);}
+  .success-bar .sb-ring::before{content:"";position:absolute;inset:4px;border-radius:50%;background:#1b1b1b;}
+  .success-bar .sb-ring span{position:relative;font-size:16px;font-weight:800;color:#ffd9a0;}
+  .success-bar .sb-progress{max-width:var(--maxw);margin:12px auto 0;height:3px;border-radius:99px;
+    background:rgba(255,255,255,.14);overflow:hidden;}
+  .success-bar .sb-progress i{display:block;height:100%;width:100%;border-radius:99px;
+    background:linear-gradient(90deg,#ffcf87,#ff9f5a);}
+
   /* ---------- toast ---------- */
   #toast{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%) scale(.9);background:rgba(17,17,17,.94);
     color:#fff;padding:14px 24px;border-radius:16px;font-size:15px;font-weight:600;opacity:0;pointer-events:none;
@@ -213,6 +241,18 @@
 </div>
 
 <div id="toast"></div>
+
+<div class="success-bar" id="successBar" aria-live="polite">
+  <div class="sb-inner">
+    <div class="sb-emoji">🎉</div>
+    <div class="sb-text">
+      <div class="sb-t1">选餐成功！</div>
+      <div class="sb-t2"><b id="sbNum">3</b> 秒后自动关闭</div>
+    </div>
+    <div class="sb-ring" id="sbRing"><span id="sbRingNum">3</span></div>
+  </div>
+  <div class="sb-progress"><i id="sbProg"></i></div>
+</div>
 <div id="modal">
   <div class="sheet">
     <div class="handle"></div>
@@ -252,6 +292,47 @@ function toast(msg){
   const t=document.getElementById('toast');
   t.textContent=msg;t.classList.add('show');
   clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),1600);
+}
+
+/* ===== 底部「选餐成功」浮框：滑入动画 + 3 秒倒计时圆环，自动收起 ===== */
+const SB_DURATION=3000;
+let _sbTimer=null,_sbTick=null;
+function showSuccessBar(onDone){
+  const bar=document.getElementById('successBar');
+  const num=document.getElementById('sbNum');
+  const ringNum=document.getElementById('sbRingNum');
+  const ring=document.getElementById('sbRing');
+  const prog=document.getElementById('sbProg');
+  if(_sbTimer){clearTimeout(_sbTimer);_sbTimer=null;}
+  if(_sbTick){clearInterval(_sbTick);_sbTick=null;}
+
+  // 重置并重新触发入场动画
+  bar.classList.remove('show');
+  void bar.offsetWidth;
+  const totalSec=Math.ceil(SB_DURATION/1000);
+  if(num)num.textContent=totalSec;
+  if(ringNum)ringNum.textContent=totalSec;
+  ring.style.setProperty('--p','100%');
+  prog.style.width='100%';
+  bar.classList.add('show');
+
+  const start=Date.now();
+  _sbTick=setInterval(()=>{
+    const left=Math.max(0,SB_DURATION-(Date.now()-start));
+    const sec=Math.max(0,Math.ceil(left/1000));
+    const pct=left/SB_DURATION*100;
+    if(num)num.textContent=sec;
+    if(ringNum)ringNum.textContent=sec;
+    ring.style.setProperty('--p',pct.toFixed(1)+'%');
+    prog.style.width=pct.toFixed(1)+'%';
+    if(left<=0){clearInterval(_sbTick);_sbTick=null;}
+  },50);
+
+  _sbTimer=setTimeout(()=>{
+    bar.classList.remove('show');
+    _sbTimer=null;
+    if(typeof onDone==='function') onDone();
+  },SB_DURATION);
 }
 function findItem(id){
   for(const c of MENU.categories) for(const it of c.items) if(it.id===id) return it;
@@ -381,10 +462,10 @@ async function submit(){
       body:JSON.stringify({name,items})});
     const d=await r.json();
     if(!d.ok){toast(d.error||'哎呀，没送出去');return;}
-    toast('✅ 好啦！明早等着吃吧～');
+    // 提交成功：底栏切换为「选餐成功」浮框，3 秒倒计时后自动收起，再展示每日菜单
     CART={};render();
     showTodayBox(name);
-    showMenu(d.daily_menu);
+    showSuccessBar(()=>{ showMenu(d.daily_menu); });
   }catch(e){toast('网络开小差了，再点一次吧');}
 }
 
