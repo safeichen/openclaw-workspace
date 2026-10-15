@@ -7,9 +7,15 @@ export PATH="/root/.nvm/versions/node/v22.22.0/bin:/root/.local/share/pnpm:/usr/
 export NVM_DIR="/root/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # 加载nvm
 export PNPM_HOME="/root/.local/share/pnpm"
+# 用户级 systemd 上下文（cron 里没有，缺了会导致 systemctl --user / 通知发送失败）
+export XDG_RUNTIME_DIR="/run/user/0"
+export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/0/bus"
 
 LOG_FILE="/root/.openclaw/workspace/openclaw-monitor.log"
 QQ_USER_ID="AE09E3EC4BCBB9BA31D09E71F47CB6FE"
+QQ_ACCOUNT_ID="102845116"
+SELFHEAL_STAMP="/root/.openclaw/workspace/.selfheal.stamp"
+SELFHEAL_COOLDOWN=900  # 秒；避免网关真挂了时每5分钟狂重启
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 
 # 发送QQ通知函数
@@ -39,7 +45,7 @@ send_qq_notification() {
     
     # 发送QQ消息（如果openclaw命令可用）
     if command -v openclaw >/dev/null 2>&1; then
-        if openclaw message --channel qqbot --to "$QQ_USER_ID" --message "$markdown_content" >/dev/null 2>&1; then
+        if openclaw message send --channel qqbot --account "$QQ_ACCOUNT_ID" --target "$QQ_USER_ID" --message "$markdown_content" >/dev/null 2>&1; then
             echo "[$TIMESTAMP] [$level] QQ通知发送成功" >> "$LOG_FILE"
         else
             echo "[$TIMESTAMP] [$level] QQ通知发送失败" >> "$LOG_FILE"
@@ -95,17 +101,37 @@ check_service() {
     return 0
 }
 
-# 检查OpenClaw状态
+# 检查OpenClaw状态（失败时自动重启网关进行自愈）
 check_status() {
     if openclaw status --brief >/dev/null 2>&1; then
         echo "[$TIMESTAMP] INFO: OpenClaw状态检查通过" >> "$LOG_FILE"
         return 0
-    else
-        local msg="OpenClaw状态检查失败"
-        echo "[$TIMESTAMP] WARNING: $msg" >> "$LOG_FILE"
-        send_qq_notification "$msg" "WARNING"
+    fi
+    local msg="OpenClaw状态检查失败"
+    echo "[$TIMESTAMP] WARNING: $msg" >> "$LOG_FILE"
+    send_qq_notification "$msg" "WARNING"
+
+    # 自愈：带冷却地重启网关，重启后复查
+    local now last
+    now=$(date +%s)
+    last=$(cat "$SELFHEAL_STAMP" 2>/dev/null || echo 0)
+    if [ $((now - last)) -lt "$SELFHEAL_COOLDOWN" ]; then
+        echo "[$TIMESTAMP] INFO: 自愈冷却中（$(($SELFHEAL_COOLDOWN - now + last))s 后允许），跳过自动重启" >> "$LOG_FILE"
         return 1
     fi
+    echo "$now" > "$SELFHEAL_STAMP"
+    echo "[$TIMESTAMP] INFO: 尝试自动重启网关进行自愈..." >> "$LOG_FILE"
+    if systemctl --user restart openclaw-gateway 2>>"$LOG_FILE"; then
+        sleep 12
+        if openclaw status --brief >/dev/null 2>&1; then
+            echo "[$TIMESTAMP] SUCCESS: 自愈成功，网关已重启并恢复" >> "$LOG_FILE"
+            send_qq_notification "状态检查失败 → 已自动重启网关并恢复" "INFO"
+            return 0
+        fi
+    fi
+    echo "[$TIMESTAMP] ERROR: 自愈失败，状态依旧异常，请人工介入" >> "$LOG_FILE"
+    send_qq_notification "状态检查失败，自动重启后仍未恢复，请人工介入" "ERROR"
+    return 1
 }
 
 # 检查系统资源
