@@ -247,7 +247,6 @@
     <div class="sb-emoji">🎉</div>
     <div class="sb-text">
       <div class="sb-t1">选餐成功！</div>
-      <div class="sb-t2"><b id="sbNum">3</b> 秒后自动关闭</div>
     </div>
     <div class="sb-ring" id="sbRing"><span id="sbRingNum">3</span></div>
   </div>
@@ -462,10 +461,10 @@ async function submit(){
       body:JSON.stringify({name,items})});
     const d=await r.json();
     if(!d.ok){toast(d.error||'哎呀，没送出去');return;}
-    // 提交成功：底栏切换为「选餐成功」浮框，3 秒倒计时后自动收起，再展示每日菜单
+    // 提交成功：底栏切换为「选餐成功」浮框，3 秒倒计时后自动收起
     CART={};render();
     showTodayBox(name);
-    showSuccessBar(()=>{ showMenu(d.daily_menu); });
+    showSuccessBar();
   }catch(e){toast('网络开小差了，再点一次吧');}
 }
 
