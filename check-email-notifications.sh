@@ -71,7 +71,7 @@ if echo "$OUTPUT" | grep -q "\[\[QQ_BOT_PUSH_START\]\]"; then
     echo "$NOTIFICATION"
     echo "[[END_EMAIL_NOTIFICATION]]"
     
-elif echo "$OUTPUT" | grep -q "\[\[NO_NEW_EMAIL\]\]"; then
+elif echo "$OUTPUT" | grep -q "\[\[NO_NEW_EMAIL\]\]" || echo "$OUTPUT" | grep -q "没有新邮件"; then
     echo "ℹ️ 没有新邮件"
     # 记录最后检查时间
     date '+%Y-%m-%d %H:%M:%S' > "$LAST_CHECK_FILE"
