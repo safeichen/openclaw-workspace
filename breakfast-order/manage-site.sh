@@ -19,6 +19,13 @@ case "$1" in
     ;;
   stop)
     [ -f "$PID_FILE" ] && kill "$(cat "$PID_FILE")" 2>/dev/null
+    # PID 文件可能过期：兜底按脚本名清理
+    pkill -f "python3 $DIR/site-server.py" 2>/dev/null
+    for i in 1 2 3 4 5; do
+      pgrep -f "python3 $DIR/site-server.py" >/dev/null 2>&1 || break
+      sleep 1
+    done
+    pkill -9 -f "python3 $DIR/site-server.py" 2>/dev/null
     rm -f "$PID_FILE"; echo "已停止";;
   restart)
     "$0" stop; sleep 2; "$0" start;;
