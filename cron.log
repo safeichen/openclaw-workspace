@@ -1,6 +1,6 @@
 🦞 OpenClaw自动备份脚本
 ======================
-执行时间: 2026-10-26 22:00:01
+执行时间: 2026-10-27 22:00:01
 
 [0;34m[INFO][0m 开始OpenClaw工作区自动备份
 [0;34m[INFO][0m 检查Git配置...
@@ -10,13 +10,13 @@
 [0;34m[INFO][0m 检测到 26 个文件有更改
 更改摘要:
  M backup.log
- D backup.log-20261019.gz
- D backup.log-20261025
- M breakfast-order/__pycache__/server.cpython-311.pyc
- M breakfast-order/data/history.json
+ D backup.log-20261020.gz
+ D backup.log-20261026
  M breakfast-order/data/orders.json
  M breakfast-order/keepalive.log
  M breakfast-order/site-server.log
  M breakfast-order/site-server.pid
  M cron.log
+ D cron.log-20261020.gz
+ D cron.log-20261026
 [0;34m[INFO][0m 添加文件到暂存区...
