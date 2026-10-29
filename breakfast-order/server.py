@@ -36,6 +36,7 @@ MENU = {
                 {"id": "s8", "name": "肉夹馍", "emoji": "🥙", "desc": "", "price": 0},
                 {"id": "s9", "name": "吐司", "emoji": "🍞", "desc": "", "price": 0},
                 {"id": "s10", "name": "松饼", "emoji": "🥞", "desc": "", "price": 0},
+                {"id": "s11", "name": "烤薯角", "emoji": "🍟", "desc": "", "price": 0},
             ],
         },
         {
@@ -47,6 +48,7 @@ MENU = {
                 {"id": "p2", "name": "火腿", "emoji": "🍖", "desc": "", "price": 0},
                 {"id": "p3", "name": "煎蛋", "emoji": "🍳", "desc": "", "price": 0},
                 {"id": "p4", "name": "水煮蛋", "emoji": "🥚", "desc": "", "price": 0},
+                {"id": "p6", "name": "午餐肉", "emoji": "🥫", "desc": "", "price": 0},
             ],
         },
         {
