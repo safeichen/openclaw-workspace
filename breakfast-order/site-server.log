@@ -36532,3 +36532,9 @@ OSError: [Errno 98] Address already in use
 127.0.0.1 - - "GET / HTTP/1.1" 200 -
 127.0.0.1 - - "GET / HTTP/1.1" 200 -
 127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 501, message Unsupported method ('HEAD')
+127.0.0.1 - - "HEAD /epa/scripts/win/nsepa_setup.exe HTTP/1.1" 501 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
