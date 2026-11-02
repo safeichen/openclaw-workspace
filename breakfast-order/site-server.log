@@ -36378,3 +36378,27 @@ OSError: [Errno 98] Address already in use
 127.0.0.1 - - "GET / HTTP/1.1" 200 -
 127.0.0.1 - - code 404, message Not Found
 127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.well-known/security.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /robots.txt HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.well-known/security.txt HTTP/1.1" 404 -
+127.0.0.1 - - "GET /breakfast/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/api/menu HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/api/orders HTTP/1.1" 200 -
+127.0.0.1 - - "POST /breakfast/api/submit HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/api/orders HTTP/1.1" 200 -
+[notify_qq] sent ok
