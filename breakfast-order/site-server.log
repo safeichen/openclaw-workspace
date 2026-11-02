@@ -36402,3 +36402,8 @@ OSError: [Errno 98] Address already in use
 127.0.0.1 - - "POST /breakfast/api/submit HTTP/1.1" 200 -
 127.0.0.1 - - "GET /breakfast/api/orders HTTP/1.1" 200 -
 [notify_qq] sent ok
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /css/style-fixed.css HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/api-fixed.js HTTP/1.1" 200 -
