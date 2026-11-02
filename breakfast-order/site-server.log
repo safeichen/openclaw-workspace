@@ -36430,3 +36430,5 @@ OSError: [Errno 98] Address already in use
 127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
 127.0.0.1 - - code 404, message Not Found
 127.0.0.1 - - "GET /info.php HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
