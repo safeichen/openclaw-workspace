@@ -36188,3 +36188,26 @@ OSError: [Errno 98] Address already in use
 127.0.0.1 - - "HEAD /index.php?option=com_acym&ctrl=frontentityselect&task=loadEntityFront&entity=list&offset=0&perCalls=1&join=none&columns=id,name HTTP/1.1" 501 -
 127.0.0.1 - - code 404, message Not Found
 127.0.0.1 - - "GET /index.php?option=com_acym&ctrl=frontentityselect&task=loadEntityFront&entity=list&offset=0&perCalls=1&join=none&columns=id,name HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "POST /sdk HTTP/1.1" 400 -
+127.0.0.1 - - code 501, message Unsupported method ('HEAD')
+127.0.0.1 - - "HEAD / HTTP/1.1" 501 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /evox/about HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /owa/auth/logon.aspx HTTP/1.1" 404 -
