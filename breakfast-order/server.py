@@ -26,7 +26,7 @@ MENU = {
             "name": "主食",
             "icon": "🍚",
             "items": [
-                {"id": "s1", "name": "小笼包", "emoji": "🥟", "desc": "", "price": 0},
+                {"id": "s1", "name": "小笼包", "emoji": "🥟", "icon": "icons/xiaolongbao.svg", "desc": "", "price": 0},
                 {"id": "s2", "name": "锅贴", "emoji": "🥟", "desc": "", "price": 0},
                 {"id": "s3", "name": "煎饼", "emoji": "🥞", "desc": "", "price": 0},
                 {"id": "s4", "name": "手抓饼", "emoji": "🫓", "desc": "", "price": 0},
@@ -56,7 +56,7 @@ MENU = {
             "name": "其他",
             "icon": "✍️",
             "items": [
-                {"id": "o1", "name": "其他（可文字输入）", "emoji": "✍️", "desc": "选这个可补充说明", "price": 0},
+                {"id": "o1", "name": "其他（可文字输入）", "emoji": "✍️", "desc": "", "price": 0},
             ],
         },
     ]
