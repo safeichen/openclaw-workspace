@@ -54,9 +54,9 @@ MENU = {
         {
             "id": "other",
             "name": "其他",
-            "icon": "✍️",
+            "icon": "🖍️",
             "items": [
-                {"id": "o1", "name": "其他（可文字输入）", "emoji": "✍️", "desc": "", "price": 0},
+                {"id": "o1", "name": "自己写一个", "emoji": "🖍️", "desc": "想吃啥写下来，我都给你做～", "price": 0},
             ],
         },
     ]
@@ -311,7 +311,7 @@ class Handler(BaseHTTPRequestHandler):
                 if isinstance(iid, str) and iid.startswith("c_"):
                     # 自定义输入项
                     nm = it.get("name") or iid[2:]
-                    clean.append({"id": iid, "name": nm, "emoji": "✍️", "qty": qty, "price": 0})
+                    clean.append({"id": iid, "name": nm, "emoji": "🖍️", "qty": qty, "price": 0})
                     continue
                 base = item_of(iid)
                 if not base:

@@ -132,6 +132,51 @@
   .success-bar .sb-progress i{display:block;height:100%;width:100%;border-radius:99px;
     background:linear-gradient(90deg,#ffcf87,#ff9f5a);}
 
+  /* ---------- 童趣：自己写一个 ---------- */
+  .item.doodle{border:1.6px dashed #ffcf87;background:#fffdf6;}
+  .item.doodle .thumb{background:#fff3d8;}
+  .item.doodle .nm{color:#8a6526;}
+  .item.doodle .ds{color:#c0a06a;}
+  .doodle-go{flex-shrink:0;display:flex;align-items:center;gap:5px;background:#fff0d2;color:#a9761f;
+    font-size:13px;font-weight:800;padding:9px 13px;border-radius:999px;white-space:nowrap;
+    box-shadow:0 2px 6px rgba(255,180,80,.28);transition:.15s;}
+  .item.doodle:active .doodle-go{transform:rotate(-8deg) scale(.94);}
+
+  #otherModal{position:fixed;inset:0;background:rgba(70,45,10,.42);display:none;align-items:center;
+    justify-content:center;z-index:110;padding:22px;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);}
+  #otherModal.show{display:flex;}
+  .doodle-card{width:100%;max-width:352px;background:#fffdf6;border-radius:28px;padding:24px 20px 20px;
+    position:relative;border:3px dashed #ffd08a;
+    box-shadow:0 18px 42px rgba(120,80,20,.24),0 0 0 9px rgba(255,255,255,.6);
+    animation:cardPop .42s cubic-bezier(.34,1.56,.64,1) both;}
+  @keyframes cardPop{0%{transform:scale(.68) rotate(-8deg);opacity:0}
+    62%{transform:scale(1.05) rotate(2.5deg)}100%{transform:scale(1) rotate(0);opacity:1}}
+  .doodle-card.shake{animation:cardShake .42s ease;}
+  @keyframes cardShake{0%,100%{transform:translateX(0)}18%{transform:translateX(-9px) rotate(-1.5deg)}
+    38%{transform:translateX(8px) rotate(1.5deg)}58%{transform:translateX(-6px)}78%{transform:translateX(4px)}}
+  .doodle-card::before{content:"🖍️";position:absolute;top:-20px;left:16px;font-size:30px;
+    transform:rotate(-16deg);filter:drop-shadow(0 4px 7px rgba(120,80,20,.22));}
+  .doodle-card h3{margin:0 0 6px;font-size:19px;font-weight:900;color:#5a3d13;letter-spacing:.4px;}
+  .doodle-card .dsub{margin:0 0 15px;font-size:12.5px;color:#b58e50;line-height:1.5;}
+  .doodle-input{width:100%;border:none;outline:none;background:#fff;border-radius:16px;padding:14px 16px;
+    font-size:16px;font-weight:700;color:#4a3a22;box-shadow:inset 0 0 0 2px #ffe6bd;
+    font-family:inherit;transition:box-shadow .18s;}
+  .doodle-input::placeholder{color:#cbb391;font-weight:600;}
+  .doodle-input:focus{box-shadow:inset 0 0 0 2.5px #ffc46b,0 0 0 4px rgba(255,196,107,.22);}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:13px 0 2px;}
+  .chip{border:none;background:#fff2d9;color:#90682a;font-size:12.5px;font-weight:700;
+    padding:8px 13px;border-radius:999px;cursor:pointer;font-family:inherit;transition:.12s;}
+  .chip:active{transform:scale(.92) rotate(-3deg);}
+  .chips-tip{width:100%;font-size:11.5px;font-weight:700;color:#c0a06a;margin:2px 0 0;}
+  .chip-mine{background:#ffe6c2;color:#8a5a13;}
+  .doodle-acts{display:flex;gap:10px;margin-top:17px;}
+  .doodle-acts button{flex:1;border:none;border-radius:16px;padding:14px;font-size:15px;font-weight:800;
+    cursor:pointer;font-family:inherit;transition:.12s;}
+  .doodle-acts button:active{transform:scale(.96);}
+  .doodle-ok{background:linear-gradient(135deg,#ffb057,#ff8a3d);color:#fff;
+    box-shadow:0 7px 16px rgba(255,140,60,.38);}
+  .doodle-cancel{background:#ffedcf;color:#8a6526;}
+
   /* ---------- toast ---------- */
   #toast{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%) scale(.9);background:rgba(17,17,17,.94);
     color:#fff;padding:14px 24px;border-radius:16px;font-size:15px;font-weight:600;opacity:0;pointer-events:none;
@@ -253,6 +298,19 @@
   </div>
   <div class="sb-progress"><i id="sbProg"></i></div>
 </div>
+<div id="otherModal">
+  <div class="doodle-card" id="doodleCard">
+    <h3>还想吃点啥呀？</h3>
+    <p class="dsub">大声告诉我，明天的饭盒给你安排上 🍱</p>
+    <input id="doodleInput" class="doodle-input" placeholder="比如：小饼干、玉米、牛奶…" maxlength="12" autocomplete="off">
+    <div class="chips" id="doodleChips"></div>
+    <div class="doodle-acts">
+      <button class="doodle-cancel" id="doodleCancel">再想想～</button>
+      <button class="doodle-ok" id="doodleOk">就要这个！</button>
+    </div>
+  </div>
+</div>
+
 <div id="modal">
   <div class="sheet">
     <div class="handle"></div>
@@ -391,29 +449,37 @@ function render(){
   for(const cat of MENU.categories){
     const sec=document.createElement('section');
     sec.className='cat';sec.id='cat_'+cat.id;
-    const cnt=cat.items.reduce((a,it)=>a+(CART[it.id]||0),0);
+    const cnt=cat.items.reduce((a,it)=>a+(CART[it.id]||0),0)
+      +(cat.items.some(it=>it.id==='o1')?customCount():0);
     sec.innerHTML=`<h2><span class="dot"></span>${cat.icon} ${cat.name}${cnt?`<span class="badge">想要 ${cnt}</span>`:''}</h2>`;
     const grid=document.createElement('div');
     grid.className='grid';
     for(const it of cat.items){
       const q=CART[it.id]||0;
+      const isOther=(it.id==='o1');
       const el=document.createElement('div');
-      el.className='item'+(q>0?' on':'');
+      el.className='item'+(q>0?' on':'')+(isOther?' doodle':'');
       el.innerHTML=`
         <div class="thumb">${it.icon?`<img src="${esc(it.icon)}" alt="">`:(it.emoji||'🍽')}</div>
         <div class="info">
           <div class="nm">${esc(it.name)}</div>
           <div class="ds">${esc(it.desc||'')}</div>
         </div>
-        <div class="stepper">
+        ${isOther
+          ? `<span class="doodle-go">写一个 ✏️</span>`
+          : `<div class="stepper">
           <button class="minus" ${q>0?'':'style="visibility:hidden"'}>−</button>
           <span class="q">${q>0?q:''}</span>
           <button class="plus">+</button>
-        </div>`;
-      el.querySelector('.plus').onclick=(e)=>{e.stopPropagation();addItem(it);};
-      el.querySelector('.minus').onclick=(e)=>{e.stopPropagation();
-        if(CART[it.id]){CART[it.id]--;if(CART[it.id]<=0)delete CART[it.id];render();}};
-      el.onclick=()=>addItem(it);
+        </div>`}`;
+      if(isOther){
+        el.onclick=()=>openDoodle();
+      }else{
+        el.querySelector('.plus').onclick=(e)=>{e.stopPropagation();addItem(it);};
+        el.querySelector('.minus').onclick=(e)=>{e.stopPropagation();
+          if(CART[it.id]){CART[it.id]--;if(CART[it.id]<=0)delete CART[it.id];render();}};
+        el.onclick=()=>addItem(it);
+      }
       grid.appendChild(el);
     }
     sec.appendChild(grid);
@@ -423,19 +489,69 @@ function render(){
 }
 
 function addItem(it){
-  if(it.id==='o1'){
-    const v=prompt('想吃什么？（输入菜名）','');
-    if(!v||!v.trim())return;
-    const k='c_'+v.trim();
-    CART[k]=(CART[k]||0)+1;render();return;
-  }
   CART[it.id]=(CART[it.id]||0)+1;render();
+}
+
+/* ===== 童趣小弹窗：自己写一个 ===== */
+const DOODLE_SUGGEST=['小饼干','玉米','牛奶','小番茄','鸡蛋羹','酸奶'];
+function customCount(){
+  let n=0;for(const k in CART){if(k.startsWith('c_'))n+=CART[k];}return n;
+}
+function openDoodle(){
+  const m=document.getElementById('otherModal');
+  const inp=document.getElementById('doodleInput');
+  const chips=document.getElementById('doodleChips');
+  chips.innerHTML='';
+  // 已经写过的小心愿
+  const mine=Object.keys(CART).filter(k=>k.startsWith('c_')&&CART[k]>0);
+  if(mine.length){
+    const tip=document.createElement('div');
+    tip.className='chips-tip';tip.textContent='已经写好咯：';
+    chips.appendChild(tip);
+    mine.forEach(k=>{
+      const b=document.createElement('button');
+      b.className='chip chip-mine';
+      b.textContent=`${k.slice(2)} ×${CART[k]} ✕`;
+      b.onclick=()=>{delete CART[k];render();openDoodle();};
+      chips.appendChild(b);
+    });
+    const tip2=document.createElement('div');
+    tip2.className='chips-tip';tip2.textContent='还想加点啥？';
+    chips.appendChild(tip2);
+  }
+  DOODLE_SUGGEST.forEach(s=>{
+    const b=document.createElement('button');
+    b.className='chip';b.textContent=s;
+    b.onclick=()=>{inp.value=s;inp.focus();};
+    chips.appendChild(b);
+  });
+  inp.value='';
+  m.classList.add('show');
+  setTimeout(()=>inp.focus(),180);
+}
+function closeDoodle(){
+  document.getElementById('otherModal').classList.remove('show');
+  document.getElementById('doodleInput').blur();
+}
+function commitDoodle(){
+  const inp=document.getElementById('doodleInput');
+  const card=document.getElementById('doodleCard');
+  const v=(inp.value||'').trim();
+  if(!v){
+    card.classList.remove('shake');void card.offsetWidth;card.classList.add('shake');
+    inp.focus();return;
+  }
+  const k='c_'+v;
+  CART[k]=(CART[k]||0)+1;
+  closeDoodle();
+  render();
+  toast(`记上啦：${v} 🖍️`);
 }
 
 function cartList(){
   const arr=[];
   for(const id in CART){
-    if(id.startsWith('c_')){arr.push({id,name:id.slice(2),emoji:'✍️',price:0,qty:CART[id]});continue;}
+    if(id.startsWith('c_')){arr.push({id,name:id.slice(2),emoji:'🖍️',price:0,qty:CART[id]});continue;}
     const it=findItem(id);
     if(it) arr.push({id,name:it.name,emoji:it.emoji||'🍽',price:it.price||0,qty:CART[id]});
   }
@@ -636,9 +752,19 @@ document.getElementById('calNext').onclick=()=>{calMonth++;if(calMonth>11){calMo
 /* 顶部日期徽章（移除后放到哪里？改为不显示） */
 
 /* 点击遮罩（弹窗外任意位置）关闭弹窗 */
-['modal','histModal'].forEach(id=>{
+['modal','histModal','otherModal'].forEach(id=>{
   const m=document.getElementById(id);
   m.addEventListener('click',e=>{ if(e.target===m) m.classList.remove('show'); });
+});
+
+/* 童趣弹窗事件 */
+document.getElementById('doodleOk').onclick=commitDoodle;
+document.getElementById('doodleCancel').onclick=closeDoodle;
+document.getElementById('doodleInput').addEventListener('keydown',e=>{
+  if(e.key==='Enter'){e.preventDefault();commitDoodle();}
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape') document.getElementById('otherModal').classList.remove('show');
 });
 
 </script>
