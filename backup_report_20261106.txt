@@ -1,0 +1,27 @@
+=== OpenClaw自动备份报告 ===
+生成时间: 2026-11-06 22:00:14
+
+1. Git状态:
+   分支: main
+   远程: git@github.com:safeichen/openclaw-workspace.git
+   最后提交: 1553457 自动备份: 更新 backup.log,breakfast-order/keepalive.log,breakfast-order/site-server.log,cron.log,generated-code, - 2026-11-06 22:00:03
+
+2. 文件更改统计:
+   未提交更改: 6 个文件
+   更改列表:
+      M backup.log
+      M breakfast-order/site-server.log
+      M cron.log
+      ? generated-code
+      M openclaw-monitor.log
+
+3. 仓库大小:
+   文件总数: 1546
+   目录大小: 400M
+
+4. 备份日志:
+   [2026-11-06 22:00:04] [INFO] 推送到GitHub...
+   [2026-11-06 22:00:04] [INFO] 推送分支: main
+   [2026-11-06 22:00:14] [SUCCESS] 推送成功
+   [2026-11-06 22:00:14] [SUCCESS] 自动备份完成
+   [2026-11-06 22:00:14] [INFO] 生成备份报告...
