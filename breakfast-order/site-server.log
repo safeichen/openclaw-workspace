@@ -48494,3 +48494,1857 @@ OSError: [Errno 98] Address already in use
 127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
 127.0.0.1 - - "GET / HTTP/1.1" 200 -
 127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /prod-api/basesetting/officeDocument/ingore/getHallSetting?name=real_name_place_order&p=wxmini HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.well-known/security.txt HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /phpinfo HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /autodiscover/autodiscover.json?@zdi/Powershell HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /robots.txt HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "POST / HTTP/1.1" 400 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/api-fixed.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /css/style-fixed.css HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/api/menu HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/api/orders HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /icons/xiaolongbao.svg HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /cdn-cgi/trace HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /robots.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.well-known/security.txt HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /developmentserver/metadatauploader HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /css/style-fixed.css HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/api-fixed.js HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wiki HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /css/style-fixed.css HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/api-fixed.js HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /admin/config.php HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/api-fixed.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /css/style-fixed.css HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /icons/xiaolongbao.svg HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "POST / HTTP/1.1" 400 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /css/style-fixed.css HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/api-fixed.js HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /Dr0v HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /cdn-cgi/trace HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /robots.txt HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /css/style-fixed.css HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET /js/api-fixed.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /robots.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /sitemap.xml HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.well-known/security.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "POST / HTTP/1.1" 400 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /mcp/ HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /api/mcp HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /mcp HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /sse HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /owa/auth/logon.aspx HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-content/plugins/hellopress/wp_filemanager.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /this_is_a_new_hello_world.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /about.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /xp.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /dsa.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /nacc-min.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /rk2.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /tp.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /hei.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /meta-box.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /gule.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /hp2.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /white.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-activate.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-class-db.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /xroot2.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /blue.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /get.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /rty.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /filter.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /fff.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /fileupload.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /0.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /codehu.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /aaa.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /class-wp-wolf-widget.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ana.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /bom.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /rawr.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /freedom-5.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /goods.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ein.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-conflg.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /122.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-about.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /n.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /1.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /file.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /naxc.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /block-patterns-set.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /sx.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /alfa-rex.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ms-site.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /rest-api.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /fb.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /gi.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /mariju.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /az.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-includes/js/codemirror/about.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /tgrs.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /jga.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /166.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ee.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /we.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-links.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /alfa-rex.php7 HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ty.php?p= HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /manager.php?p= HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /makeasmtp.php?p= HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /fm.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /atomlib.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /mah.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET //tfm.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /nij.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /1.php?p= HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /0x.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ak.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /asd.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /themes.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /to.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-trackback.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /readme.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /radio.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /xor_create.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /z.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /bolt.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /33.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /new.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /size.php?p= HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /style.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /chosen.php?p= HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-config.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-info.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /fthdhf.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /as.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /bay.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /all.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /all2.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /s.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /index1.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /about.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-trackback.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-admin/css/colors/blue/index.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /abcd.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-content/index.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ccou.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-content/index.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wso.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /classwithtostring.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ar.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ant.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /warm.PhP7 HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /k.php?p= HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /b.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /akcc.php?p= HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /inputs.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /222.php?p= HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /admin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /zfile.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /docs.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /css.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /el.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /atomlib.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /moon.php?p= HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /simple.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /404.php?fm=true HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /xmrlpc.php?p= HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /123.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ioxi-o.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /gdn.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /xx.php?p= HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /num.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /lv.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /11.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-login.php?action=register HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /goods HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /gtc.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /z60.php?p= HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /install.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wsd.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /vx.php?p= HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /dapa.php? HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-includes/certificates/index.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-content/uploads/gravity_forms/g/e/e/a/Casper.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /spip.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /scripts/wpup.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wordpress/update/wpupex.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ho/wpup.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-admin/maint/ HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp/wp-content/plugins/classic-editor/js/geido.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /myy.php HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ar.php HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "POST / HTTP/1.1" 400 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.git/config HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.svn/wc.db HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.git-credentials HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env.local HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env.production HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env.backup HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env.old HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env.bak HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env.save HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env.example HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-config.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /config.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.aws/credentials HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /credentials.json HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /service-account.json HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.npmrc HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.pypirc HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.netrc HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.git/HEAD HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.gitignore HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.gitmodules HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.gitlab-ci.yml HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.git/logs/HEAD HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /server/.git/config HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /studioserver/.git/config HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /web/.git/config HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /www/.git/config HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /app/.git/config HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /api/.git/config HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /admin/.git/config HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /backend/.git/config HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /raw HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ws HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /socket.io/?EIO=4&transport=websocket HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /robots.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /sitemap.xml HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.well-known/security.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /webui/ HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "POST / HTTP/1.1" 400 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /geoserver/web/ HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.git/config HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /assets/images/doc.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-admin/css/colors/classwithtostring.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-content/plugins/revslider/public/assets/assets/sources/wp-login.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-includes/fonts/install.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-admin/upgrade.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.well-knownold/inputs.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /th/plugins/phpThumb/404.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-content/mu-plugins/index.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-includes/customize/wp-login.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-admin/chosen.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /index/about.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-admin/network/upfile.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /edit.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /admin/fckeditor/editor/filemanager/owlmailer.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /dropdown.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-includes/customize/wp-conflg.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-content/config.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-content/plugins/WordPressCore/alfa-rex.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-includes/rest-api/alfa-rex.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-admin/wp-admin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-content/themes/seotheme/classwithtostring.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-admin/images/install.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-includes/Text/network.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-admin/images/about.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-configs.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /css/index.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /about/wp-conflg.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-includes/style-engine/autoload_classmap.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.well-known/themes.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-admin/js/about.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-includes/html-api/index.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-includes/assets/index.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-admin/admin-post.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-admin/index.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /cgi-bin/upfile.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.well-known/pki-validation/parx.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-mail.php/wp-includes/ID3/info.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.well-known/acme-challenge/about.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-content/themes/xmrlpc.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-content/about.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-content/uploads/autoload_classmap.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /css/item.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /shell20211028.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /cgi-bin/admin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-includes/SimplePie/Content/Type/index.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /admin.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-includes/Text/Diff/about.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-includes/block-patterns/autoload_classmap.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-includes/wp-includes/about.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wp-admin/css/colors/blue/index.php HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /admin/config.php HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - "GET /js/api-fixed.js HTTP/1.1" 200 -
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
