@@ -66476,3 +66476,3824 @@ Traceback (most recent call last):
   File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
     self.socket.bind(self.server_address)
 OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+统一站点服务器启动: 端口 8080
+  AI资讯站:  http://0.0.0.0/
+  早餐点单:  http://0.0.0.0/breakfast/
+Traceback (most recent call last):
+  File "/root/.openclaw/workspace/breakfast-order/site-server.py", line 221, in <module>
+    ReuseServer(("0.0.0.0", PORT), Handler).serve_forever()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.11/socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "/usr/lib64/python3.11/http/server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib64/python3.11/socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/menu HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/api/orders HTTP/1.1" 200 -
+127.0.0.1 - - "POST /yunyun/api/submit HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/orders HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/api/orders HTTP/1.1" 200 -
+127.0.0.1 - - "POST /yunyun/api/reset HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/orders HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/history HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+[notify_qq] sent ok
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/icons/xiaolongbao.svg HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/api/menu HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/api/orders HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/menu HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/orders HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/icons/xiaolongbao.svg HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /autodiscover/autodiscover.json?@zdi/Powershell HTTP/1.1" 404 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - code 501, message Unsupported method ('HEAD')
+127.0.0.1 - - "HEAD /yunyun/ HTTP/1.1" 501 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/menu HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/menu HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/orders HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/icons/xiaolongbao.svg HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/history HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/menu HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/orders HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/icons/xiaolongbao.svg HTTP/1.1" 200 -
+127.0.0.1 - - "POST /yunyun/api/submit HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/orders HTTP/1.1" 200 -
+[notify_qq] sent ok
+127.0.0.1 - - "POST / HTTP/1.1" 400 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/menu HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/orders HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/icons/xiaolongbao.svg HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "POST /yunyun/api/submit HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/orders HTTP/1.1" 200 -
+[notify_qq] sent ok
+127.0.0.1 - - "GET /breakfast/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/icons/xiaolongbao.svg HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/api/menu HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/api/orders HTTP/1.1" 200 -
+127.0.0.1 - - "POST /breakfast/api/submit HTTP/1.1" 200 -
+127.0.0.1 - - "GET /breakfast/api/orders HTTP/1.1" 200 -
+[notify_qq] sent ok
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/menu HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/orders HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/icons/xiaolongbao.svg HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/history HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/ HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/menu HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/orders HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/icons/xiaolongbao.svg HTTP/1.1" 200 -
+127.0.0.1 - - "POST /yunyun/api/submit HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/orders HTTP/1.1" 200 -
+[notify_qq] sent ok
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /.env HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /images/ai-icon.png HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /api/mcp HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /mcp HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /mcp/ HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /sse HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /admin/config.php HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /setup/setup.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /public/images/metinfo.gif HTTP/1.1" 404 -
+127.0.0.1 - - "GET /README.md HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /include/ckeditor/plugins/smiley/images/angel_smile.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /ucms/img/loading.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /apps/admin/view/default/layui/images/face/11.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /public/ui/met/images/dt-9.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /app/img/loading.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /statics/images/ext/dir.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /zb_users/plugin/UEditor/themes/default/images/cursor_v.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /order/alipay/images/alipay.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /miniprogram/code/default_baidu/app.js HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /plug/oem/load.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /public/plugins/ckeditor/images/spacer.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /public/plugins/Ueditor/dialogs/attachment/images/alignicon.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /data/captcha/captcha_bg1.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /api/goods.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /e/data/images/arrow.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /zb_users/emotion/face/Music.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /e/DownSys/play/images/top_l.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /d/txt/test.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /d/js/acmsd/close_o.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /static/install/images/loading.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /plugins/system_info/view/widget.html HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /static/css/cmf-ide-helper.css HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /v1_0/company/index/sendCompanyLogo HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /admin/plugin/uploadify/btn.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /static/warn/close.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /shoppingcart.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /Public/images/cmsfloatformpanel-hd-bg.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /Home/Tpl/default/Index/c_index.html HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /wap/index.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /Framework/ThinkPHP.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /adminsoft/index.php?archive=adminuser&action=login HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /dayrui/Fcms/View/login.html HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /dayrui/Fcms/Readme.txt HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /interface/public.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /template/pc/default/member/footer.html HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /index.php?s=index/show/buildHtml&htmlfile=chk_show&htmlpath=./caches HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /index.php?s=/admin/index/login HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /espcms_admin/index.php HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /espcms_includes/fileimage/icon_txt.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /inc/img/webmap/jj.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /plus/img/df_dedetitle.gif HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /includes/cls_sms.php HTTP/1.1" 404 -
+127.0.0.1 - - "GET /yunyun HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/menu HTTP/1.1" 200 -
+127.0.0.1 - - "GET /yunyun/api/orders HTTP/1.1" 200 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /icons/xiaolongbao.svg HTTP/1.1" 404 -
+127.0.0.1 - - code 404, message Not Found
+127.0.0.1 - - "GET /icons/xiaolongbao.svg HTTP/1.1" 404 -
+127.0.0.1 - - "GET / HTTP/1.1" 200 -
