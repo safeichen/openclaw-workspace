@@ -62,8 +62,16 @@ PORT = 8080
 sys.path.insert(0, BF_DIR)
 import server as bf  # 复用早餐业务的 MENU / 逻辑
 
+# ---- 独立的 yunyun 早餐页面（数据、菜单逻辑完全独立）----
+YY_DIR = "/root/.openclaw/workspace/yunyun-order"
+YY_DATA = os.path.join(YY_DIR, "data")
+sys.path.insert(0, YY_DIR)
+import yunyun_server as yy
+
 bf.load_orders()
+yy.load_orders()
 lock = threading.Lock()
+yy_lock = threading.Lock()
 
 
 class ReuseServer(ThreadingHTTPServer):
@@ -112,6 +120,40 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         parsed = urlparse(self.path)
         path = parsed.path
+        # yunyun 早餐 API（独立数据）
+        if path == "/yunyun/api/menu":
+            self._json({"menu": yy.MENU, "orders": yy.current_orders()}); return
+        if path == "/yunyun/api/daily-menu":
+            self._json(yy.build_daily_menu()); return
+        if path == "/yunyun/api/orders":
+            self._json({"orders": yy.current_orders()}); return
+        if path == "/yunyun/api/history":
+            qs = parse_qs(parsed.query)
+            hist = yy.load_history()
+            today = datetime.now().strftime("%Y-%m-%d")
+            cur = yy.current_orders()
+            if cur and today not in hist:
+                hist[today] = cur
+            date = (qs.get("date") or [None])[0]
+            if date:
+                data = hist.get(date, {})
+                self._json({"date": date, "menu": yy.build_menu_for(data, date), "orders": data})
+            else:
+                cutoff = (datetime.now() - timedelta(days=29)).strftime("%Y-%m-%d")
+                days = {}
+                for d, od in hist.items():
+                    if not od or d < cutoff:
+                        continue
+                    m = yy.build_menu_for(od, d)
+                    names = [f"{s['emoji']}{s['name']}" for s in m["summary"]]
+                    days[d] = {"count": m["total_items"], "people": m["total_people"], "preview": "、".join(names[:6])}
+                self._json({"days": days}); return
+        # yunyun 早餐页面
+        if path in ("/yunyun", "/yunyun/"):
+            self._file(os.path.join(YY_DIR, "index.html")); return
+        if path.startswith("/yunyun/"):
+            fp = self._safe_join(YY_DIR, path[len("/yunyun/"):])
+            self._file(fp) if fp else self.send_error(403); return
         # 早餐 API
         if path == "/breakfast/api/menu":
             self._json({"menu": bf.MENU, "orders": bf.current_orders()}); return
@@ -161,7 +203,47 @@ class Handler(BaseHTTPRequestHandler):
         except Exception:
             self._json({"ok": False, "error": "无效的 JSON"}, 400); return
 
-        if path == "/breakfast/api/submit":
+        if path == "/yunyun/api/submit":
+            name = (data.get("name") or "").strip()
+            items = data.get("items") or []
+            if not name:
+                self._json({"ok": False, "error": "请填写你的名字"}, 400); return
+            clean = []
+            for it in items:
+                iid = it.get("id")
+                qty = max(1, int(it.get("qty", 1)))
+                if isinstance(iid, str) and iid.startswith("c_"):
+                    nm = it.get("name") or iid[2:]
+                    clean.append({"id": iid, "name": nm, "emoji": "✍️", "qty": qty, "price": 0})
+                    continue
+                base = yy.item_of(iid)
+                if not base: continue
+                clean.append({"id": base["id"], "name": base["name"], "emoji": base.get("emoji", "🍽"),
+                              "qty": qty, "price": base.get("price", 0)})
+            if not clean:
+                self._json({"ok": False, "error": "请至少选择一样早餐"}, 400); return
+            with yy_lock:
+                yy.orders[name] = {"name": name, "items": clean,
+                                   "ts": datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+                yy.save_orders()
+            try:
+                tmr = (datetime.now() + timedelta(days=1)).strftime("%m/%d")
+                picked = "、".join(f"{i['name']}×{i['qty']}" if i.get("qty", 1) > 1 else i["name"] for i in clean)
+                notify_qq(f"✅ 云云页面收到啦～\n👤 {name} 点了：{picked}\n明早（{tmr}）给你安排上 🍳")
+            except Exception:
+                pass
+            self._json({"ok": True, "message": f"{name} 的早餐已提交！", "daily_menu": yy.build_daily_menu()})
+        elif path == "/yunyun/api/reset":
+            with yy_lock:
+                yy.orders.clear(); yy.save_orders()
+            self._json({"ok": True, "message": "今日点单已清空"})
+        elif path == "/yunyun/api/cancel":
+            name = (data.get("name") or "").strip()
+            with yy_lock:
+                if name in yy.orders:
+                    del yy.orders[name]; yy.save_orders()
+            self._json({"ok": True, "message": f"{name} 的点单已取消"})
+        elif path == "/breakfast/api/submit":
             name = (data.get("name") or "").strip()
             items = data.get("items") or []
             if not name:

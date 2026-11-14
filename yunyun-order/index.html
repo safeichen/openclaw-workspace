@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#111111">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>🍳 早餐吃什么</title>
+<style>
+  :root{
+    --bg:#f6f5f3; --card:#ffffff; --ink:#111111; --muted:#8a8580;
+    --accent:#111111; --accent-ink:#ffffff; --tint:#f1efe9; --line:#ece9e3;
+    --radius:18px; --shadow:0 2px 12px rgba(0,0,0,.05);
+    --maxw:720px;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;
+    padding-bottom:calc(88px + env(safe-area-inset-bottom));
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;}
+
+  /* ---------- 顶部 ---------- */
+  header{
+    background:var(--bg);padding:calc(18px + env(safe-area-inset-top)) 18px 12px;
+  }
+  header .brand{display:flex;align-items:center;gap:10px;}
+  header .logo{width:38px;height:38px;border-radius:12px;background:var(--ink);color:#fff;
+    display:grid;place-items:center;font-size:20px;flex-shrink:0;}
+  header h1{margin:0;font-size:21px;font-weight:800;letter-spacing:.3px;}
+  header .sub{margin:2px 0 0;font-size:12px;color:var(--muted);}
+  header .date{margin-left:auto;font-size:12px;color:var(--muted);background:#fff;
+    padding:6px 11px;border-radius:999px;box-shadow:var(--shadow);white-space:nowrap;}
+  .hdr-btns{margin-left:auto;display:flex;gap:8px;}
+  .hdr-btns button{border:none;background:#fff;box-shadow:var(--shadow);border-radius:999px;
+    padding:7px 12px;font-size:12.5px;font-weight:600;color:var(--ink);cursor:pointer;white-space:nowrap;}
+  .hdr-btns button:active{transform:scale(.96);}
+
+  /* ---------- 名字 ---------- */
+  .who{display:flex;align-items:center;gap:10px;margin-top:14px;background:#fff;border-radius:var(--radius);
+    padding:12px 14px;box-shadow:var(--shadow);}
+  .who .icon{font-size:18px;}
+  .who input{flex:1;border:none;outline:none;font-size:15px;background:transparent;color:var(--ink);}
+  .who input::placeholder{color:#b5b0a8;}
+
+  /* ---------- 分类tab：始终悬浮在最顶部 ---------- */
+  .tabs{display:flex;gap:8px;padding:8px 18px;overflow-x:auto;position:sticky;
+    top:0;
+    background:var(--bg);z-index:40;box-shadow:0 6px 12px -8px rgba(0,0,0,.18);
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;}
+  .tabs::-webkit-scrollbar{display:none;}
+  .tab{flex:0 0 auto;border:none;background:#fff;color:var(--muted);padding:8px 15px;border-radius:999px;
+    font-size:13.5px;font-weight:600;cursor:pointer;box-shadow:var(--shadow);transition:.15s;white-space:nowrap;}
+  .tab.on{background:var(--ink);color:#fff;}
+
+  /* ---------- 内容 ---------- */
+  main{padding:6px 18px 0;}
+  .cat{margin-bottom:22px;scroll-margin-top:64px;}
+  .cat h2{font-size:15px;margin:0 0 12px;display:flex;align-items:center;gap:8px;}
+  .cat h2 .dot{width:6px;height:6px;border-radius:50%;background:var(--ink);}
+  .cat h2 .badge{margin-left:auto;font-size:11px;font-weight:600;color:var(--accent-ink);
+    background:var(--ink);padding:2px 8px;border-radius:999px;}
+
+  .grid{display:grid;grid-template-columns:1fr;gap:10px;}
+  .item{background:var(--card);border-radius:var(--radius);padding:14px;display:flex;align-items:center;gap:14px;
+    box-shadow:var(--shadow);border:1.5px solid transparent;transition:.15s;cursor:pointer;}
+  .item:active{transform:scale(.985);}
+  .item.on{border-color:var(--ink);}
+  .item .thumb{width:52px;height:52px;border-radius:14px;background:var(--tint);display:grid;place-items:center;
+    font-size:26px;flex-shrink:0;}
+  .item .thumb img{width:41px;height:41px;display:block;}
+  .item .info{flex:1;min-width:0;}
+  .item .nm{font-size:15px;font-weight:700;line-height:1.3;}
+  .item .ds{font-size:12px;color:var(--muted);margin-top:3px;}
+
+  .stepper{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+  .stepper button{width:30px;height:30px;border-radius:50%;border:none;font-size:18px;font-weight:700;
+    line-height:1;cursor:pointer;display:grid;place-items:center;transition:.12s;}
+  .stepper button:active{transform:scale(.9);}
+  .stepper .minus{background:var(--tint);color:var(--ink);}
+  .stepper .plus{background:var(--ink);color:#fff;}
+  .stepper .q{min-width:18px;text-align:center;font-size:15px;font-weight:800;}
+
+  /* ---------- 底部栏 ---------- */
+  .bar{position:fixed;left:0;right:0;bottom:0;z-index:30;
+    background:rgba(255,255,255,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    border-top:1px solid var(--line);
+    padding:12px 18px calc(12px + env(safe-area-inset-bottom));}
+  .bar .inner{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;gap:12px;}
+  .bar .left{flex:1;min-width:0;}
+  .bar .l1{font-size:12px;color:var(--muted);}
+  .bar .l2{font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px;}
+  .bar button{border:none;border-radius:999px;font-size:15.5px;font-weight:700;padding:13px 22px;cursor:pointer;
+    transition:.12s;white-space:nowrap;}
+  .bar button:active{transform:scale(.97);}
+  .btn-ghost{background:var(--tint);color:var(--ink);}
+  .btn-main{background:var(--ink);color:#fff;box-shadow:0 6px 16px rgba(17,17,17,.25);}
+
+  /* ---------- 今日已点提示 ---------- */
+  .today-box{margin:12px 0 0;padding:12px 14px;border-radius:14px;background:#fff8e8;border:1px solid #ffe3a3;
+    font-size:14px;line-height:1.5;color:#8a6d1f;display:none;}
+  .today-box .tb-t{font-weight:700;margin-bottom:2px;color:#b8860b;}
+  .today-box .tb-n{color:#111;font-weight:600;}
+
+  /* ---------- 选餐成功浮框 ---------- */
+  .success-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;
+    background:linear-gradient(135deg,#0f0f0f 0%,#262626 58%,#3a2f1f 100%);
+    color:#fff;
+    padding:16px 18px calc(16px + env(safe-area-inset-bottom));
+    transform:translateY(130%);opacity:0;pointer-events:none;
+    transition:transform .38s cubic-bezier(.2,.9,.2,1),opacity .3s ease;
+    box-shadow:0 -10px 34px rgba(0,0,0,.3);overflow:hidden;}
+  .success-bar.show{transform:translateY(0);opacity:1;pointer-events:auto;}
+  .success-bar .sb-inner{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;gap:14px;}
+  .success-bar .sb-emoji{font-size:32px;line-height:1;filter:drop-shadow(0 3px 8px rgba(255,190,90,.45));}
+  .success-bar.show .sb-emoji{animation:sbPop .72s cubic-bezier(.34,1.56,.64,1) both;}
+  @keyframes sbPop{0%{transform:scale(.2) rotate(-30deg);opacity:0}
+    55%{transform:scale(1.35) rotate(12deg);opacity:1}
+    75%{transform:scale(.94) rotate(-5deg)}100%{transform:scale(1) rotate(0);opacity:1}}
+  .success-bar .sb-t1{font-size:17px;font-weight:800;letter-spacing:.5px;}
+  .success-bar .sb-t2{font-size:12.5px;opacity:.72;margin-top:4px;}
+  .success-bar .sb-t2 b{color:#ffd9a0;font-size:13.5px;}
+  .success-bar .sb-ring{margin-left:auto;width:46px;height:46px;border-radius:50%;flex-shrink:0;
+    display:grid;place-items:center;position:relative;
+    background:conic-gradient(#ffcf87 var(--p,100%), rgba(255,255,255,.15) 0);}
+  .success-bar .sb-ring::before{content:"";position:absolute;inset:4px;border-radius:50%;background:#1b1b1b;}
+  .success-bar .sb-ring span{position:relative;font-size:16px;font-weight:800;color:#ffd9a0;}
+  .success-bar .sb-progress{max-width:var(--maxw);margin:12px auto 0;height:3px;border-radius:99px;
+    background:rgba(255,255,255,.14);overflow:hidden;}
+  .success-bar .sb-progress i{display:block;height:100%;width:100%;border-radius:99px;
+    background:linear-gradient(90deg,#ffcf87,#ff9f5a);}
+
+  /* ---------- 童趣：自己写一个 ---------- */
+  .item.doodle{border:1.6px dashed #ffcf87;background:#fffdf6;}
+  .item.doodle .thumb{background:#fff3d8;}
+  .item.doodle .nm{color:#8a6526;}
+  .item.doodle .ds{color:#c0a06a;}
+  .doodle-go{flex-shrink:0;display:flex;align-items:center;gap:5px;background:#fff0d2;color:#a9761f;
+    font-size:13px;font-weight:800;padding:9px 13px;border-radius:999px;white-space:nowrap;
+    box-shadow:0 2px 6px rgba(255,180,80,.28);transition:.15s;}
+  .item.doodle:active .doodle-go{transform:rotate(-8deg) scale(.94);}
+
+  #otherModal{position:fixed;inset:0;background:rgba(70,45,10,.42);display:none;align-items:center;
+    justify-content:center;z-index:110;padding:22px;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);}
+  #otherModal.show{display:flex;}
+  .doodle-card{width:100%;max-width:352px;background:#fffdf6;border-radius:28px;padding:24px 20px 20px;
+    position:relative;border:3px dashed #ffd08a;
+    box-shadow:0 18px 42px rgba(120,80,20,.24),0 0 0 9px rgba(255,255,255,.6);
+    animation:cardPop .42s cubic-bezier(.34,1.56,.64,1) both;}
+  @keyframes cardPop{0%{transform:scale(.68) rotate(-8deg);opacity:0}
+    62%{transform:scale(1.05) rotate(2.5deg)}100%{transform:scale(1) rotate(0);opacity:1}}
+  .doodle-card.shake{animation:cardShake .42s ease;}
+  @keyframes cardShake{0%,100%{transform:translateX(0)}18%{transform:translateX(-9px) rotate(-1.5deg)}
+    38%{transform:translateX(8px) rotate(1.5deg)}58%{transform:translateX(-6px)}78%{transform:translateX(4px)}}
+  .doodle-card::before{content:"🖍️";position:absolute;top:-20px;left:16px;font-size:30px;
+    transform:rotate(-16deg);filter:drop-shadow(0 4px 7px rgba(120,80,20,.22));}
+  .doodle-card h3{margin:0 0 6px;font-size:19px;font-weight:900;color:#5a3d13;letter-spacing:.4px;}
+  .doodle-card .dsub{margin:0 0 15px;font-size:12.5px;color:#b58e50;line-height:1.5;}
+  .doodle-input{width:100%;border:none;outline:none;background:#fff;border-radius:16px;padding:14px 16px;
+    font-size:16px;font-weight:700;color:#4a3a22;box-shadow:inset 0 0 0 2px #ffe6bd;
+    font-family:inherit;transition:box-shadow .18s;}
+  .doodle-input::placeholder{color:#cbb391;font-weight:600;}
+  .doodle-input:focus{box-shadow:inset 0 0 0 2.5px #ffc46b,0 0 0 4px rgba(255,196,107,.22);}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:13px 0 2px;}
+  .chip{border:none;background:#fff2d9;color:#90682a;font-size:12.5px;font-weight:700;
+    padding:8px 13px;border-radius:999px;cursor:pointer;font-family:inherit;transition:.12s;}
+  .chip:active{transform:scale(.92) rotate(-3deg);}
+  .chips-tip{width:100%;font-size:11.5px;font-weight:700;color:#c0a06a;margin:2px 0 0;}
+  .chip-mine{background:#ffe6c2;color:#8a5a13;}
+  .doodle-acts{display:flex;gap:10px;margin-top:17px;}
+  .doodle-acts button{flex:1;border:none;border-radius:16px;padding:14px;font-size:15px;font-weight:800;
+    cursor:pointer;font-family:inherit;transition:.12s;}
+  .doodle-acts button:active{transform:scale(.96);}
+  .doodle-ok{background:linear-gradient(135deg,#ffb057,#ff8a3d);color:#fff;
+    box-shadow:0 7px 16px rgba(255,140,60,.38);}
+  .doodle-cancel{background:#ffedcf;color:#8a6526;}
+
+  /* ---------- toast ---------- */
+  #toast{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%) scale(.9);background:rgba(17,17,17,.94);
+    color:#fff;padding:14px 24px;border-radius:16px;font-size:15px;font-weight:600;opacity:0;pointer-events:none;
+    transition:.22s;z-index:99;max-width:80%;text-align:center;line-height:1.4;}
+  #toast.show{opacity:1;transform:translate(-50%,-50%) scale(1);}
+
+  /* ---------- 弹窗 ---------- */
+  #modal{position:fixed;inset:0;background:rgba(17,17,17,.45);display:none;align-items:flex-end;z-index:100;}
+  #modal.show{display:flex;}
+  .sheet{background:#fff;width:100%;max-width:var(--maxw);margin:0 auto;border-radius:24px 24px 0 0;
+    padding:22px 18px calc(22px + env(safe-area-inset-bottom));max-height:82vh;overflow:auto;
+    animation:up .28s cubic-bezier(.2,.8,.2,1);}
+  @keyframes up{from{transform:translateY(100%);}to{transform:translateY(0);}}
+  .sheet .handle{width:40px;height:4px;border-radius:99px;background:var(--line);margin:0 auto 16px;}
+  .sheet h3{margin:0 0 14px;font-size:18px;font-weight:800;}
+  .mk{white-space:pre-wrap;font-size:13.5px;line-height:1.75;background:var(--tint);border-radius:16px;padding:16px;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:#3a352f;}
+  .sheet .acts{display:flex;gap:10px;margin-top:16px;}
+  .sheet .acts button{flex:1;border:none;border-radius:14px;padding:14px;font-size:15px;
+    font-weight:700;cursor:pointer;transition:.12s;}
+  .sheet .acts button:active{transform:scale(.98);}
+  .copy{background:var(--ink);color:#fff;}
+  .close{background:var(--tint);color:var(--ink);}
+
+  /* ---------- 日历 ---------- */
+  #histModal{position:fixed;inset:0;background:rgba(17,17,17,.45);display:none;align-items:flex-end;z-index:100;}
+  #histModal.show{display:flex;}
+  @keyframes sheetUp{from{transform:translateY(24px);opacity:.4}to{transform:translateY(0);opacity:1}}
+  #histModal.show .sheet{animation:sheetUp .3s cubic-bezier(.22,1,.36,1) both;}
+  .sheet{position:relative;}
+  .sheet-x{position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:50%;border:2px solid #fff;
+    background:linear-gradient(135deg,#ffd7a8,#ffb27a);color:#7a4a1d;font-size:17px;cursor:pointer;line-height:1;
+    display:flex;align-items:center;justify-content:center;z-index:5;
+    box-shadow:0 3px 10px rgba(255,150,90,.35);transition:transform .15s ease, box-shadow .15s ease;}
+  .sheet-x:hover{transform:rotate(90deg) scale(1.08);box-shadow:0 5px 16px rgba(255,150,90,.5);}
+  .sheet-x:active{transform:scale(.88) rotate(-15deg);}
+  @keyframes xpop{0%{transform:scale(.6);opacity:0}60%{transform:scale(1.15)}100%{transform:scale(1);opacity:1}}
+  #histModal.show .sheet-x{animation:xpop .35s cubic-bezier(.34,1.56,.64,1) both;}
+  .sheet-x:active{transform:scale(.94);}
+  .cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+  .cal-head span{font-size:16px;font-weight:800;}
+  .cal-head button{width:34px;height:34px;border-radius:50%;border:none;background:var(--tint);
+    font-size:18px;font-weight:700;cursor:pointer;line-height:1;}
+  .cal-week{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font-size:12px;
+    color:var(--muted);margin-bottom:6px;}
+  .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;}
+  .cal-cell{aspect-ratio:1/1;border-radius:12px;display:flex;flex-direction:column;align-items:center;
+    justify-content:center;font-size:13px;background:var(--bg);color:var(--text);position:relative;}
+  .cal-cell.empty{background:transparent;}
+  .cal-cell.out{opacity:.28;}
+  .cal-cell.has{background:var(--ink);color:#fff;font-weight:700;cursor:pointer;}
+  .cal-cell.today{box-shadow:inset 0 0 0 2px var(--ink);}
+  .cal-cell .dot{width:4px;height:4px;border-radius:50%;background:#fff;position:absolute;bottom:6px;}
+  .cal-cell .dnum{line-height:1;}
+  #histDetail{overflow:hidden;max-height:0;opacity:0;transform:translateY(6px);
+    transition:max-height .32s cubic-bezier(.4,0,.2,1), opacity .3s ease, transform .3s ease;}
+
+  /* ---------- 童趣：回忆小本本 ---------- */
+  #histModal .sheet{background:linear-gradient(180deg,#fffdf6 0%,#fff8ea 100%);
+    border-radius:30px 30px 0 0;box-shadow:0 -14px 44px rgba(120,80,20,.22);
+    border-top:3px dashed #ffd9a3;}
+  #histModal h3{color:#5a3d13;letter-spacing:.4px;}
+  .hist-sub{margin:-8px 0 14px;font-size:12.5px;color:#b58e50;line-height:1.5;}
+  #histModal .cal-head{margin-top:2px;}
+  #histModal .cal-head span{color:#7a5417;font-size:16.5px;font-weight:900;}
+  #histModal .cal-head button{background:#ffe9c4;color:#8a5a13;font-size:19px;font-weight:900;
+    box-shadow:0 3px 9px rgba(255,170,70,.35);transition:transform .14s ease;}
+  #histModal .cal-head button:active{transform:scale(.88) rotate(-8deg);}
+  #histModal .cal-head button:disabled{box-shadow:none;background:#f6efdf;}
+  #histModal .cal-week{color:#c0a06a;font-weight:800;font-size:12px;}
+  #histModal .cal-grid{gap:7px;}
+  #histModal .cal-cell{background:#fff7e8;color:#b79a6b;border-radius:15px;font-weight:700;
+    transition:transform .14s ease;}
+  #histModal .cal-cell.empty{background:transparent;}
+  #histModal .cal-cell.has{background:linear-gradient(140deg,#ffd79a,#ffb264);color:#5a3510;
+    font-weight:900;box-shadow:0 4px 10px rgba(255,160,70,.32);}
+  #histModal .cal-cell.has:nth-child(3n){transform:rotate(-2deg);}
+  #histModal .cal-cell.has:nth-child(3n+1){transform:rotate(2deg);}
+  #histModal .cal-cell.has:active{transform:scale(.88) rotate(-6deg);}
+  #histModal .cal-cell.has .dot{background:#7a4a1d;bottom:5px;}
+  #histModal .cal-cell.today{box-shadow:inset 0 0 0 2.5px #ffab5e;background:#fff1d6;
+    animation:todayBob 2.4s ease-in-out infinite;}
+  #histModal .cal-cell.today.has{box-shadow:inset 0 0 0 2.5px #fff,0 4px 12px rgba(255,160,70,.45);}
+  @keyframes todayBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2.5px)}}
+  .cal-sum{margin:13px 2px 2px;font-size:12.5px;font-weight:700;color:#a9761f;
+    background:#fff2d9;border-radius:999px;padding:8px 13px;display:inline-block;}
+  .cal-tip{margin:10px 2px 4px;font-size:12px;color:#c6ac81;text-align:center;}
+  #histDetail{background:#fffdf6;border:2px dashed #ffd08a;border-radius:20px;
+    padding:18px 16px 14px;color:#6b4a1c;font-family:inherit;font-size:13.5px;line-height:1.85;
+    position:relative;box-shadow:0 6px 16px rgba(180,130,60,.1);white-space:pre-wrap;}
+  #histDetail::before{content:"📌";position:absolute;top:-14px;left:50%;
+    transform:translateX(-50%) rotate(-8deg);font-size:21px;}
+  #histDetail .hd-day{font-size:13px;font-weight:900;color:#8a6526;margin-bottom:6px;
+    display:flex;align-items:center;gap:6px;}
+
+  /* ---------- 响应式：平板/桌面 ---------- */
+  @media(min-width:560px){
+    .grid{grid-template-columns:repeat(2,1fr);}
+    header h1{font-size:23px;}
+  }
+  @media(min-width:860px){
+    :root{--maxw:920px;}
+    .grid{grid-template-columns:repeat(3,1fr);}
+    body{padding-bottom:100px;}
+    .bar .inner{padding:0 4px;}
+  }
+  /* 横屏手机 */
+  @media(max-height:500px) and (orientation:landscape){
+    header{padding-top:12px;}
+    .grid{grid-template-columns:repeat(3,1fr);}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="logo">🍳</div>
+      <div>
+        <h1>早餐吃什么呀</h1>
+        <p class="sub">挑好想吃的，好好吃饭长高高 🌱</p>
+      </div>
+      <div class="hdr-btns">
+        <button id="histBtn">📖 回忆</button>
+      </div>
+    </div>
+    <div class="who" id="whoBar" style="display:none">
+      <span class="icon">👤</span>
+      <input id="nameInput" placeholder="输入你的名字" maxlength="20">
+    </div>
+    <div id="todayBox" class="today-box" style="display:none"></div>
+  </header>
+
+  <div class="tabs" id="tabs"></div>
+  <main id="menu"></main>
+
+  <div class="bar">
+    <div class="inner">
+      <div class="left">
+        <div class="l1" id="cnt">还没选</div>
+        <div class="l2" id="picked">—</div>
+      </div>
+      <button id="submitBtn" class="btn-main">就吃这些啦！</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<div class="success-bar" id="successBar" aria-live="polite">
+  <div class="sb-inner">
+    <div class="sb-emoji">🎉</div>
+    <div class="sb-text">
+      <div class="sb-t1">帮小肚子记好啦 🥰</div>
+    </div>
+    <div class="sb-ring" id="sbRing"><span id="sbRingNum">3</span></div>
+  </div>
+  <div class="sb-progress"><i id="sbProg"></i></div>
+</div>
+<div id="otherModal">
+  <div class="doodle-card" id="doodleCard">
+    <h3>还想吃点啥呀？</h3>
+    <p class="dsub">大声告诉我，明天的饭盒给你安排上 🍱</p>
+    <input id="doodleInput" class="doodle-input" placeholder="比如：小饼干、玉米、牛奶…" maxlength="12" autocomplete="off">
+    <div class="chips" id="doodleChips"></div>
+    <div class="doodle-acts">
+      <button class="doodle-cancel" id="doodleCancel">再想想～</button>
+      <button class="doodle-ok" id="doodleOk">就要这个！</button>
+    </div>
+  </div>
+</div>
+
+<div id="modal">
+  <div class="sheet">
+    <div class="handle"></div>
+    <h3>🍳 明天吃什么呀</h3>
+    <div class="mk" id="menuText"></div>
+    <div class="acts">
+      <button class="close" id="closeModal">关闭</button>
+      <button class="copy" id="copyBtn">复制菜单</button>
+    </div>
+  </div>
+</div>
+
+<div id="histModal">
+  <div class="sheet">
+    <button class="sheet-x" id="closeHist" aria-label="关闭">🙈</button>
+    <div class="handle"></div>
+    <h3>🍳 最近吃过啥</h3>
+    <p class="hist-sub">翻翻小本本，看看这些天都吃了啥 📖</p>
+    <div class="cal-head">
+      <button id="calPrev">‹</button>
+      <span id="calTitle"></span>
+      <button id="calNext">›</button>
+    </div>
+    <div class="cal-week">
+      <span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+    <div class="cal-sum" id="calSum"></div>
+    <div id="histDetail" style="margin-top:14px;display:none"></div>
+    <p class="cal-tip">小本本只记最近 30 天哦 🌱 每天都要好好吃饭呀</p>
+  </div>
+</div>
+
+<script>
+const API = location.pathname.startsWith('/yunyun') ? (location.origin + '/yunyun') : (location.pathname.startsWith('/breakfast') ? (location.origin + '/breakfast') : location.origin);
+let MENU = null;
+let CART = {};   // id -> qty
+
+function toast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.classList.add('show');
+  clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),1600);
+}
+
+/* ===== 底部「选餐成功」浮框：滑入动画 + 3 秒倒计时圆环，自动收起 ===== */
+const SB_DURATION=3000;
+let _sbTimer=null,_sbTick=null;
+function showSuccessBar(onDone){
+  const bar=document.getElementById('successBar');
+  const ringNum=document.getElementById('sbRingNum');
+  const ring=document.getElementById('sbRing');
+  const prog=document.getElementById('sbProg');
+  if(_sbTimer){clearTimeout(_sbTimer);_sbTimer=null;}
+  if(_sbTick){clearInterval(_sbTick);_sbTick=null;}
+
+  // 重置并重新触发入场动画
+  bar.classList.remove('show');
+  void bar.offsetWidth;
+  const totalSec=Math.ceil(SB_DURATION/1000);
+  if(ringNum)ringNum.textContent=totalSec;
+  ring.style.setProperty('--p','100%');
+  prog.style.width='100%';
+  bar.classList.add('show');
+
+  const start=Date.now();
+  _sbTick=setInterval(()=>{
+    const left=Math.max(0,SB_DURATION-(Date.now()-start));
+    const sec=Math.max(0,Math.ceil(left/1000));
+    const pct=left/SB_DURATION*100;
+    if(ringNum)ringNum.textContent=sec;
+    ring.style.setProperty('--p',pct.toFixed(1)+'%');
+    prog.style.width=pct.toFixed(1)+'%';
+    if(left<=0){clearInterval(_sbTick);_sbTick=null;}
+  },50);
+
+  _sbTimer=setTimeout(()=>{
+    bar.classList.remove('show');
+    _sbTimer=null;
+    if(typeof onDone==='function') onDone();
+  },SB_DURATION);
+}
+function findItem(id){
+  for(const c of MENU.categories) for(const it of c.items) if(it.id===id) return it;
+  return null;
+}
+function esc(s){return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+
+function renderTabs(){
+  const el=document.getElementById('tabs');
+  el.innerHTML='';
+  for(const cat of MENU.categories){
+    const b=document.createElement('button');
+    b.className='tab';
+    b.textContent=`${cat.icon} ${cat.name}`;
+    b.onclick=()=>{
+      const t=document.getElementById('cat_'+cat.id);
+      if(t){
+        const tabsH=document.getElementById('tabs').offsetHeight||0;
+        const y=t.getBoundingClientRect().top+window.scrollY-tabsH-6;
+        _spyLock=true;
+        window.scrollTo({top:Math.max(0,y),behavior:'smooth'});
+        setTimeout(()=>{_spyLock=false;},700);
+      }
+      document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+      b.classList.add('on');
+    };
+    el.appendChild(b);
+  }
+  if(el.firstChild) el.firstChild.classList.add('on');
+  setupScrollSpy();
+}
+
+/* 滚动时高亮当前分类对应的 tab（点击期间暂停，避免打架） */
+let _spyLock=false;
+function setupScrollSpy(){
+  if(window._spyObserver) window._spyObserver.disconnect();
+  const tabs=document.getElementById('tabs');
+  const mark=(id)=>{
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+    const idx=MENU.categories.findIndex(c=>c.id===id);
+    if(idx>=0 && tabs.children[idx]) tabs.children[idx].classList.add('on');
+  };
+  const obs=new IntersectionObserver((entries)=>{
+    if(_spyLock) return;
+    const vis=entries.filter(e=>e.isIntersecting)
+      .sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top);
+    if(vis.length) mark(vis[0].target.id.replace('cat_',''));
+  },{rootMargin:'-60px 0px -70% 0px',threshold:0});
+  MENU.categories.forEach(c=>{
+    const s=document.getElementById('cat_'+c.id);
+    if(s) obs.observe(s);
+  });
+  window._spyObserver=obs;
+}
+
+function render(){
+  const root=document.getElementById('menu');
+  root.innerHTML='';
+  for(const cat of MENU.categories){
+    const sec=document.createElement('section');
+    sec.className='cat';sec.id='cat_'+cat.id;
+    const cnt=cat.items.reduce((a,it)=>a+(CART[it.id]||0),0)
+      +(cat.items.some(it=>it.id==='o1')?customCount():0);
+    sec.innerHTML=`<h2><span class="dot"></span>${cat.icon} ${cat.name}${cnt?`<span class="badge">想要 ${cnt}</span>`:''}</h2>`;
+    const grid=document.createElement('div');
+    grid.className='grid';
+    for(const it of cat.items){
+      const q=CART[it.id]||0;
+      const isOther=(it.id==='o1');
+      const el=document.createElement('div');
+      el.className='item'+(q>0?' on':'')+(isOther?' doodle':'');
+      el.innerHTML=`
+        <div class="thumb">${it.icon?`<img src="${esc(it.icon)}" alt="">`:(it.emoji||'🍽')}</div>
+        <div class="info">
+          <div class="nm">${esc(it.name)}</div>
+          <div class="ds">${esc(it.desc||'')}</div>
+        </div>
+        ${isOther
+          ? `<span class="doodle-go">写一个 ✏️</span>`
+          : `<div class="stepper">
+          <button class="minus" ${q>0?'':'style="visibility:hidden"'}>−</button>
+          <span class="q">${q>0?q:''}</span>
+          <button class="plus">+</button>
+        </div>`}`;
+      if(isOther){
+        el.onclick=()=>openDoodle();
+      }else{
+        el.querySelector('.plus').onclick=(e)=>{e.stopPropagation();addItem(it);};
+        el.querySelector('.minus').onclick=(e)=>{e.stopPropagation();
+          if(CART[it.id]){CART[it.id]--;if(CART[it.id]<=0)delete CART[it.id];render();}};
+        el.onclick=()=>addItem(it);
+      }
+      grid.appendChild(el);
+    }
+    sec.appendChild(grid);
+    root.appendChild(sec);
+  }
+  updateBar();
+}
+
+function addItem(it){
+  CART[it.id]=(CART[it.id]||0)+1;render();
+}
+
+/* ===== 童趣小弹窗：自己写一个 ===== */
+const DOODLE_SUGGEST=['小饼干','玉米','牛奶','小番茄','鸡蛋羹','酸奶'];
+function customCount(){
+  let n=0;for(const k in CART){if(k.startsWith('c_'))n+=CART[k];}return n;
+}
+function openDoodle(){
+  const m=document.getElementById('otherModal');
+  const inp=document.getElementById('doodleInput');
+  const chips=document.getElementById('doodleChips');
+  chips.innerHTML='';
+  // 已经写过的小心愿
+  const mine=Object.keys(CART).filter(k=>k.startsWith('c_')&&CART[k]>0);
+  if(mine.length){
+    const tip=document.createElement('div');
+    tip.className='chips-tip';tip.textContent='已经写好咯：';
+    chips.appendChild(tip);
+    mine.forEach(k=>{
+      const b=document.createElement('button');
+      b.className='chip chip-mine';
+      b.textContent=`${k.slice(2)} ×${CART[k]} ✕`;
+      b.onclick=()=>{delete CART[k];render();openDoodle();};
+      chips.appendChild(b);
+    });
+    const tip2=document.createElement('div');
+    tip2.className='chips-tip';tip2.textContent='还想加点啥？';
+    chips.appendChild(tip2);
+  }
+  DOODLE_SUGGEST.forEach(s=>{
+    const b=document.createElement('button');
+    b.className='chip';b.textContent=s;
+    b.onclick=()=>{inp.value=s;inp.focus();};
+    chips.appendChild(b);
+  });
+  inp.value='';
+  m.classList.add('show');
+  setTimeout(()=>inp.focus(),180);
+}
+function closeDoodle(){
+  document.getElementById('otherModal').classList.remove('show');
+  document.getElementById('doodleInput').blur();
+}
+function commitDoodle(){
+  const inp=document.getElementById('doodleInput');
+  const card=document.getElementById('doodleCard');
+  const v=(inp.value||'').trim();
+  if(!v){
+    card.classList.remove('shake');void card.offsetWidth;card.classList.add('shake');
+    inp.focus();return;
+  }
+  const k='c_'+v;
+  CART[k]=(CART[k]||0)+1;
+  closeDoodle();
+  render();
+  toast(`记上啦：${v} 🖍️`);
+}
+
+function cartList(){
+  const arr=[];
+  for(const id in CART){
+    if(id.startsWith('c_')){arr.push({id,name:id.slice(2),emoji:'🖍️',price:0,qty:CART[id]});continue;}
+    const it=findItem(id);
+    if(it) arr.push({id,name:it.name,emoji:it.emoji||'🍽',price:it.price||0,qty:CART[id]});
+  }
+  return arr;
+}
+
+function updateBar(){
+  const list=cartList();
+  const n=list.reduce((a,b)=>a+b.qty,0);
+  document.getElementById('cnt').textContent=n?`想吃了 ${n} 样 😋`:'还没挑呢～';
+  const names=list.map(x=>x.qty>1?`${x.name}×${x.qty}`:x.name).join('、');
+  document.getElementById('picked').textContent=names||'—';
+}
+
+async function submit(){
+  const name=USER_NAME;   // 只有一位用户「仁仁」
+  const items=cartList();
+  if(!items.length){toast('至少挑一样想吃的嘛 🥺');return;}
+  try{
+    const r=await fetch(API+'/api/submit',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({name,items})});
+    const d=await r.json();
+    if(!d.ok){toast(d.error||'哎呀，没送出去');return;}
+    // 提交成功：底栏切换为「选餐成功」浮框，3 秒倒计时后自动收起
+    CART={};render();
+    showTodayBox(name);
+    showSuccessBar();
+  }catch(e){toast('网络开小差了，再点一次吧');}
+}
+
+function menuToText(m){
+  let s=`🍳 明天吃什么呀 (${m.date})\n`;
+  s+=`👥 ${m.total_people} 人 · 一共 ${m.total_items} 样\n`;
+  s+=`——————\n`;
+  if(!m.summary.length){s+='（大家还没挑呢～）\n';return s;}
+  for(const it of m.summary) s+=`${it.emoji||'🍽'} ${it.name} ×${it.qty}\n`;
+  s+=`——————\n👤 谁想吃啥：\n`;
+  for(const p of m.per_person){
+    const list=p.items.map(i=>`${i.name}${i.qty>1?'×'+i.qty:''}`).join('、');
+    const t=p.ts?`  🕐 ${p.ts.slice(11,16)}`:'';
+    s+=`· ${p.name}：${list}${t}\n`;
+  }
+  return s;
+}
+
+function showMenu(m){
+  const fill=(mm)=>{
+    document.getElementById('menuText').textContent=menuToText(mm);
+    document.getElementById('modal').classList.add('show');
+  };
+  if(m) fill(m);
+  else fetch(API+'/api/daily-menu').then(r=>r.json()).then(fill);
+}
+
+document.getElementById('submitBtn').onclick=submit;
+document.getElementById('closeModal').onclick=()=>document.getElementById('modal').classList.remove('show');
+document.getElementById('modal').onclick=(e)=>{if(e.target.id==='modal')e.currentTarget.classList.remove('show');};
+document.getElementById('copyBtn').onclick=async()=>{
+  const txt=document.getElementById('menuText').textContent;
+  try{await navigator.clipboard.writeText(txt);toast('抄好啦，可以贴给别人看');}
+  catch(e){toast('长按文字手动复制也行哦');}
+};
+
+/* 只有一位用户「仁仁」，无需填名字 */
+const USER_NAME='仁仁';
+
+/* ===== 今日已点提示 + 自动勾选 ===== */
+let todayLoaded=false;
+function showTodayBox(name){
+  const box=document.getElementById('todayBox');
+  if(!name){box.style.display='none';return;}
+  fetch(API+'/api/orders').then(r=>r.json()).then(d=>{
+    const od=(d.orders||{})[name];
+    if(od && od.items && od.items.length){
+      const list=od.items.map(i=>`${i.emoji||'🍽'}${i.name}${i.qty>1?'×'+i.qty:''}`).join('、');
+      box.innerHTML=`<div class="tb-t">🥰 今天已经挑好啦，帮小肚子记着呢</div>`
+        +`<div>就想吃：<span class="tb-n">${list}</span></div>`
+        +`<div style="margin-top:4px;color:#a08a4a">改主意啦？在下面点点，再喊一声「就吃这些啦！」就好 👇</div>`;
+      box.style.display='block';
+      // 自动把已点项填进购物车
+      CART={};
+      for(const it of od.items){ if(it.id) CART[it.id]=it.qty||1; }
+      if(typeof MENU!=='undefined' && MENU && MENU.categories) render();
+      todayLoaded=true;
+    }else{
+      box.style.display='none';
+    }
+
+  }).catch(()=>{box.style.display='none';});
+}
+fetch(API+'/api/menu').then(r=>r.json()).then(d=>{MENU=d.menu;renderTabs();render();
+  showTodayBox(USER_NAME);
+
+});
+
+/* ================= 日历历史 ================= */
+let HIST = {};           // {date: {count, people, preview}}
+let calYear, calMonth;   // 当前显示的年月
+const HIST_DAYS = 30;    // 只保留最近30天
+
+function ymd(y,m,d){return `${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;}
+function dayStr(dt){return dt.toISOString().slice(0,10);}
+function cutoffStr(){        // 30天窗口最早那天(含)
+  const c=new Date(); c.setHours(0,0,0,0); c.setDate(c.getDate()-(HIST_DAYS-1));
+  return dayStr(c);
+}
+
+async function openHist(){
+  // 先立刻显示弹窗和日历（用已有缓存），避免点击卡顿
+  const now=new Date();
+  calYear=now.getFullYear();calMonth=now.getMonth();
+  renderCal();
+  document.getElementById('histModal').classList.add('show');
+  document.getElementById('histDetail').style.display='none';
+  // 后台拉取历史，回来再刷新
+  try{
+    const r=await fetch(API+'/api/history');
+    const d=await r.json();
+    HIST=d.days||{};
+    renderCal();
+  }catch(e){/* 保留已渲染的日历 */}
+}
+
+// 用 DOM 拼片段一次性插入，减少重排
+function renderCal(){
+  const grid=document.getElementById('calGrid');
+  const title=document.getElementById('calTitle');
+  title.textContent=`${calYear}年 ${calMonth+1}月`;
+  const frag=document.createDocumentFragment();
+  const now=new Date();
+  const first=new Date(calYear,calMonth,1);
+  let startIdx=(first.getDay()+6)%7;  // 周一=0
+  const daysInMonth=new Date(calYear,calMonth+1,0).getDate();
+  const todayStr=dayStr(now);
+  const cut=cutoffStr();
+  for(let i=0;i<startIdx;i++){
+    const c=document.createElement('div');c.className='cal-cell empty';frag.appendChild(c);
+  }
+  for(let d=1;d<=daysInMonth;d++){
+    const ds=ymd(calYear,calMonth,d);
+    const info=HIST[ds];
+    const inWindow = ds>=cut && ds<=todayStr;   // 只在最近30天内可选
+    const c=document.createElement('div');
+    c.className='cal-cell'+(info&&inWindow?' has':'')+(ds===todayStr?' today':'');
+    // 用 textContent 拼装，避免解析 innerHTML
+    const dn=document.createElement('span');dn.className='dnum';dn.textContent=d;c.appendChild(dn);
+    if(info&&inWindow){
+      const dot=document.createElement('span');dot.className='dot';c.appendChild(dot);
+      c.onclick=()=>showHistDay(ds);
+      c.title=info.preview||'';
+    }else if(!inWindow){
+      c.classList.add('out');
+    }
+    frag.appendChild(c);
+  }
+  grid.replaceChildren(frag);
+
+  // 本月小结（童趣版）
+  const sumEl=document.getElementById('calSum');
+  if(sumEl){
+    let n=0;
+    for(let d=1;d<=daysInMonth;d++){
+      const ds=ymd(calYear,calMonth,d);
+      if(HIST[ds] && ds>=cut && ds<=todayStr) n++;
+    }
+    const isCurMonth=(calYear===now.getFullYear() && calMonth===now.getMonth());
+    const who=USER_NAME?`${USER_NAME}`:'小肚子';
+    sumEl.textContent = n
+      ? `📮 ${calMonth+1}月有 ${n} 天好好吃饭啦${n>=10?'，太棒了吧 🏆':'，继续保持哦 💪'}`
+      : (isCurMonth?`🫧 这个月还空空的，去挑点好吃的吧～`:`🫧 这个月没有小记录呢`);
+    sumEl.style.display='inline-block';
+  }
+}
+
+async function showHistDay(ds){
+  const det=document.getElementById('histDetail');
+  // 平滑收起（如果已展开）
+  det.style.maxHeight='0';
+  det.style.opacity='0';
+  det.style.transform='translateY(6px)';
+  let text='', count=0;
+  try{
+    const r=await fetch(API+'/api/history?date='+ds);
+    const d=await r.json();
+    text=menuToText(d.menu);
+    const mm=d.menu||{};
+    count=mm.total_items||(mm.summary||[]).reduce((a,b)=>a+(b.qty||1),0);
+  }catch(e){text='呃…没打开，等下再试试';}
+  det.innerHTML='';
+  const head=document.createElement('div');
+  head.className='hd-day';
+  head.textContent=`🗓 ${Number(ds.slice(5,7))}月${Number(ds.slice(8,10))}日 · 那天点了 ${count} 样`;
+  det.appendChild(head);
+  det.appendChild(document.createTextNode(text));
+  det.style.display='block';
+  // 强制回流后展开，触发过渡
+  requestAnimationFrame(()=>{
+    det.style.maxHeight=det.scrollHeight+'px';
+    det.style.opacity='1';
+    det.style.transform='translateY(0)';
+  });
+  // 等展开动画走完再滚到小票处，免得高度还没算对
+  setTimeout(()=>{
+    const sheet=det.closest('.sheet');
+    if(sheet){
+      sheet.scrollTo({top:sheet.scrollHeight,behavior:'smooth'});
+    }
+  },380);
+}
+
+document.getElementById('histBtn').onclick=openHist;
+document.getElementById('closeHist').onclick=()=>document.getElementById('histModal').classList.remove('show');
+// 只在最近30天窗口内翻月，超出则按钮禁用
+function inWindowMonth(y,m){
+  const cand=new Date(y,m+1,0);            // 该月最后一天
+  return dayStr(cand)>=cutoffStr() && dayStr(new Date(y,m,1))<=dayStr(new Date());
+}
+function updateNav(){
+  const prevOut = !inWindowMonth(calMonth===0?calYear-1:calYear, calMonth===0?11:calMonth-1);
+  const nextOut = !inWindowMonth(calMonth===11?calYear+1:calYear, calMonth===11?0:calMonth+1);
+  const p=document.getElementById('calPrev'), n=document.getElementById('calNext');
+  p.disabled=prevOut; p.style.opacity=prevOut?.3:1; p.style.cursor=prevOut?'default':'pointer';
+  n.disabled=nextOut; n.style.opacity=nextOut?.3:1; n.style.cursor=nextOut?'default':'pointer';
+}
+const _renderCal=renderCal;
+renderCal=function(){_renderCal();updateNav();};document.getElementById('calPrev').onclick=()=>{calMonth--;if(calMonth<0){calMonth=11;calYear--;}renderCal();};
+document.getElementById('calNext').onclick=()=>{calMonth++;if(calMonth>11){calMonth=0;calYear++;}renderCal();};
+
+/* 顶部日期徽章（移除后放到哪里？改为不显示） */
+
+/* 点击遮罩（弹窗外任意位置）关闭弹窗 */
+['modal','histModal','otherModal'].forEach(id=>{
+  const m=document.getElementById(id);
+  m.addEventListener('click',e=>{ if(e.target===m) m.classList.remove('show'); });
+});
+
+/* 童趣弹窗事件 */
+document.getElementById('doodleOk').onclick=commitDoodle;
+document.getElementById('doodleCancel').onclick=closeDoodle;
+document.getElementById('doodleInput').addEventListener('keydown',e=>{
+  if(e.key==='Enter'){e.preventDefault();commitDoodle();}
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape') document.getElementById('otherModal').classList.remove('show');
+});
+
+</script>
+</body>
+</html>
