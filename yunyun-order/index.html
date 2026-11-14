@@ -38,18 +38,8 @@
     padding:7px 12px;font-size:12.5px;font-weight:600;color:var(--ink);cursor:pointer;white-space:nowrap;}
   .hdr-btns button:active{transform:scale(.96);}
 
-  /* ---------- 说明卡片 ---------- */
-  .guide{margin:14px 0 0;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);
-    padding:14px 16px;cursor:pointer;}
-  .guide .g-head{display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:800;}
-  .guide .g-head .arrow{margin-left:auto;font-size:12px;color:var(--muted);transition:.2s;}
-  .guide.open .g-head .arrow{transform:rotate(180deg);}
-  .guide .g-body{display:none;margin-top:10px;}
-  .guide.open .g-body{display:block;}
-  .guide ul{margin:0;padding-left:18px;}
-  .guide li{font-size:13px;line-height:1.75;color:#4a4641;}
-  .guide li b{color:var(--ink);}
-  .note{margin-top:12px;background:#fff8e8;border:1px solid #ffe3a3;border-radius:14px;padding:12px 14px;}
+  /* ---------- 备注便签 ---------- */
+  .note{margin-top:14px;background:#fff8e8;border:1px solid #ffe3a3;border-radius:14px;padding:12px 14px;}
   .note .n-t{font-size:13px;font-weight:800;color:#b8860b;margin-bottom:5px;}
   .note .n-c{font-size:13px;line-height:1.7;color:#7a5f1a;}
   .note .n-c .k{color:#111;font-weight:700;}
@@ -325,21 +315,9 @@
     </div>
     <div id="todayBox" class="today-box" style="display:none"></div>
 
-    <div class="guide" id="guide">
-      <div class="g-head">📌 说明 <span class="arrow">▾</span></div>
-      <div class="g-body">
-        <ul>
-          <li>先在名字框写上<b>你是谁</b>，再点想吃的东西 🍽</li>
-          <li>每样可以 <b>➕ / ➖</b> 改份数；菜单里没有的，点「其他」自己写</li>
-          <li>选好点底部 <b>「就吃这些啦」</b>，第二天早上就按单准备</li>
-          <li>点错了别慌，再点一次自己的名字可以 <b>修改 / 取消</b></li>
-          <li>每天 <b>21:00 前</b> 选好最稳妥，太晚了就只能看着流口水啦 😋</li>
-        </ul>
-        <div class="note">
-          <div class="n-t">📝 昀昀的备注</div>
-          <div class="n-c" id="yyNote">这份早餐单是<b>昀昀专属</b>的，想吃啥就点啥，不用客气～口味、忌口、想吃/不想吃的，随时告诉我，我记在这里 ✍️</div>
-        </div>
-      </div>
+    <div class="note">
+      <div class="n-t">📝 昀昀的备注</div>
+      <div class="n-c" id="yyNote">这份早餐单是<b>昀昀专属</b>的，想吃啥就点啥，不用客气～口味、忌口、想吃/不想吃的，随时告诉我，我记在这里 ✍️</div>
     </div>
   </header>
 
@@ -419,19 +397,6 @@
 const API = location.pathname.startsWith('/yunyun') ? (location.origin + '/yunyun') : (location.pathname.startsWith('/breakfast') ? (location.origin + '/breakfast') : location.origin);
 let MENU = null;
 let CART = {};   // id -> qty
-
-/* ===== 说明卡片：默认展开，点标题可收起（记住状态） ===== */
-(function(){
-  const g=document.getElementById('guide');
-  if(!g) return;
-  const KEY='yy_guide_open';
-  const saved=localStorage.getItem(KEY);
-  if(saved===null || saved==='1') g.classList.add('open');
-  g.addEventListener('click',()=>{
-    g.classList.toggle('open');
-    localStorage.setItem(KEY, g.classList.contains('open')?'1':'0');
-  });
-})();
 
 function toast(msg){
   const t=document.getElementById('toast');
