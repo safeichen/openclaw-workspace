@@ -229,7 +229,7 @@ class Handler(BaseHTTPRequestHandler):
             try:
                 tmr = (datetime.now() + timedelta(days=1)).strftime("%m/%d")
                 picked = "、".join(f"{i['name']}×{i['qty']}" if i.get("qty", 1) > 1 else i["name"] for i in clean)
-                notify_qq(f"✅ 昀昀页面收到啦～\n👤 {name} 点了：{picked}\n明早（{tmr}）给你安排上 🍳")
+                notify_qq(f"✅ 收到啦～\n🍳 明早（{tmr}）吃：{picked}\n好好吃饭长高高 🌱")
             except Exception:
                 pass
             self._json({"ok": True, "message": f"{name} 的早餐已提交！", "daily_menu": yy.build_daily_menu()})
