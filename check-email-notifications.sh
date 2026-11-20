@@ -48,15 +48,15 @@ echo "📊 检查完成，退出码: $EXIT_CODE"
 echo ""
 
 # 分析输出
-if echo "$OUTPUT" | grep -q "\[\[QQ_BOT_PUSH_START\]\]"; then
+if echo "$OUTPUT" | grep -q "\[\[CLAWBOT_PUSH_START\]\]"; then
     echo "✅ 检测到新邮件通知！"
     echo ""
     
     # 提取通知内容
-    NOTIFICATION=$(echo "$OUTPUT" | sed -n '/\[\[QQ_BOT_PUSH_START\]\]/,/\[\[QQ_BOT_PUSH_END\]\]/p')
+    NOTIFICATION=$(echo "$OUTPUT" | sed -n '/\[\[CLAWBOT_PUSH_START\]\]/,/\[\[CLAWBOT_PUSH_END\]\]/p')
     
     # 移除标记行
-    NOTIFICATION=$(echo "$NOTIFICATION" | grep -v "\[\[QQ_BOT_PUSH_START\]\]" | grep -v "\[\[QQ_BOT_PUSH_END\]\]")
+    NOTIFICATION=$(echo "$NOTIFICATION" | grep -v "\[\[CLAWBOT_PUSH_START\]\]" | grep -v "\[\[CLAWBOT_PUSH_END\]\]")
     
     echo "📋 通知内容:"
     echo "$NOTIFICATION"
