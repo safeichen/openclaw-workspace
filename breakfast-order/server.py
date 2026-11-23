@@ -38,6 +38,7 @@ MENU = {
                 {"id": "s10", "name": "松饼", "emoji": "🥞", "desc": "", "price": 0},
                 {"id": "s11", "name": "烤薯角", "emoji": "🍟", "desc": "", "price": 0},
                 {"id": "s12", "name": "三明治", "emoji": "🥪", "desc": "", "price": 0},
+                {"id": "s13", "name": "热狗", "emoji": "🌭", "desc": "", "price": 0},
             ],
         },
         {
